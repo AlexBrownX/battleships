@@ -22,35 +22,7 @@ public class CameraScript : MonoBehaviour
         EnemyView();
     }
 
-    private void PlayerView() {
-        if (!_moveCameraRight) return;
-        
-        var mainCameraPosition = Camera.main.transform.position;
-        var enemyCameraPosition = new Vector3(-13.0f, mainCameraPosition.y,  mainCameraPosition.z);
-            
-        Camera.main.transform.position = 
-            Vector3.MoveTowards(mainCameraPosition, enemyCameraPosition, _cameraMoveSpeed * Time.deltaTime);
-
-        if (Camera.main.transform.position.Equals(enemyCameraPosition)) {
-            _moveCameraRight = false;
-        }
-    }
-
-    private void EnemyView() {
-        if (!_moveCameraLeft) return;
-        
-        var mainCameraPosition = Camera.main.transform.position;
-        var playerCameraPosition = new Vector3(0f, mainCameraPosition.y,  mainCameraPosition.z);
-            
-        Camera.main.transform.position =
-            Vector3.MoveTowards(mainCameraPosition, playerCameraPosition, _cameraMoveSpeed * Time.deltaTime);;
-
-        if (Camera.main.transform.position.Equals(playerCameraPosition)) {
-            _moveCameraLeft = false;
-        }
-    }
-
-    private void RightBtnClicked() {
+    public void RightBtnClicked() {
         if (!_isPlayerView) {
             return;
         }
@@ -60,7 +32,7 @@ public class CameraScript : MonoBehaviour
         _moveCameraRight = true;
     }
 
-    private void LeftBtnClicked() {
+    public void LeftBtnClicked() {
         if (_isPlayerView) {
             return;
         }
@@ -68,5 +40,38 @@ public class CameraScript : MonoBehaviour
         _isPlayerView = true;
         _moveCameraLeft = true;
         _moveCameraRight = false;
+    }
+
+    private void PlayerView() {
+        if (!_moveCameraRight) return;
+        
+        GetComponent<StatusTextScript>().ClearText();
+        var mainCameraPosition = Camera.main.transform.position;
+        var enemyCameraPosition = new Vector3(-13.0f, mainCameraPosition.y,  mainCameraPosition.z);
+            
+        Camera.main.transform.position = 
+            Vector3.MoveTowards(mainCameraPosition, enemyCameraPosition, _cameraMoveSpeed * Time.deltaTime);
+
+        if (Camera.main.transform.position.Equals(enemyCameraPosition)) {
+            GetComponent<StatusTextScript>().SetSelectTargetText();
+            _moveCameraRight = false;
+        }
+    }
+
+
+    private void EnemyView() {
+        if (!_moveCameraLeft) return;
+        
+        GetComponent<StatusTextScript>().ClearText();
+        var mainCameraPosition = Camera.main.transform.position;
+        var playerCameraPosition = new Vector3(0f, mainCameraPosition.y,  mainCameraPosition.z);
+            
+        Camera.main.transform.position =
+            Vector3.MoveTowards(mainCameraPosition, playerCameraPosition, _cameraMoveSpeed * Time.deltaTime);;
+
+        if (Camera.main.transform.position.Equals(playerCameraPosition)) {
+            GetComponent<StatusTextScript>().SetEnemyTargetingText();
+            _moveCameraLeft = false;
+        }
     }
 }

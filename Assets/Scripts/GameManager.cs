@@ -3,11 +3,7 @@ using UnityEngine;
 public class GameManager : MonoBehaviour {
 
     public static GameManager Instance;
-    public GameObject[] ships;
-    public GameObject currentShip;
-
-    private int _shipIndex = 0;
-    private bool _setupComplete = false;
+    private bool _setupComplete;
 
     void Start() {
         Instance = this;
@@ -19,6 +15,5 @@ public class GameManager : MonoBehaviour {
     
     private void Setup() {
         if (_setupComplete) return;
-        currentShip = ships[_shipIndex];
     }
 }

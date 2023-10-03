@@ -136,9 +136,8 @@ GameObject:
   - component: {fileID: 20572235}
   - component: {fileID: 20572234}
   - component: {fileID: 20572233}
-  - component: {fileID: 20572232}
   m_Layer: 0
-  m_Name: Tile (8)
+  m_Name: Tile (108)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -159,21 +158,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1388061472}
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
---- !u!114 &20572232
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 20572230}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5c7b98e806cb84687abd3b0b47b7987c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
-  redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
-  greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
 --- !u!54 &20572233
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -323,6 +307,8 @@ MonoBehaviour:
   tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
+  shipHovering: 0
+  setupComplete: 0
 --- !u!54 &35273697
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -434,9 +420,8 @@ GameObject:
   - component: {fileID: 38699531}
   - component: {fileID: 38699530}
   - component: {fileID: 38699529}
-  - component: {fileID: 38699528}
   m_Layer: 0
-  m_Name: Tile (84)
+  m_Name: Tile (184)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -457,21 +442,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1388061472}
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
---- !u!114 &38699528
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 38699526}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5c7b98e806cb84687abd3b0b47b7987c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
-  redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
-  greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
 --- !u!54 &38699529
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -621,6 +591,8 @@ MonoBehaviour:
   tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
+  shipHovering: 0
+  setupComplete: 0
 --- !u!54 &49948865
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -770,6 +742,8 @@ MonoBehaviour:
   tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
+  shipHovering: 0
+  setupComplete: 0
 --- !u!54 &61501232
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -881,9 +855,8 @@ GameObject:
   - component: {fileID: 75303604}
   - component: {fileID: 75303603}
   - component: {fileID: 75303602}
-  - component: {fileID: 75303601}
   m_Layer: 0
-  m_Name: Tile (29)
+  m_Name: Tile (129)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -904,21 +877,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1388061472}
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
---- !u!114 &75303601
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 75303599}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5c7b98e806cb84687abd3b0b47b7987c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
-  redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
-  greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
 --- !u!54 &75303602
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1068,6 +1026,8 @@ MonoBehaviour:
   tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
+  shipHovering: 0
+  setupComplete: 0
 --- !u!54 &78157199
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1202,6 +1162,8 @@ MonoBehaviour:
   tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
+  shipHovering: 0
+  setupComplete: 0
 --- !u!54 &92598113
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1328,9 +1290,8 @@ GameObject:
   - component: {fileID: 104095890}
   - component: {fileID: 104095889}
   - component: {fileID: 104095888}
-  - component: {fileID: 104095887}
   m_Layer: 0
-  m_Name: Tile (99)
+  m_Name: Tile (199)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1351,21 +1312,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1388061472}
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
---- !u!114 &104095887
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 104095885}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5c7b98e806cb84687abd3b0b47b7987c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
-  redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
-  greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
 --- !u!54 &104095888
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1477,9 +1423,8 @@ GameObject:
   - component: {fileID: 118185775}
   - component: {fileID: 118185774}
   - component: {fileID: 118185773}
-  - component: {fileID: 118185772}
   m_Layer: 0
-  m_Name: Tile (71)
+  m_Name: Tile (171)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1500,21 +1445,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1388061472}
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
---- !u!114 &118185772
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 118185770}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5c7b98e806cb84687abd3b0b47b7987c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
-  redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
-  greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
 --- !u!54 &118185773
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1626,9 +1556,8 @@ GameObject:
   - component: {fileID: 119680041}
   - component: {fileID: 119680040}
   - component: {fileID: 119680039}
-  - component: {fileID: 119680038}
   m_Layer: 0
-  m_Name: Tile (14)
+  m_Name: Tile (114)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1649,21 +1578,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1388061472}
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
---- !u!114 &119680038
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 119680036}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5c7b98e806cb84687abd3b0b47b7987c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
-  redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
-  greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
 --- !u!54 &119680039
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1813,6 +1727,8 @@ MonoBehaviour:
   tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
+  shipHovering: 0
+  setupComplete: 0
 --- !u!54 &125789994
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1924,9 +1840,8 @@ GameObject:
   - component: {fileID: 127373777}
   - component: {fileID: 127373776}
   - component: {fileID: 127373775}
-  - component: {fileID: 127373774}
   m_Layer: 0
-  m_Name: Tile (3)
+  m_Name: Tile (103)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1947,21 +1862,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1388061472}
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
---- !u!114 &127373774
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 127373772}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5c7b98e806cb84687abd3b0b47b7987c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
-  redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
-  greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
 --- !u!54 &127373775
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2111,6 +2011,8 @@ MonoBehaviour:
   tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
+  shipHovering: 0
+  setupComplete: 0
 --- !u!54 &133447707
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2222,9 +2124,8 @@ GameObject:
   - component: {fileID: 149119991}
   - component: {fileID: 149119990}
   - component: {fileID: 149119989}
-  - component: {fileID: 149119988}
   m_Layer: 0
-  m_Name: Tile (49)
+  m_Name: Tile (149)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2245,21 +2146,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1388061472}
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
---- !u!114 &149119988
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 149119986}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5c7b98e806cb84687abd3b0b47b7987c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
-  redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
-  greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
 --- !u!54 &149119989
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2409,6 +2295,8 @@ MonoBehaviour:
   tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
+  shipHovering: 0
+  setupComplete: 0
 --- !u!54 &151861481
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2558,6 +2446,8 @@ MonoBehaviour:
   tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
+  shipHovering: 0
+  setupComplete: 0
 --- !u!54 &156144880
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2669,9 +2559,8 @@ GameObject:
   - component: {fileID: 169460052}
   - component: {fileID: 169460051}
   - component: {fileID: 169460050}
-  - component: {fileID: 169460049}
   m_Layer: 0
-  m_Name: Tile (70)
+  m_Name: Tile (170)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2692,21 +2581,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1388061472}
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
---- !u!114 &169460049
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 169460047}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5c7b98e806cb84687abd3b0b47b7987c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
-  redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
-  greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
 --- !u!54 &169460050
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2818,9 +2692,8 @@ GameObject:
   - component: {fileID: 173637008}
   - component: {fileID: 173637007}
   - component: {fileID: 173637006}
-  - component: {fileID: 173637005}
   m_Layer: 0
-  m_Name: Tile (90)
+  m_Name: Tile (190)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2841,21 +2714,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1388061472}
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
---- !u!114 &173637005
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 173637003}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5c7b98e806cb84687abd3b0b47b7987c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
-  redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
-  greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
 --- !u!54 &173637006
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3046,9 +2904,8 @@ GameObject:
   - component: {fileID: 226136921}
   - component: {fileID: 226136920}
   - component: {fileID: 226136919}
-  - component: {fileID: 226136918}
   m_Layer: 0
-  m_Name: Tile (79)
+  m_Name: Tile (179)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3069,21 +2926,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1388061472}
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
---- !u!114 &226136918
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 226136916}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5c7b98e806cb84687abd3b0b47b7987c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
-  redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
-  greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
 --- !u!54 &226136919
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3195,9 +3037,8 @@ GameObject:
   - component: {fileID: 246954192}
   - component: {fileID: 246954191}
   - component: {fileID: 246954190}
-  - component: {fileID: 246954189}
   m_Layer: 0
-  m_Name: Tile (75)
+  m_Name: Tile (175)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3218,21 +3059,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1388061472}
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
---- !u!114 &246954189
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 246954187}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5c7b98e806cb84687abd3b0b47b7987c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
-  redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
-  greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
 --- !u!54 &246954190
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3382,6 +3208,8 @@ MonoBehaviour:
   tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
+  shipHovering: 0
+  setupComplete: 0
 --- !u!54 &255182189
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3493,9 +3321,8 @@ GameObject:
   - component: {fileID: 255664250}
   - component: {fileID: 255664249}
   - component: {fileID: 255664248}
-  - component: {fileID: 255664247}
   m_Layer: 0
-  m_Name: Tile (56)
+  m_Name: Tile (156)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3516,21 +3343,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1388061472}
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
---- !u!114 &255664247
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 255664245}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5c7b98e806cb84687abd3b0b47b7987c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
-  redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
-  greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
 --- !u!54 &255664248
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3680,6 +3492,8 @@ MonoBehaviour:
   tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
+  shipHovering: 0
+  setupComplete: 0
 --- !u!54 &258583204
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3791,9 +3605,8 @@ GameObject:
   - component: {fileID: 272482008}
   - component: {fileID: 272482007}
   - component: {fileID: 272482006}
-  - component: {fileID: 272482005}
   m_Layer: 0
-  m_Name: Tile (40)
+  m_Name: Tile (140)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3814,21 +3627,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1388061472}
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
---- !u!114 &272482005
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 272482003}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5c7b98e806cb84687abd3b0b47b7987c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
-  redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
-  greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
 --- !u!54 &272482006
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3940,9 +3738,8 @@ GameObject:
   - component: {fileID: 274931821}
   - component: {fileID: 274931820}
   - component: {fileID: 274931819}
-  - component: {fileID: 274931818}
   m_Layer: 0
-  m_Name: Tile (62)
+  m_Name: Tile (162)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3963,21 +3760,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1388061472}
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
---- !u!114 &274931818
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 274931816}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5c7b98e806cb84687abd3b0b47b7987c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
-  redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
-  greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
 --- !u!54 &274931819
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -4089,9 +3871,8 @@ GameObject:
   - component: {fileID: 275333211}
   - component: {fileID: 275333210}
   - component: {fileID: 275333209}
-  - component: {fileID: 275333208}
   m_Layer: 0
-  m_Name: Tile (73)
+  m_Name: Tile (173)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4112,21 +3893,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1388061472}
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
---- !u!114 &275333208
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 275333206}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5c7b98e806cb84687abd3b0b47b7987c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
-  redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
-  greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
 --- !u!54 &275333209
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -4238,9 +4004,8 @@ GameObject:
   - component: {fileID: 295437286}
   - component: {fileID: 295437285}
   - component: {fileID: 295437284}
-  - component: {fileID: 295437283}
   m_Layer: 0
-  m_Name: Tile (53)
+  m_Name: Tile (153)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4261,21 +4026,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1388061472}
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
---- !u!114 &295437283
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 295437281}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5c7b98e806cb84687abd3b0b47b7987c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
-  redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
-  greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
 --- !u!54 &295437284
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -4425,6 +4175,8 @@ MonoBehaviour:
   tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
+  shipHovering: 0
+  setupComplete: 0
 --- !u!54 &313696261
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -4574,6 +4326,8 @@ MonoBehaviour:
   tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
+  shipHovering: 0
+  setupComplete: 0
 --- !u!54 &354809115
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -4685,9 +4439,8 @@ GameObject:
   - component: {fileID: 374034035}
   - component: {fileID: 374034034}
   - component: {fileID: 374034033}
-  - component: {fileID: 374034032}
   m_Layer: 0
-  m_Name: Tile (96)
+  m_Name: Tile (196)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4708,21 +4461,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1388061472}
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
---- !u!114 &374034032
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 374034030}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5c7b98e806cb84687abd3b0b47b7987c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
-  redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
-  greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
 --- !u!54 &374034033
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -4968,6 +4706,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   zPositionOffset: 2.2
+  shipSize: 5
 --- !u!1 &395443588
 GameObject:
   m_ObjectHideFlags: 0
@@ -4981,9 +4720,8 @@ GameObject:
   - component: {fileID: 395443593}
   - component: {fileID: 395443592}
   - component: {fileID: 395443591}
-  - component: {fileID: 395443590}
   m_Layer: 0
-  m_Name: Tile (35)
+  m_Name: Tile (135)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5004,21 +4742,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1388061472}
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
---- !u!114 &395443590
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 395443588}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5c7b98e806cb84687abd3b0b47b7987c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
-  redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
-  greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
 --- !u!54 &395443591
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -5168,6 +4891,8 @@ MonoBehaviour:
   tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
+  shipHovering: 0
+  setupComplete: 0
 --- !u!54 &398626396
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -5279,9 +5004,8 @@ GameObject:
   - component: {fileID: 400798514}
   - component: {fileID: 400798513}
   - component: {fileID: 400798512}
-  - component: {fileID: 400798511}
   m_Layer: 0
-  m_Name: Tile (67)
+  m_Name: Tile (167)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5302,21 +5026,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1388061472}
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
---- !u!114 &400798511
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 400798509}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5c7b98e806cb84687abd3b0b47b7987c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
-  redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
-  greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
 --- !u!54 &400798512
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -5435,7 +5144,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &413500078
 Transform:
   m_ObjectHideFlags: 0
@@ -5561,7 +5270,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11b17337aa2d04132842ee2e50ec33d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  zPositionOffset: 1
+  zPositionOffset: 1.05
+  shipSize: 3
 --- !u!1 &428221059
 GameObject:
   m_ObjectHideFlags: 0
@@ -5575,9 +5285,8 @@ GameObject:
   - component: {fileID: 428221064}
   - component: {fileID: 428221063}
   - component: {fileID: 428221062}
-  - component: {fileID: 428221061}
   m_Layer: 0
-  m_Name: Tile (20)
+  m_Name: Tile (120)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5598,21 +5307,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1388061472}
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
---- !u!114 &428221061
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 428221059}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5c7b98e806cb84687abd3b0b47b7987c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
-  redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
-  greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
 --- !u!54 &428221062
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -5762,6 +5456,8 @@ MonoBehaviour:
   tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
+  shipHovering: 0
+  setupComplete: 0
 --- !u!54 &428939891
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -5911,6 +5607,8 @@ MonoBehaviour:
   tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
+  shipHovering: 0
+  setupComplete: 0
 --- !u!54 &429501150
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -6060,6 +5758,8 @@ MonoBehaviour:
   tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
+  shipHovering: 0
+  setupComplete: 0
 --- !u!54 &436217844
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -6209,6 +5909,8 @@ MonoBehaviour:
   tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
+  shipHovering: 0
+  setupComplete: 0
 --- !u!54 &439642164
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -6320,9 +6022,8 @@ GameObject:
   - component: {fileID: 447047828}
   - component: {fileID: 447047827}
   - component: {fileID: 447047826}
-  - component: {fileID: 447047825}
   m_Layer: 0
-  m_Name: Tile (86)
+  m_Name: Tile (186)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6343,21 +6044,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1388061472}
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
---- !u!114 &447047825
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 447047823}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5c7b98e806cb84687abd3b0b47b7987c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
-  redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
-  greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
 --- !u!54 &447047826
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -6469,9 +6155,8 @@ GameObject:
   - component: {fileID: 447593029}
   - component: {fileID: 447593028}
   - component: {fileID: 447593027}
-  - component: {fileID: 447593026}
   m_Layer: 0
-  m_Name: Tile (23)
+  m_Name: Tile (123)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6492,21 +6177,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1388061472}
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
---- !u!114 &447593026
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 447593024}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5c7b98e806cb84687abd3b0b47b7987c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
-  redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
-  greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
 --- !u!54 &447593027
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -6605,6 +6275,85 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 447593024}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &471798447
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 471798448}
+  - component: {fileID: 471798450}
+  - component: {fileID: 471798449}
+  m_Layer: 5
+  m_Name: RotateBtnText
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &471798448
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 471798447}
+  m_LocalRotation: {x: 0, y: 0, z: -0.7071068, w: 0.7071068}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 497774120}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &471798449
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 471798447}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 95
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 0
+    m_MaxSize: 100
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: '>'
+--- !u!222 &471798450
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 471798447}
+  m_CullTransparentMesh: 1
 --- !u!1 &494677110
 GameObject:
   m_ObjectHideFlags: 0
@@ -6618,9 +6367,8 @@ GameObject:
   - component: {fileID: 494677115}
   - component: {fileID: 494677114}
   - component: {fileID: 494677113}
-  - component: {fileID: 494677112}
   m_Layer: 0
-  m_Name: Tile (26)
+  m_Name: Tile (126)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6641,21 +6389,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1388061472}
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
---- !u!114 &494677112
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 494677110}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5c7b98e806cb84687abd3b0b47b7987c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
-  redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
-  greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
 --- !u!54 &494677113
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -6754,6 +6487,127 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 494677110}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &497774119
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 497774120}
+  - component: {fileID: 497774123}
+  - component: {fileID: 497774122}
+  - component: {fileID: 497774121}
+  m_Layer: 5
+  m_Name: RotateBtn
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &497774120
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 497774119}
+  m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
+  m_LocalPosition: {x: 0, y: 0, z: -0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 471798448}
+  m_Father: {fileID: 1020488856}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -792.8, y: 239.3}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &497774121
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 497774119}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 497774122}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &497774122
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 497774119}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 0.8979143, b: 0, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &497774123
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 497774119}
+  m_CullTransparentMesh: 1
 --- !u!1 &503767609
 GameObject:
   m_ObjectHideFlags: 0
@@ -6805,6 +6659,8 @@ MonoBehaviour:
   tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
+  shipHovering: 0
+  setupComplete: 0
 --- !u!54 &503767612
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -6939,6 +6795,8 @@ MonoBehaviour:
   tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
+  shipHovering: 0
+  setupComplete: 0
 --- !u!54 &538531178
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -7103,6 +6961,8 @@ MonoBehaviour:
   tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
+  shipHovering: 0
+  setupComplete: 0
 --- !u!54 &563187892
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -7252,6 +7112,8 @@ MonoBehaviour:
   tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
+  shipHovering: 0
+  setupComplete: 0
 --- !u!54 &569384101
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -7401,6 +7263,8 @@ MonoBehaviour:
   tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
+  shipHovering: 0
+  setupComplete: 0
 --- !u!54 &581067423
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -7512,9 +7376,8 @@ GameObject:
   - component: {fileID: 589263728}
   - component: {fileID: 589263727}
   - component: {fileID: 589263726}
-  - component: {fileID: 589263725}
   m_Layer: 0
-  m_Name: Tile (39)
+  m_Name: Tile (139)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7535,21 +7398,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1388061472}
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
---- !u!114 &589263725
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 589263723}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5c7b98e806cb84687abd3b0b47b7987c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
-  redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
-  greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
 --- !u!54 &589263726
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -7699,6 +7547,8 @@ MonoBehaviour:
   tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
+  shipHovering: 0
+  setupComplete: 0
 --- !u!54 &593759338
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -7848,6 +7698,8 @@ MonoBehaviour:
   tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
+  shipHovering: 0
+  setupComplete: 0
 --- !u!54 &597302153
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -7959,9 +7811,8 @@ GameObject:
   - component: {fileID: 631428710}
   - component: {fileID: 631428709}
   - component: {fileID: 631428708}
-  - component: {fileID: 631428707}
   m_Layer: 0
-  m_Name: Tile (43)
+  m_Name: Tile (143)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7982,21 +7833,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1388061472}
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
---- !u!114 &631428707
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 631428705}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5c7b98e806cb84687abd3b0b47b7987c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
-  redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
-  greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
 --- !u!54 &631428708
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -8146,6 +7982,8 @@ MonoBehaviour:
   tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
+  shipHovering: 0
+  setupComplete: 0
 --- !u!54 &638319010
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -8264,7 +8102,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &640409653
 Transform:
   m_ObjectHideFlags: 0
@@ -8390,7 +8228,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11b17337aa2d04132842ee2e50ec33d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  zPositionOffset: 1
+  zPositionOffset: 1.6
+  shipSize: 4
 --- !u!1 &648316631
 GameObject:
   m_ObjectHideFlags: 0
@@ -8442,6 +8281,8 @@ MonoBehaviour:
   tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
+  shipHovering: 0
+  setupComplete: 0
 --- !u!54 &648316634
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -8553,9 +8394,8 @@ GameObject:
   - component: {fileID: 651115269}
   - component: {fileID: 651115268}
   - component: {fileID: 651115267}
-  - component: {fileID: 651115266}
   m_Layer: 0
-  m_Name: Tile (81)
+  m_Name: Tile (181)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8576,21 +8416,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1388061472}
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
---- !u!114 &651115266
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 651115264}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5c7b98e806cb84687abd3b0b47b7987c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
-  redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
-  greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
 --- !u!54 &651115267
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -8873,6 +8698,8 @@ MonoBehaviour:
   tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
+  shipHovering: 0
+  setupComplete: 0
 --- !u!54 &659190532
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -8984,9 +8811,8 @@ GameObject:
   - component: {fileID: 694524536}
   - component: {fileID: 694524535}
   - component: {fileID: 694524534}
-  - component: {fileID: 694524533}
   m_Layer: 0
-  m_Name: Tile (92)
+  m_Name: Tile (192)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9007,21 +8833,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1388061472}
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
---- !u!114 &694524533
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 694524531}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5c7b98e806cb84687abd3b0b47b7987c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
-  redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
-  greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
 --- !u!54 &694524534
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -9265,6 +9076,8 @@ MonoBehaviour:
   tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
+  shipHovering: 0
+  setupComplete: 0
 --- !u!54 &713047148
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -9376,9 +9189,8 @@ GameObject:
   - component: {fileID: 714413910}
   - component: {fileID: 714413909}
   - component: {fileID: 714413908}
-  - component: {fileID: 714413907}
   m_Layer: 0
-  m_Name: Tile (9)
+  m_Name: Tile (109)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9399,21 +9211,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1388061472}
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
---- !u!114 &714413907
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 714413905}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5c7b98e806cb84687abd3b0b47b7987c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
-  redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
-  greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
 --- !u!54 &714413908
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -9525,9 +9322,8 @@ GameObject:
   - component: {fileID: 726058185}
   - component: {fileID: 726058184}
   - component: {fileID: 726058183}
-  - component: {fileID: 726058182}
   m_Layer: 0
-  m_Name: Tile (42)
+  m_Name: Tile (142)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9548,21 +9344,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1388061472}
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
---- !u!114 &726058182
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 726058180}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5c7b98e806cb84687abd3b0b47b7987c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
-  redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
-  greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
 --- !u!54 &726058183
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -9791,6 +9572,8 @@ MonoBehaviour:
   tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
+  shipHovering: 0
+  setupComplete: 0
 --- !u!54 &750017364
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -9940,6 +9723,8 @@ MonoBehaviour:
   tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
+  shipHovering: 0
+  setupComplete: 0
 --- !u!54 &753411001
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -10051,9 +9836,8 @@ GameObject:
   - component: {fileID: 756957605}
   - component: {fileID: 756957604}
   - component: {fileID: 756957603}
-  - component: {fileID: 756957602}
   m_Layer: 0
-  m_Name: Tile (57)
+  m_Name: Tile (157)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10074,21 +9858,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1388061472}
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
---- !u!114 &756957602
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 756957600}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5c7b98e806cb84687abd3b0b47b7987c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
-  redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
-  greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
 --- !u!54 &756957603
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -10207,7 +9976,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &758352202
 Transform:
   m_ObjectHideFlags: 0
@@ -10333,7 +10102,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11b17337aa2d04132842ee2e50ec33d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  zPositionOffset: 1
+  zPositionOffset: 1.05
+  shipSize: 3
 --- !u!1 &764274702
 GameObject:
   m_ObjectHideFlags: 0
@@ -10347,9 +10117,8 @@ GameObject:
   - component: {fileID: 764274707}
   - component: {fileID: 764274706}
   - component: {fileID: 764274705}
-  - component: {fileID: 764274704}
   m_Layer: 0
-  m_Name: Tile (55)
+  m_Name: Tile (155)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10370,21 +10139,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1388061472}
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
---- !u!114 &764274704
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 764274702}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5c7b98e806cb84687abd3b0b47b7987c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
-  redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
-  greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
 --- !u!54 &764274705
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -10534,6 +10288,8 @@ MonoBehaviour:
   tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
+  shipHovering: 0
+  setupComplete: 0
 --- !u!54 &781797108
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -10668,6 +10424,8 @@ MonoBehaviour:
   tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
+  shipHovering: 0
+  setupComplete: 0
 --- !u!54 &788655512
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -10832,6 +10590,8 @@ MonoBehaviour:
   tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
+  shipHovering: 0
+  setupComplete: 0
 --- !u!54 &792243485
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -10981,6 +10741,8 @@ MonoBehaviour:
   tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
+  shipHovering: 0
+  setupComplete: 0
 --- !u!54 &792440619
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -11130,6 +10892,8 @@ MonoBehaviour:
   tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
+  shipHovering: 0
+  setupComplete: 0
 --- !u!54 &797963336
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -11241,9 +11005,8 @@ GameObject:
   - component: {fileID: 811051274}
   - component: {fileID: 811051273}
   - component: {fileID: 811051272}
-  - component: {fileID: 811051271}
   m_Layer: 0
-  m_Name: Tile (74)
+  m_Name: Tile (174)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11264,21 +11027,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1388061472}
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
---- !u!114 &811051271
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 811051269}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5c7b98e806cb84687abd3b0b47b7987c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
-  redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
-  greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
 --- !u!54 &811051272
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -11390,9 +11138,8 @@ GameObject:
   - component: {fileID: 814716663}
   - component: {fileID: 814716662}
   - component: {fileID: 814716661}
-  - component: {fileID: 814716660}
   m_Layer: 0
-  m_Name: Tile (47)
+  m_Name: Tile (147)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11413,21 +11160,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1388061472}
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
---- !u!114 &814716660
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 814716658}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5c7b98e806cb84687abd3b0b47b7987c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
-  redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
-  greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
 --- !u!54 &814716661
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -11539,9 +11271,8 @@ GameObject:
   - component: {fileID: 826909383}
   - component: {fileID: 826909382}
   - component: {fileID: 826909381}
-  - component: {fileID: 826909380}
   m_Layer: 0
-  m_Name: Tile (2)
+  m_Name: Tile (102)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11562,21 +11293,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1388061472}
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
---- !u!114 &826909380
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 826909378}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5c7b98e806cb84687abd3b0b47b7987c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
-  redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
-  greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
 --- !u!54 &826909381
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -11726,6 +11442,8 @@ MonoBehaviour:
   tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
+  shipHovering: 0
+  setupComplete: 0
 --- !u!54 &832701566
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -11875,6 +11593,8 @@ MonoBehaviour:
   tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
+  shipHovering: 0
+  setupComplete: 0
 --- !u!54 &835343293
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -11986,9 +11706,8 @@ GameObject:
   - component: {fileID: 836440843}
   - component: {fileID: 836440842}
   - component: {fileID: 836440841}
-  - component: {fileID: 836440840}
   m_Layer: 0
-  m_Name: Tile (27)
+  m_Name: Tile (127)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12009,21 +11728,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1388061472}
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
---- !u!114 &836440840
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 836440838}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5c7b98e806cb84687abd3b0b47b7987c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
-  redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
-  greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
 --- !u!54 &836440841
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -12173,6 +11877,8 @@ MonoBehaviour:
   tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
+  shipHovering: 0
+  setupComplete: 0
 --- !u!54 &839944587
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -12284,9 +11990,8 @@ GameObject:
   - component: {fileID: 855351452}
   - component: {fileID: 855351451}
   - component: {fileID: 855351450}
-  - component: {fileID: 855351449}
   m_Layer: 0
-  m_Name: Tile (37)
+  m_Name: Tile (137)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12307,21 +12012,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1388061472}
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
---- !u!114 &855351449
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 855351447}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5c7b98e806cb84687abd3b0b47b7987c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
-  redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
-  greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
 --- !u!54 &855351450
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -12432,6 +12122,7 @@ GameObject:
   - component: {fileID: 857272910}
   - component: {fileID: 857272912}
   - component: {fileID: 857272913}
+  - component: {fileID: 857272914}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -12451,13 +12142,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 060f00bb9b2f24e2e9034ca3df92447a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ships:
-  - {fileID: 384897278}
-  - {fileID: 640409652}
-  - {fileID: 413500077}
-  - {fileID: 758352201}
-  - {fileID: 1343236093}
-  currentShip: {fileID: 0}
 --- !u!4 &857272911
 Transform:
   m_ObjectHideFlags: 0
@@ -12500,6 +12184,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   statusText: {fileID: 176771295}
+--- !u!114 &857272914
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 857272909}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71c7d6ad66b0a43819407aa54f0a5f30, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tiles: []
+  ships:
+  - {fileID: 384897278}
+  - {fileID: 640409652}
+  - {fileID: 413500077}
+  - {fileID: 758352201}
+  - {fileID: 1343236093}
+  currentShip: {fileID: 0}
+  rotateBtn: {fileID: 497774121}
 --- !u!1 &857682902
 GameObject:
   m_ObjectHideFlags: 0
@@ -12551,6 +12256,8 @@ MonoBehaviour:
   tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
+  shipHovering: 0
+  setupComplete: 0
 --- !u!54 &857682905
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -12741,9 +12448,8 @@ GameObject:
   - component: {fileID: 870216743}
   - component: {fileID: 870216742}
   - component: {fileID: 870216741}
-  - component: {fileID: 870216740}
   m_Layer: 0
-  m_Name: Tile (95)
+  m_Name: Tile (195)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12764,21 +12470,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1388061472}
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
---- !u!114 &870216740
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 870216738}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5c7b98e806cb84687abd3b0b47b7987c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
-  redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
-  greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
 --- !u!54 &870216741
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -12928,6 +12619,8 @@ MonoBehaviour:
   tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
+  shipHovering: 0
+  setupComplete: 0
 --- !u!54 &895038023
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -13039,9 +12732,8 @@ GameObject:
   - component: {fileID: 902556742}
   - component: {fileID: 902556741}
   - component: {fileID: 902556740}
-  - component: {fileID: 902556739}
   m_Layer: 0
-  m_Name: Tile (51)
+  m_Name: Tile (151)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13062,21 +12754,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1388061472}
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
---- !u!114 &902556739
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 902556737}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5c7b98e806cb84687abd3b0b47b7987c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
-  redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
-  greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
 --- !u!54 &902556740
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -13226,6 +12903,8 @@ MonoBehaviour:
   tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
+  shipHovering: 0
+  setupComplete: 0
 --- !u!54 &950899945
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -13375,6 +13054,8 @@ MonoBehaviour:
   tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
+  shipHovering: 0
+  setupComplete: 0
 --- !u!54 &950902857
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -13486,9 +13167,8 @@ GameObject:
   - component: {fileID: 957555133}
   - component: {fileID: 957555132}
   - component: {fileID: 957555131}
-  - component: {fileID: 957555130}
   m_Layer: 0
-  m_Name: Tile (77)
+  m_Name: Tile (177)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13509,21 +13189,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1388061472}
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
---- !u!114 &957555130
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 957555128}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5c7b98e806cb84687abd3b0b47b7987c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
-  redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
-  greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
 --- !u!54 &957555131
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -13765,6 +13430,8 @@ MonoBehaviour:
   tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
+  shipHovering: 0
+  setupComplete: 0
 --- !u!54 &1003984228
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -14012,6 +13679,8 @@ MonoBehaviour:
   tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
+  shipHovering: 0
+  setupComplete: 0
 --- !u!1 &1016831387
 GameObject:
   m_ObjectHideFlags: 0
@@ -14063,6 +13732,8 @@ MonoBehaviour:
   tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
+  shipHovering: 0
+  setupComplete: 0
 --- !u!54 &1016831390
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -14257,6 +13928,7 @@ RectTransform:
   m_Children:
   - {fileID: 176771294}
   - {fileID: 1571259214}
+  - {fileID: 497774120}
   - {fileID: 1418277145}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -14278,9 +13950,8 @@ GameObject:
   - component: {fileID: 1030845244}
   - component: {fileID: 1030845243}
   - component: {fileID: 1030845242}
-  - component: {fileID: 1030845241}
   m_Layer: 0
-  m_Name: Tile (6)
+  m_Name: Tile (106)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14301,21 +13972,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1388061472}
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
---- !u!114 &1030845241
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1030845239}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5c7b98e806cb84687abd3b0b47b7987c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
-  redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
-  greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
 --- !u!54 &1030845242
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -14583,6 +14239,8 @@ MonoBehaviour:
   tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
+  shipHovering: 0
+  setupComplete: 0
 --- !u!54 &1034145308
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -14747,6 +14405,8 @@ MonoBehaviour:
   tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
+  shipHovering: 0
+  setupComplete: 0
 --- !u!54 &1038583344
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -14896,6 +14556,8 @@ MonoBehaviour:
   tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
+  shipHovering: 0
+  setupComplete: 0
 --- !u!54 &1043277896
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -15007,9 +14669,8 @@ GameObject:
   - component: {fileID: 1044592626}
   - component: {fileID: 1044592625}
   - component: {fileID: 1044592624}
-  - component: {fileID: 1044592623}
   m_Layer: 0
-  m_Name: Tile (34)
+  m_Name: Tile (134)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -15030,21 +14691,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1388061472}
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
---- !u!114 &1044592623
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1044592621}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5c7b98e806cb84687abd3b0b47b7987c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
-  redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
-  greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
 --- !u!54 &1044592624
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -15194,6 +14840,8 @@ MonoBehaviour:
   tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
+  shipHovering: 0
+  setupComplete: 0
 --- !u!54 &1051786678
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -15305,9 +14953,8 @@ GameObject:
   - component: {fileID: 1055060781}
   - component: {fileID: 1055060780}
   - component: {fileID: 1055060779}
-  - component: {fileID: 1055060778}
   m_Layer: 0
-  m_Name: Tile (38)
+  m_Name: Tile (138)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -15328,21 +14975,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1388061472}
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
---- !u!114 &1055060778
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1055060776}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5c7b98e806cb84687abd3b0b47b7987c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
-  redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
-  greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
 --- !u!54 &1055060779
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -15492,6 +15124,8 @@ MonoBehaviour:
   tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
+  shipHovering: 0
+  setupComplete: 0
 --- !u!54 &1059621347
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -15641,6 +15275,8 @@ MonoBehaviour:
   tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
+  shipHovering: 0
+  setupComplete: 0
 --- !u!54 &1065179388
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -15752,9 +15388,8 @@ GameObject:
   - component: {fileID: 1071436892}
   - component: {fileID: 1071436891}
   - component: {fileID: 1071436890}
-  - component: {fileID: 1071436889}
   m_Layer: 0
-  m_Name: Tile (5)
+  m_Name: Tile (105)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -15775,21 +15410,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1388061472}
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
---- !u!114 &1071436889
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1071436887}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5c7b98e806cb84687abd3b0b47b7987c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
-  redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
-  greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
 --- !u!54 &1071436890
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -16072,6 +15692,8 @@ MonoBehaviour:
   tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
+  shipHovering: 0
+  setupComplete: 0
 --- !u!54 &1096494344
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -16221,6 +15843,8 @@ MonoBehaviour:
   tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
+  shipHovering: 0
+  setupComplete: 0
 --- !u!54 &1096722551
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -16370,6 +15994,8 @@ MonoBehaviour:
   tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
+  shipHovering: 0
+  setupComplete: 0
 --- !u!54 &1100542864
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -16481,9 +16107,8 @@ GameObject:
   - component: {fileID: 1104379877}
   - component: {fileID: 1104379876}
   - component: {fileID: 1104379875}
-  - component: {fileID: 1104379874}
   m_Layer: 0
-  m_Name: Tile (65)
+  m_Name: Tile (165)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -16504,21 +16129,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1388061472}
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
---- !u!114 &1104379874
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1104379872}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5c7b98e806cb84687abd3b0b47b7987c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
-  redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
-  greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
 --- !u!54 &1104379875
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -16799,6 +16409,8 @@ MonoBehaviour:
   tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
+  shipHovering: 0
+  setupComplete: 0
 --- !u!54 &1151511064
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -16910,9 +16522,8 @@ GameObject:
   - component: {fileID: 1158476764}
   - component: {fileID: 1158476763}
   - component: {fileID: 1158476762}
-  - component: {fileID: 1158476761}
   m_Layer: 0
-  m_Name: Tile (59)
+  m_Name: Tile (159)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -16933,21 +16544,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1388061472}
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
---- !u!114 &1158476761
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1158476759}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5c7b98e806cb84687abd3b0b47b7987c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
-  redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
-  greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
 --- !u!54 &1158476762
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -17059,9 +16655,8 @@ GameObject:
   - component: {fileID: 1187583090}
   - component: {fileID: 1187583089}
   - component: {fileID: 1187583088}
-  - component: {fileID: 1187583087}
   m_Layer: 0
-  m_Name: Tile (46)
+  m_Name: Tile (146)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -17082,21 +16677,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1388061472}
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
---- !u!114 &1187583087
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1187583085}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5c7b98e806cb84687abd3b0b47b7987c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
-  redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
-  greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
 --- !u!54 &1187583088
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -17344,6 +16924,8 @@ MonoBehaviour:
   tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
+  shipHovering: 0
+  setupComplete: 0
 --- !u!1 &1208319149
 GameObject:
   m_ObjectHideFlags: 0
@@ -17357,9 +16939,8 @@ GameObject:
   - component: {fileID: 1208319154}
   - component: {fileID: 1208319153}
   - component: {fileID: 1208319152}
-  - component: {fileID: 1208319151}
   m_Layer: 0
-  m_Name: Tile (94)
+  m_Name: Tile (194)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -17380,21 +16961,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1388061472}
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
---- !u!114 &1208319151
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1208319149}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5c7b98e806cb84687abd3b0b47b7987c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
-  redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
-  greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
 --- !u!54 &1208319152
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -17506,9 +17072,8 @@ GameObject:
   - component: {fileID: 1211779211}
   - component: {fileID: 1211779210}
   - component: {fileID: 1211779209}
-  - component: {fileID: 1211779208}
   m_Layer: 0
-  m_Name: Tile (72)
+  m_Name: Tile (172)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -17529,21 +17094,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1388061472}
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
---- !u!114 &1211779208
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1211779206}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5c7b98e806cb84687abd3b0b47b7987c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
-  redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
-  greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
 --- !u!54 &1211779209
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -17693,6 +17243,8 @@ MonoBehaviour:
   tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
+  shipHovering: 0
+  setupComplete: 0
 --- !u!54 &1219474019
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -17842,6 +17394,8 @@ MonoBehaviour:
   tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
+  shipHovering: 0
+  setupComplete: 0
 --- !u!54 &1228202361
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -17953,9 +17507,8 @@ GameObject:
   - component: {fileID: 1231912344}
   - component: {fileID: 1231912343}
   - component: {fileID: 1231912342}
-  - component: {fileID: 1231912341}
   m_Layer: 0
-  m_Name: Tile (60)
+  m_Name: Tile (160)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -17976,21 +17529,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1388061472}
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
---- !u!114 &1231912341
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1231912339}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5c7b98e806cb84687abd3b0b47b7987c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
-  redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
-  greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
 --- !u!54 &1231912342
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -18140,6 +17678,8 @@ MonoBehaviour:
   tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
+  shipHovering: 0
+  setupComplete: 0
 --- !u!54 &1239512135
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -18251,9 +17791,8 @@ GameObject:
   - component: {fileID: 1246512966}
   - component: {fileID: 1246512965}
   - component: {fileID: 1246512964}
-  - component: {fileID: 1246512963}
   m_Layer: 0
-  m_Name: Tile (68)
+  m_Name: Tile (168)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -18274,21 +17813,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1388061472}
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
---- !u!114 &1246512963
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1246512961}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5c7b98e806cb84687abd3b0b47b7987c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
-  redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
-  greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
 --- !u!54 &1246512964
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -18400,9 +17924,8 @@ GameObject:
   - component: {fileID: 1251308032}
   - component: {fileID: 1251308031}
   - component: {fileID: 1251308030}
-  - component: {fileID: 1251308029}
   m_Layer: 0
-  m_Name: Tile (61)
+  m_Name: Tile (161)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -18423,21 +17946,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1388061472}
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
---- !u!114 &1251308029
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1251308027}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5c7b98e806cb84687abd3b0b47b7987c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
-  redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
-  greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
 --- !u!54 &1251308030
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -18549,9 +18057,8 @@ GameObject:
   - component: {fileID: 1254392126}
   - component: {fileID: 1254392125}
   - component: {fileID: 1254392124}
-  - component: {fileID: 1254392123}
   m_Layer: 0
-  m_Name: Tile (17)
+  m_Name: Tile (117)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -18572,21 +18079,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1388061472}
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
---- !u!114 &1254392123
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1254392121}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5c7b98e806cb84687abd3b0b47b7987c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
-  redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
-  greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
 --- !u!54 &1254392124
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -18698,9 +18190,8 @@ GameObject:
   - component: {fileID: 1272769262}
   - component: {fileID: 1272769261}
   - component: {fileID: 1272769260}
-  - component: {fileID: 1272769259}
   m_Layer: 0
-  m_Name: Tile (30)
+  m_Name: Tile (130)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -18721,21 +18212,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1388061472}
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
---- !u!114 &1272769259
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1272769257}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5c7b98e806cb84687abd3b0b47b7987c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
-  redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
-  greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
 --- !u!54 &1272769260
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -18847,9 +18323,8 @@ GameObject:
   - component: {fileID: 1281751939}
   - component: {fileID: 1281751938}
   - component: {fileID: 1281751937}
-  - component: {fileID: 1281751936}
   m_Layer: 0
-  m_Name: Tile (58)
+  m_Name: Tile (158)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -18870,21 +18345,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1388061472}
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
---- !u!114 &1281751936
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1281751934}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5c7b98e806cb84687abd3b0b47b7987c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
-  redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
-  greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
 --- !u!54 &1281751937
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -19167,6 +18627,8 @@ MonoBehaviour:
   tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
+  shipHovering: 0
+  setupComplete: 0
 --- !u!54 &1292212673
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -19316,6 +18778,8 @@ MonoBehaviour:
   tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
+  shipHovering: 0
+  setupComplete: 0
 --- !u!54 &1301660834
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -19465,6 +18929,8 @@ MonoBehaviour:
   tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
+  shipHovering: 0
+  setupComplete: 0
 --- !u!54 &1310299479
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -19576,9 +19042,8 @@ GameObject:
   - component: {fileID: 1312154148}
   - component: {fileID: 1312154147}
   - component: {fileID: 1312154146}
-  - component: {fileID: 1312154145}
   m_Layer: 0
-  m_Name: Tile (10)
+  m_Name: Tile (110)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -19599,21 +19064,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1388061472}
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
---- !u!114 &1312154145
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1312154143}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5c7b98e806cb84687abd3b0b47b7987c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
-  redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
-  greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
 --- !u!54 &1312154146
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -19725,9 +19175,8 @@ GameObject:
   - component: {fileID: 1313884367}
   - component: {fileID: 1313884366}
   - component: {fileID: 1313884365}
-  - component: {fileID: 1313884364}
   m_Layer: 0
-  m_Name: Tile (54)
+  m_Name: Tile (154)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -19748,21 +19197,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1388061472}
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
---- !u!114 &1313884364
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1313884362}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5c7b98e806cb84687abd3b0b47b7987c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
-  redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
-  greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
 --- !u!54 &1313884365
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -19912,6 +19346,8 @@ MonoBehaviour:
   tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
+  shipHovering: 0
+  setupComplete: 0
 --- !u!54 &1316651996
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -20023,9 +19459,8 @@ GameObject:
   - component: {fileID: 1318601143}
   - component: {fileID: 1318601142}
   - component: {fileID: 1318601141}
-  - component: {fileID: 1318601140}
   m_Layer: 0
-  m_Name: Tile (41)
+  m_Name: Tile (141)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -20046,21 +19481,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1388061472}
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
---- !u!114 &1318601140
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1318601138}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5c7b98e806cb84687abd3b0b47b7987c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
-  redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
-  greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
 --- !u!54 &1318601141
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -20210,6 +19630,8 @@ MonoBehaviour:
   tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
+  shipHovering: 0
+  setupComplete: 0
 --- !u!54 &1336226653
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -20321,9 +19743,8 @@ GameObject:
   - component: {fileID: 1338854210}
   - component: {fileID: 1338854209}
   - component: {fileID: 1338854208}
-  - component: {fileID: 1338854207}
   m_Layer: 0
-  m_Name: Tile (36)
+  m_Name: Tile (136)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -20344,21 +19765,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1388061472}
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
---- !u!114 &1338854207
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1338854205}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5c7b98e806cb84687abd3b0b47b7987c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
-  redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
-  greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
 --- !u!54 &1338854208
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -20477,7 +19883,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1343236094
 Transform:
   m_ObjectHideFlags: 0
@@ -20603,7 +20009,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11b17337aa2d04132842ee2e50ec33d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  zPositionOffset: 1
+  zPositionOffset: 0.6
+  shipSize: 2
 --- !u!1 &1348568130
 GameObject:
   m_ObjectHideFlags: 0
@@ -20655,6 +20062,8 @@ MonoBehaviour:
   tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
+  shipHovering: 0
+  setupComplete: 0
 --- !u!54 &1348568133
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -20804,6 +20213,8 @@ MonoBehaviour:
   tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
+  shipHovering: 0
+  setupComplete: 0
 --- !u!54 &1351549468
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -20915,9 +20326,8 @@ GameObject:
   - component: {fileID: 1353210799}
   - component: {fileID: 1353210798}
   - component: {fileID: 1353210797}
-  - component: {fileID: 1353210796}
   m_Layer: 0
-  m_Name: Tile (69)
+  m_Name: Tile (169)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -20938,21 +20348,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1388061472}
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
---- !u!114 &1353210796
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1353210794}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5c7b98e806cb84687abd3b0b47b7987c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
-  redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
-  greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
 --- !u!54 &1353210797
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -21102,6 +20497,8 @@ MonoBehaviour:
   tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
+  shipHovering: 0
+  setupComplete: 0
 --- !u!54 &1353297548
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -21213,9 +20610,8 @@ GameObject:
   - component: {fileID: 1357370226}
   - component: {fileID: 1357370225}
   - component: {fileID: 1357370224}
-  - component: {fileID: 1357370223}
   m_Layer: 0
-  m_Name: Tile (80)
+  m_Name: Tile (180)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -21236,21 +20632,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1388061472}
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
---- !u!114 &1357370223
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1357370221}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5c7b98e806cb84687abd3b0b47b7987c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
-  redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
-  greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
 --- !u!54 &1357370224
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -21362,9 +20743,8 @@ GameObject:
   - component: {fileID: 1364445103}
   - component: {fileID: 1364445102}
   - component: {fileID: 1364445101}
-  - component: {fileID: 1364445100}
   m_Layer: 0
-  m_Name: Tile (33)
+  m_Name: Tile (133)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -21385,21 +20765,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1388061472}
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
---- !u!114 &1364445100
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1364445098}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5c7b98e806cb84687abd3b0b47b7987c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
-  redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
-  greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
 --- !u!54 &1364445101
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -21680,6 +21045,8 @@ MonoBehaviour:
   tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
+  shipHovering: 0
+  setupComplete: 0
 --- !u!54 &1393240878
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -21791,9 +21158,8 @@ GameObject:
   - component: {fileID: 1395923756}
   - component: {fileID: 1395923755}
   - component: {fileID: 1395923754}
-  - component: {fileID: 1395923753}
   m_Layer: 0
-  m_Name: Tile (66)
+  m_Name: Tile (166)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -21814,21 +21180,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1388061472}
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
---- !u!114 &1395923753
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1395923751}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5c7b98e806cb84687abd3b0b47b7987c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
-  redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
-  greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
 --- !u!54 &1395923754
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -22076,6 +21427,8 @@ MonoBehaviour:
   tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
+  shipHovering: 0
+  setupComplete: 0
 --- !u!1 &1410531502
 GameObject:
   m_ObjectHideFlags: 0
@@ -22127,6 +21480,8 @@ MonoBehaviour:
   tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
+  shipHovering: 0
+  setupComplete: 0
 --- !u!54 &1410531505
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -22359,9 +21714,8 @@ GameObject:
   - component: {fileID: 1424810860}
   - component: {fileID: 1424810859}
   - component: {fileID: 1424810858}
-  - component: {fileID: 1424810857}
   m_Layer: 0
-  m_Name: Tile (21)
+  m_Name: Tile (121)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -22382,21 +21736,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1388061472}
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
---- !u!114 &1424810857
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1424810855}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5c7b98e806cb84687abd3b0b47b7987c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
-  redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
-  greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
 --- !u!54 &1424810858
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -22508,9 +21847,8 @@ GameObject:
   - component: {fileID: 1428554682}
   - component: {fileID: 1428554681}
   - component: {fileID: 1428554680}
-  - component: {fileID: 1428554679}
   m_Layer: 0
-  m_Name: Tile (45)
+  m_Name: Tile (145)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -22531,21 +21869,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1388061472}
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
---- !u!114 &1428554679
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1428554677}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5c7b98e806cb84687abd3b0b47b7987c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
-  redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
-  greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
 --- !u!54 &1428554680
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -22695,6 +22018,8 @@ MonoBehaviour:
   tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
+  shipHovering: 0
+  setupComplete: 0
 --- !u!54 &1445050939
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -22806,9 +22131,8 @@ GameObject:
   - component: {fileID: 1455614400}
   - component: {fileID: 1455614399}
   - component: {fileID: 1455614398}
-  - component: {fileID: 1455614397}
   m_Layer: 0
-  m_Name: Tile (85)
+  m_Name: Tile (185)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -22829,21 +22153,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1388061472}
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
---- !u!114 &1455614397
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1455614395}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5c7b98e806cb84687abd3b0b47b7987c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
-  redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
-  greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
 --- !u!54 &1455614398
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -22955,9 +22264,8 @@ GameObject:
   - component: {fileID: 1456566836}
   - component: {fileID: 1456566835}
   - component: {fileID: 1456566834}
-  - component: {fileID: 1456566833}
   m_Layer: 0
-  m_Name: Tile (83)
+  m_Name: Tile (183)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -22978,21 +22286,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1388061472}
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
---- !u!114 &1456566833
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1456566831}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5c7b98e806cb84687abd3b0b47b7987c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
-  redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
-  greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
 --- !u!54 &1456566834
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -23104,9 +22397,8 @@ GameObject:
   - component: {fileID: 1459745105}
   - component: {fileID: 1459745104}
   - component: {fileID: 1459745103}
-  - component: {fileID: 1459745102}
   m_Layer: 0
-  m_Name: Tile (76)
+  m_Name: Tile (176)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -23127,21 +22419,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1388061472}
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
---- !u!114 &1459745102
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1459745100}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5c7b98e806cb84687abd3b0b47b7987c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
-  redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
-  greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
 --- !u!54 &1459745103
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -23291,6 +22568,8 @@ MonoBehaviour:
   tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
+  shipHovering: 0
+  setupComplete: 0
 --- !u!54 &1475674615
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -23402,9 +22681,8 @@ GameObject:
   - component: {fileID: 1491121712}
   - component: {fileID: 1491121711}
   - component: {fileID: 1491121710}
-  - component: {fileID: 1491121709}
   m_Layer: 0
-  m_Name: Tile (11)
+  m_Name: Tile (111)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -23425,21 +22703,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1388061472}
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
---- !u!114 &1491121709
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1491121707}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5c7b98e806cb84687abd3b0b47b7987c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
-  redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
-  greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
 --- !u!54 &1491121710
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -23722,6 +22985,8 @@ MonoBehaviour:
   tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
+  shipHovering: 0
+  setupComplete: 0
 --- !u!54 &1514613463
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -23833,9 +23098,8 @@ GameObject:
   - component: {fileID: 1523372051}
   - component: {fileID: 1523372050}
   - component: {fileID: 1523372049}
-  - component: {fileID: 1523372048}
   m_Layer: 0
-  m_Name: Tile (48)
+  m_Name: Tile (148)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -23856,21 +23120,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1388061472}
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
---- !u!114 &1523372048
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1523372046}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5c7b98e806cb84687abd3b0b47b7987c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
-  redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
-  greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
 --- !u!54 &1523372049
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -24020,6 +23269,8 @@ MonoBehaviour:
   tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
+  shipHovering: 0
+  setupComplete: 0
 --- !u!54 &1530343212
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -24133,7 +23384,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1534462257
 Transform:
   m_ObjectHideFlags: 0
@@ -24163,9 +23414,8 @@ GameObject:
   - component: {fileID: 1540481888}
   - component: {fileID: 1540481887}
   - component: {fileID: 1540481886}
-  - component: {fileID: 1540481885}
   m_Layer: 0
-  m_Name: Tile (87)
+  m_Name: Tile (187)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -24186,21 +23436,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1388061472}
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
---- !u!114 &1540481885
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1540481883}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5c7b98e806cb84687abd3b0b47b7987c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
-  redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
-  greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
 --- !u!54 &1540481886
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -24312,9 +23547,8 @@ GameObject:
   - component: {fileID: 1555384233}
   - component: {fileID: 1555384232}
   - component: {fileID: 1555384231}
-  - component: {fileID: 1555384230}
   m_Layer: 0
-  m_Name: Tile (7)
+  m_Name: Tile (107)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -24335,21 +23569,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1388061472}
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
---- !u!114 &1555384230
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1555384228}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5c7b98e806cb84687abd3b0b47b7987c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
-  redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
-  greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
 --- !u!54 &1555384231
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -24484,7 +23703,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -792.8, y: 482}
+  m_AnchoredPosition: {x: -793, y: 482}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1571259215
@@ -24500,7 +23719,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -24620,6 +23839,8 @@ MonoBehaviour:
   tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
+  shipHovering: 0
+  setupComplete: 0
 --- !u!54 &1577381209
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -24769,6 +23990,8 @@ MonoBehaviour:
   tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
+  shipHovering: 0
+  setupComplete: 0
 --- !u!54 &1580956119
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -24916,9 +24139,8 @@ GameObject:
   - component: {fileID: 1608408309}
   - component: {fileID: 1608408308}
   - component: {fileID: 1608408307}
-  - component: {fileID: 1608408306}
   m_Layer: 0
-  m_Name: Tile (97)
+  m_Name: Tile (197)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -24939,21 +24161,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1388061472}
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
---- !u!114 &1608408306
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1608408304}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5c7b98e806cb84687abd3b0b47b7987c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
-  redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
-  greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
 --- !u!54 &1608408307
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -25103,6 +24310,8 @@ MonoBehaviour:
   tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
+  shipHovering: 0
+  setupComplete: 0
 --- !u!54 &1613197380
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -25252,6 +24461,8 @@ MonoBehaviour:
   tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
+  shipHovering: 0
+  setupComplete: 0
 --- !u!54 &1636276912
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -25397,9 +24608,8 @@ GameObject:
   - component: {fileID: 1660825821}
   - component: {fileID: 1660825820}
   - component: {fileID: 1660825819}
-  - component: {fileID: 1660825818}
   m_Layer: 0
-  m_Name: Tile (16)
+  m_Name: Tile (116)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -25420,21 +24630,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1388061472}
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
---- !u!114 &1660825818
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1660825816}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5c7b98e806cb84687abd3b0b47b7987c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
-  redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
-  greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
 --- !u!54 &1660825819
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -25546,9 +24741,8 @@ GameObject:
   - component: {fileID: 1663427022}
   - component: {fileID: 1663427021}
   - component: {fileID: 1663427020}
-  - component: {fileID: 1663427019}
   m_Layer: 0
-  m_Name: Tile (89)
+  m_Name: Tile (189)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -25569,21 +24763,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1388061472}
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
---- !u!114 &1663427019
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1663427017}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5c7b98e806cb84687abd3b0b47b7987c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
-  redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
-  greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
 --- !u!54 &1663427020
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -25727,9 +24906,8 @@ GameObject:
   - component: {fileID: 1677582872}
   - component: {fileID: 1677582871}
   - component: {fileID: 1677582870}
-  - component: {fileID: 1677582869}
   m_Layer: 0
-  m_Name: Tile (63)
+  m_Name: Tile (163)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -25750,21 +24928,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1388061472}
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
---- !u!114 &1677582869
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1677582867}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5c7b98e806cb84687abd3b0b47b7987c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
-  redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
-  greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
 --- !u!54 &1677582870
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -25914,6 +25077,8 @@ MonoBehaviour:
   tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
+  shipHovering: 0
+  setupComplete: 0
 --- !u!54 &1689287256
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -26025,9 +25190,8 @@ GameObject:
   - component: {fileID: 1695645830}
   - component: {fileID: 1695645829}
   - component: {fileID: 1695645828}
-  - component: {fileID: 1695645827}
   m_Layer: 0
-  m_Name: Tile (93)
+  m_Name: Tile (193)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -26048,21 +25212,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1388061472}
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
---- !u!114 &1695645827
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1695645825}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5c7b98e806cb84687abd3b0b47b7987c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
-  redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
-  greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
 --- !u!54 &1695645828
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -26212,6 +25361,8 @@ MonoBehaviour:
   tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
+  shipHovering: 0
+  setupComplete: 0
 --- !u!54 &1698225986
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -26361,6 +25512,8 @@ MonoBehaviour:
   tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
+  shipHovering: 0
+  setupComplete: 0
 --- !u!54 &1699869372
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -26472,9 +25625,8 @@ GameObject:
   - component: {fileID: 1712740833}
   - component: {fileID: 1712740832}
   - component: {fileID: 1712740831}
-  - component: {fileID: 1712740830}
   m_Layer: 0
-  m_Name: Tile (88)
+  m_Name: Tile (188)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -26495,21 +25647,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1388061472}
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
---- !u!114 &1712740830
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1712740828}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5c7b98e806cb84687abd3b0b47b7987c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
-  redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
-  greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
 --- !u!54 &1712740831
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -26621,9 +25758,8 @@ GameObject:
   - component: {fileID: 1717244237}
   - component: {fileID: 1717244236}
   - component: {fileID: 1717244235}
-  - component: {fileID: 1717244234}
   m_Layer: 0
-  m_Name: Tile (78)
+  m_Name: Tile (178)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -26644,21 +25780,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1388061472}
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
---- !u!114 &1717244234
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1717244232}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5c7b98e806cb84687abd3b0b47b7987c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
-  redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
-  greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
 --- !u!54 &1717244235
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -26808,6 +25929,8 @@ MonoBehaviour:
   tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
+  shipHovering: 0
+  setupComplete: 0
 --- !u!54 &1724764104
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -26919,9 +26042,8 @@ GameObject:
   - component: {fileID: 1724787460}
   - component: {fileID: 1724787459}
   - component: {fileID: 1724787458}
-  - component: {fileID: 1724787457}
   m_Layer: 0
-  m_Name: Tile (22)
+  m_Name: Tile (122)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -26942,21 +26064,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1388061472}
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
---- !u!114 &1724787457
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1724787455}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5c7b98e806cb84687abd3b0b47b7987c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
-  redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
-  greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
 --- !u!54 &1724787458
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -27068,9 +26175,8 @@ GameObject:
   - component: {fileID: 1728153967}
   - component: {fileID: 1728153966}
   - component: {fileID: 1728153965}
-  - component: {fileID: 1728153964}
   m_Layer: 0
-  m_Name: Tile (82)
+  m_Name: Tile (182)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -27091,21 +26197,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1388061472}
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
---- !u!114 &1728153964
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1728153962}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5c7b98e806cb84687abd3b0b47b7987c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
-  redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
-  greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
 --- !u!54 &1728153965
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -27255,6 +26346,8 @@ MonoBehaviour:
   tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
+  shipHovering: 0
+  setupComplete: 0
 --- !u!54 &1728879219
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -27366,9 +26459,8 @@ GameObject:
   - component: {fileID: 1730982457}
   - component: {fileID: 1730982456}
   - component: {fileID: 1730982455}
-  - component: {fileID: 1730982454}
   m_Layer: 0
-  m_Name: Tile (28)
+  m_Name: Tile (128)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -27389,21 +26481,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1388061472}
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
---- !u!114 &1730982454
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1730982452}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5c7b98e806cb84687abd3b0b47b7987c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
-  redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
-  greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
 --- !u!54 &1730982455
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -27538,6 +26615,8 @@ MonoBehaviour:
   tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
+  shipHovering: 0
+  setupComplete: 0
 --- !u!54 &1741495128
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -27664,9 +26743,8 @@ GameObject:
   - component: {fileID: 1744164149}
   - component: {fileID: 1744164148}
   - component: {fileID: 1744164147}
-  - component: {fileID: 1744164146}
   m_Layer: 0
-  m_Name: Tile (100)
+  m_Name: Tile (200)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -27687,21 +26765,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1388061472}
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
---- !u!114 &1744164146
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1744164144}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5c7b98e806cb84687abd3b0b47b7987c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
-  redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
-  greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
 --- !u!54 &1744164147
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -27813,9 +26876,8 @@ GameObject:
   - component: {fileID: 1760470741}
   - component: {fileID: 1760470740}
   - component: {fileID: 1760470739}
-  - component: {fileID: 1760470738}
   m_Layer: 0
-  m_Name: Tile (1)
+  m_Name: Tile (101)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -27836,21 +26898,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1388061472}
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
---- !u!114 &1760470738
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1760470736}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5c7b98e806cb84687abd3b0b47b7987c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
-  redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
-  greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
 --- !u!54 &1760470739
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -27962,9 +27009,8 @@ GameObject:
   - component: {fileID: 1761720501}
   - component: {fileID: 1761720500}
   - component: {fileID: 1761720499}
-  - component: {fileID: 1761720498}
   m_Layer: 0
-  m_Name: Tile (13)
+  m_Name: Tile (113)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -27985,21 +27031,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1388061472}
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
---- !u!114 &1761720498
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1761720496}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5c7b98e806cb84687abd3b0b47b7987c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
-  redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
-  greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
 --- !u!54 &1761720499
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -28111,9 +27142,8 @@ GameObject:
   - component: {fileID: 1767306692}
   - component: {fileID: 1767306691}
   - component: {fileID: 1767306690}
-  - component: {fileID: 1767306689}
   m_Layer: 0
-  m_Name: Tile (44)
+  m_Name: Tile (144)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -28134,21 +27164,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1388061472}
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
---- !u!114 &1767306689
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1767306687}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5c7b98e806cb84687abd3b0b47b7987c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
-  redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
-  greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
 --- !u!54 &1767306690
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -28260,9 +27275,8 @@ GameObject:
   - component: {fileID: 1767543838}
   - component: {fileID: 1767543837}
   - component: {fileID: 1767543836}
-  - component: {fileID: 1767543835}
   m_Layer: 0
-  m_Name: Tile (91)
+  m_Name: Tile (191)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -28283,21 +27297,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1388061472}
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
---- !u!114 &1767543835
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1767543833}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5c7b98e806cb84687abd3b0b47b7987c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
-  redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
-  greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
 --- !u!54 &1767543836
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -28409,9 +27408,8 @@ GameObject:
   - component: {fileID: 1770868441}
   - component: {fileID: 1770868440}
   - component: {fileID: 1770868439}
-  - component: {fileID: 1770868438}
   m_Layer: 0
-  m_Name: Tile (64)
+  m_Name: Tile (164)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -28432,21 +27430,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1388061472}
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
---- !u!114 &1770868438
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1770868436}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5c7b98e806cb84687abd3b0b47b7987c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
-  redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
-  greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
 --- !u!54 &1770868439
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -28729,6 +27712,8 @@ MonoBehaviour:
   tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
+  shipHovering: 0
+  setupComplete: 0
 --- !u!54 &1814929939
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -28840,9 +27825,8 @@ GameObject:
   - component: {fileID: 1820804304}
   - component: {fileID: 1820804303}
   - component: {fileID: 1820804302}
-  - component: {fileID: 1820804301}
   m_Layer: 0
-  m_Name: Tile (31)
+  m_Name: Tile (131)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -28863,21 +27847,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1388061472}
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
---- !u!114 &1820804301
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1820804299}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5c7b98e806cb84687abd3b0b47b7987c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
-  redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
-  greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
 --- !u!54 &1820804302
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -28989,9 +27958,8 @@ GameObject:
   - component: {fileID: 1825762895}
   - component: {fileID: 1825762894}
   - component: {fileID: 1825762893}
-  - component: {fileID: 1825762892}
   m_Layer: 0
-  m_Name: Tile (98)
+  m_Name: Tile (198)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -29012,21 +27980,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1388061472}
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
---- !u!114 &1825762892
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1825762890}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5c7b98e806cb84687abd3b0b47b7987c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
-  redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
-  greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
 --- !u!54 &1825762893
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -29138,9 +28091,8 @@ GameObject:
   - component: {fileID: 1846473806}
   - component: {fileID: 1846473805}
   - component: {fileID: 1846473804}
-  - component: {fileID: 1846473803}
   m_Layer: 0
-  m_Name: Tile (19)
+  m_Name: Tile (119)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -29161,21 +28113,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1388061472}
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
---- !u!114 &1846473803
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1846473801}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5c7b98e806cb84687abd3b0b47b7987c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
-  redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
-  greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
 --- !u!54 &1846473804
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -29325,6 +28262,8 @@ MonoBehaviour:
   tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
+  shipHovering: 0
+  setupComplete: 0
 --- !u!54 &1893316306
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -29542,6 +28481,8 @@ MonoBehaviour:
   tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
+  shipHovering: 0
+  setupComplete: 0
 --- !u!54 &1907043061
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -29653,9 +28594,8 @@ GameObject:
   - component: {fileID: 1907909897}
   - component: {fileID: 1907909896}
   - component: {fileID: 1907909895}
-  - component: {fileID: 1907909894}
   m_Layer: 0
-  m_Name: Tile (25)
+  m_Name: Tile (125)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -29676,21 +28616,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1388061472}
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
---- !u!114 &1907909894
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1907909892}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5c7b98e806cb84687abd3b0b47b7987c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
-  redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
-  greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
 --- !u!54 &1907909895
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -29802,9 +28727,8 @@ GameObject:
   - component: {fileID: 1911124023}
   - component: {fileID: 1911124022}
   - component: {fileID: 1911124021}
-  - component: {fileID: 1911124020}
   m_Layer: 0
-  m_Name: Tile (4)
+  m_Name: Tile (104)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -29825,21 +28749,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1388061472}
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
---- !u!114 &1911124020
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1911124018}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5c7b98e806cb84687abd3b0b47b7987c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
-  redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
-  greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
 --- !u!54 &1911124021
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -29951,9 +28860,8 @@ GameObject:
   - component: {fileID: 1938277402}
   - component: {fileID: 1938277401}
   - component: {fileID: 1938277400}
-  - component: {fileID: 1938277399}
   m_Layer: 0
-  m_Name: Tile (24)
+  m_Name: Tile (124)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -29974,21 +28882,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1388061472}
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
---- !u!114 &1938277399
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1938277397}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5c7b98e806cb84687abd3b0b47b7987c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
-  redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
-  greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
 --- !u!54 &1938277400
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -30100,9 +28993,8 @@ GameObject:
   - component: {fileID: 1952643619}
   - component: {fileID: 1952643618}
   - component: {fileID: 1952643617}
-  - component: {fileID: 1952643616}
   m_Layer: 0
-  m_Name: Tile (32)
+  m_Name: Tile (132)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -30123,21 +29015,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1388061472}
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
---- !u!114 &1952643616
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1952643614}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5c7b98e806cb84687abd3b0b47b7987c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
-  redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
-  greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
 --- !u!54 &1952643617
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -30287,6 +29164,8 @@ MonoBehaviour:
   tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
+  shipHovering: 0
+  setupComplete: 0
 --- !u!54 &1966262627
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -30590,6 +29469,8 @@ MonoBehaviour:
   tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
+  shipHovering: 0
+  setupComplete: 0
 --- !u!54 &2007736451
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -30716,9 +29597,8 @@ GameObject:
   - component: {fileID: 2009380660}
   - component: {fileID: 2009380659}
   - component: {fileID: 2009380658}
-  - component: {fileID: 2009380657}
   m_Layer: 0
-  m_Name: Tile (52)
+  m_Name: Tile (152)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -30739,21 +29619,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1388061472}
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
---- !u!114 &2009380657
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2009380655}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5c7b98e806cb84687abd3b0b47b7987c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
-  redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
-  greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
 --- !u!54 &2009380658
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -30865,9 +29730,8 @@ GameObject:
   - component: {fileID: 2030088874}
   - component: {fileID: 2030088873}
   - component: {fileID: 2030088872}
-  - component: {fileID: 2030088871}
   m_Layer: 0
-  m_Name: Tile (18)
+  m_Name: Tile (118)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -30888,21 +29752,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1388061472}
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
---- !u!114 &2030088871
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2030088869}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5c7b98e806cb84687abd3b0b47b7987c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
-  redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
-  greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
 --- !u!54 &2030088872
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -31014,9 +29863,8 @@ GameObject:
   - component: {fileID: 2039608367}
   - component: {fileID: 2039608366}
   - component: {fileID: 2039608365}
-  - component: {fileID: 2039608364}
   m_Layer: 0
-  m_Name: Tile (50)
+  m_Name: Tile (150)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -31037,21 +29885,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1388061472}
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
---- !u!114 &2039608364
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2039608362}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5c7b98e806cb84687abd3b0b47b7987c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
-  redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
-  greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
 --- !u!54 &2039608365
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -31163,9 +29996,8 @@ GameObject:
   - component: {fileID: 2062171581}
   - component: {fileID: 2062171580}
   - component: {fileID: 2062171579}
-  - component: {fileID: 2062171578}
   m_Layer: 0
-  m_Name: Tile (12)
+  m_Name: Tile (112)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -31186,21 +30018,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1388061472}
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
---- !u!114 &2062171578
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2062171576}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5c7b98e806cb84687abd3b0b47b7987c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
-  redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
-  greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
 --- !u!54 &2062171579
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -31312,9 +30129,8 @@ GameObject:
   - component: {fileID: 2068524151}
   - component: {fileID: 2068524150}
   - component: {fileID: 2068524149}
-  - component: {fileID: 2068524148}
   m_Layer: 0
-  m_Name: Tile (15)
+  m_Name: Tile (115)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -31335,21 +30151,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1388061472}
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
---- !u!114 &2068524148
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2068524146}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5c7b98e806cb84687abd3b0b47b7987c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
-  redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
-  greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
 --- !u!54 &2068524149
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -31499,6 +30300,8 @@ MonoBehaviour:
   tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
+  shipHovering: 0
+  setupComplete: 0
 --- !u!54 &2073256805
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -31648,6 +30451,8 @@ MonoBehaviour:
   tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
+  shipHovering: 0
+  setupComplete: 0
 --- !u!54 &2074712406
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -31831,6 +30636,8 @@ MonoBehaviour:
   tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
+  shipHovering: 0
+  setupComplete: 0
 --- !u!54 &2112901236
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -31980,6 +30787,8 @@ MonoBehaviour:
   tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
+  shipHovering: 0
+  setupComplete: 0
 --- !u!54 &2115673371
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -32129,6 +30938,8 @@ MonoBehaviour:
   tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
+  shipHovering: 0
+  setupComplete: 0
 --- !u!54 &2117666137
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -32263,6 +31074,8 @@ MonoBehaviour:
   tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
+  shipHovering: 0
+  setupComplete: 0
 --- !u!54 &2121765241
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -32427,6 +31240,8 @@ MonoBehaviour:
   tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
+  shipHovering: 0
+  setupComplete: 0
 --- !u!54 &2135249774
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -32576,6 +31391,8 @@ MonoBehaviour:
   tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
+  shipHovering: 0
+  setupComplete: 0
 --- !u!54 &2138820576
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -32725,6 +31542,8 @@ MonoBehaviour:
   tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
+  shipHovering: 0
+  setupComplete: 0
 --- !u!54 &2141903317
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -32874,6 +31693,8 @@ MonoBehaviour:
   tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
+  shipHovering: 0
+  setupComplete: 0
 --- !u!54 &2146312789
 Rigidbody:
   m_ObjectHideFlags: 0
