@@ -4705,7 +4705,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11b17337aa2d04132842ee2e50ec33d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  zPositionOffset: 2.2
+  zOffset: 2.2
+  zRotatedOffset: 0
+  xOffset: 0
+  xRotatedOffset: 0
   shipSize: 5
 --- !u!1 &395443588
 GameObject:
@@ -5270,7 +5273,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11b17337aa2d04132842ee2e50ec33d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  zPositionOffset: 1.05
+  zOffset: 1
+  zRotatedOffset: 0
+  xOffset: 0
+  xRotatedOffset: 0
   shipSize: 3
 --- !u!1 &428221059
 GameObject:
@@ -8228,7 +8234,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11b17337aa2d04132842ee2e50ec33d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  zPositionOffset: 1.6
+  zOffset: 1.5
+  zRotatedOffset: 0
+  xOffset: 0
+  xRotatedOffset: 0.5
   shipSize: 4
 --- !u!1 &648316631
 GameObject:
@@ -10102,7 +10111,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11b17337aa2d04132842ee2e50ec33d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  zPositionOffset: 1.05
+  zOffset: 1
+  zRotatedOffset: 0
+  xOffset: 0
+  xRotatedOffset: 0
   shipSize: 3
 --- !u!1 &764274702
 GameObject:
@@ -13373,7 +13385,7 @@ Transform:
   m_GameObject: {fileID: 963194225}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 0.92387956, z: -0.38268343, w: 0}
-  m_LocalPosition: {x: 0.119999886, y: 6.12, z: 8.12}
+  m_LocalPosition: {x: 0.119999886, y: 6.83, z: 8.13}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -20009,7 +20021,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11b17337aa2d04132842ee2e50ec33d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  zPositionOffset: 0.6
+  zOffset: 0.5
+  zRotatedOffset: 0
+  xOffset: 0
+  xRotatedOffset: 0
   shipSize: 2
 --- !u!1 &1348568130
 GameObject:
@@ -24105,7 +24120,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1600375313
 Transform:
   m_ObjectHideFlags: 0
