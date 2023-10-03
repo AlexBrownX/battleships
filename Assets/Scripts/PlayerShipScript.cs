@@ -5,6 +5,9 @@ using UnityEngine.Serialization;
 public class PlayerShipScript : MonoBehaviour {
 
     public float zOffset;
+    public float zRotatedOffset;
+    public float xOffset;
+    public float xRotatedOffset;
     public int shipSize;
     private bool _setupComplete = false;
     private bool _rotated = false;
@@ -22,8 +25,12 @@ public class PlayerShipScript : MonoBehaviour {
         Setup();
     }
 
-    public float GetOffset() {
-        return _rotated ? 0f : zOffset;
+    public float GetZOffset() {
+        return _rotated ? zRotatedOffset : zOffset;
+    }
+    
+    public float GetXOffset() {
+        return _rotated ? xRotatedOffset : xOffset;
     }
     
     private void Setup() {

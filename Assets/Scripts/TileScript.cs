@@ -64,8 +64,9 @@ public class TileScript : MonoBehaviour {
 
     private void HoverShip() {
         var tilePosition = transform.position;
-        var zOffset = BoardSetup.Instance.currentShip.GetComponent<PlayerShipScript>().GetOffset();
-        var hoverPosition = new Vector3(tilePosition.x, tilePosition.y + 1f, tilePosition.z - zOffset);
+        var zOffset = BoardSetup.Instance.currentShip.GetComponent<PlayerShipScript>().GetZOffset();
+        var xOffset = BoardSetup.Instance.currentShip.GetComponent<PlayerShipScript>().GetXOffset();
+        var hoverPosition = new Vector3(tilePosition.x - xOffset, tilePosition.y + 1f, tilePosition.z - zOffset);
         BoardSetup.Instance.currentShip.transform.position = hoverPosition;
     }
 
