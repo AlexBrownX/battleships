@@ -2,9 +2,9 @@ using System.Linq;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class BoardSetup : MonoBehaviour {
+public class PlayerBoardSetup : MonoBehaviour {
     
-    public static BoardSetup Instance;
+    public static PlayerBoardSetup Instance;
     public GameObject[] tiles;
     public GameObject[] ships;
     public GameObject currentShip;
@@ -54,14 +54,14 @@ public class BoardSetup : MonoBehaviour {
     }
 
     public bool CanDrop() {
-        var highlighted = tiles.Count(tile => tile.GetComponent<PlayerTileSetupScript>().shipHovering);
+        var highlighted = tiles.Count(tile => tile.GetComponent<PlayerTileSetup>().shipHovering);
         return currentShip.GetComponent<PlayerShipScript>().shipSize == highlighted;
     }
     
     public void ShipPlaced() {
         foreach (var tile in tiles) {
-            if (tile.GetComponent<PlayerTileSetupScript>().shipHovering) {
-                tile.GetComponent<PlayerTileSetupScript>().CompleteSetup();
+            if (tile.GetComponent<PlayerTileSetup>().shipHovering) {
+                tile.GetComponent<PlayerTileSetup>().CompleteSetup();
             }
         }
     
@@ -71,7 +71,7 @@ public class BoardSetup : MonoBehaviour {
 
     private void SetupCompleted() {
         foreach (var tile in tiles) {
-            tile.GetComponent<PlayerTileSetupScript>().CompleteSetup();
+            tile.GetComponent<PlayerTileSetup>().CompleteSetup();
         }
         
         currentShip = null;

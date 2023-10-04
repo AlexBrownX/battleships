@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class PlayerTileSetupScript : MonoBehaviour {
+public class PlayerTileSetup : MonoBehaviour {
 
     public Material tile;
     public Material redTile;
@@ -27,11 +27,11 @@ public class PlayerTileSetupScript : MonoBehaviour {
         }
 
         if (isShipOverTile()) {
-            if (BoardSetup.Instance.CanDrop()) {
+            if (PlayerBoardSetup.Instance.CanDrop()) {
                 GetComponent<Renderer>().material = greenTile;
         
                 if (MouseOverTile() && Input.GetMouseButtonDown(0)) {
-                    BoardSetup.Instance.ShipPlaced();
+                    PlayerBoardSetup.Instance.ShipPlaced();
                     return;
                 }
             }
@@ -56,15 +56,15 @@ public class PlayerTileSetupScript : MonoBehaviour {
         var direction = new Vector3(transform.position.x, transform.position.y + 50f, transform.position.z);
         // Debug.DrawLine(transform.position, direction, Color.red, 1);
         return Physics.Raycast(transform.position, direction, out var hit) && 
-               hit.collider.gameObject.name == BoardSetup.Instance.currentShip.name;
+               hit.collider.gameObject.name == PlayerBoardSetup.Instance.currentShip.name;
     }
 
     private void HoverShip() {
         var tilePosition = transform.position;
-        var zOffset = BoardSetup.Instance.currentShip.GetComponent<PlayerShipScript>().GetZOffset();
-        var xOffset = BoardSetup.Instance.currentShip.GetComponent<PlayerShipScript>().GetXOffset();
+        var zOffset = PlayerBoardSetup.Instance.currentShip.GetComponent<PlayerShipScript>().GetZOffset();
+        var xOffset = PlayerBoardSetup.Instance.currentShip.GetComponent<PlayerShipScript>().GetXOffset();
         var hoverPosition = new Vector3(tilePosition.x - xOffset, tilePosition.y + 1f, tilePosition.z - zOffset);
-        BoardSetup.Instance.currentShip.transform.position = hoverPosition;
+        PlayerBoardSetup.Instance.currentShip.transform.position = hoverPosition;
     }
 
     private bool MouseOverTile() {

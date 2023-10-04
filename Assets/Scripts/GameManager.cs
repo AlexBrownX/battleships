@@ -5,6 +5,7 @@ public class GameManager : MonoBehaviour {
     public static GameManager Instance;
     private bool _setupComplete;
     private bool _playerTurn = true;
+    private bool _turnTaken = false;
 
     void Start() {
         Instance = this;
@@ -13,7 +14,7 @@ public class GameManager : MonoBehaviour {
     void Update() {
         if (!_setupComplete) return;
 
-        if (_playerTurn) {
+        if (_playerTurn && !_turnTaken) {
             PlayerTurn();
         }
         else {
