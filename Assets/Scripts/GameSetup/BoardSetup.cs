@@ -54,14 +54,14 @@ public class BoardSetup : MonoBehaviour {
     }
 
     public bool CanDrop() {
-        var highlighted = tiles.Count(tile => tile.GetComponent<TileScript>().shipHovering);
+        var highlighted = tiles.Count(tile => tile.GetComponent<PlayerTileSetupScript>().shipHovering);
         return currentShip.GetComponent<PlayerShipScript>().shipSize == highlighted;
     }
     
     public void ShipPlaced() {
         foreach (var tile in tiles) {
-            if (tile.GetComponent<TileScript>().shipHovering) {
-                tile.GetComponent<TileScript>().CompleteSetup();
+            if (tile.GetComponent<PlayerTileSetupScript>().shipHovering) {
+                tile.GetComponent<PlayerTileSetupScript>().CompleteSetup();
             }
         }
     
@@ -71,11 +71,11 @@ public class BoardSetup : MonoBehaviour {
 
     private void SetupCompleted() {
         foreach (var tile in tiles) {
-            tile.GetComponent<TileScript>().CompleteSetup();
+            tile.GetComponent<PlayerTileSetupScript>().CompleteSetup();
         }
         
         currentShip = null;
         _setupComplete = true;
-        GetComponent<CameraScript>().RightBtnClicked();
+        GameManager.Instance.CompleteSetup();
     }
 }

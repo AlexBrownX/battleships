@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class TileScript : MonoBehaviour {
+public class PlayerTileSetupScript : MonoBehaviour {
 
     public Material tile;
     public Material redTile;
@@ -21,14 +21,16 @@ public class TileScript : MonoBehaviour {
     private void Setup() {
         if (setupComplete) return;
         shipHovering = true;
-
+        
         if (MouseOverTile()) {
             HoverShip();
+        }
 
+        if (isShipOverTile()) {
             if (BoardSetup.Instance.CanDrop()) {
                 GetComponent<Renderer>().material = greenTile;
-
-                if (Input.GetMouseButtonDown(0)) {
+        
+                if (MouseOverTile() && Input.GetMouseButtonDown(0)) {
                     BoardSetup.Instance.ShipPlaced();
                     return;
                 }
@@ -36,11 +38,6 @@ public class TileScript : MonoBehaviour {
             else {
                 GetComponent<Renderer>().material = redTile;
             }
-            return;
-        }
-        
-        if (isShipOverTile()) {
-            GetComponent<Renderer>().material = BoardSetup.Instance.CanDrop() ? greenTile : redTile;
             return;
         }
         

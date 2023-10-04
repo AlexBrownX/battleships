@@ -20024,7 +20024,7 @@ MonoBehaviour:
   zOffset: 0.5
   zRotatedOffset: 0
   xOffset: 0
-  xRotatedOffset: 0
+  xRotatedOffset: 0.6
   shipSize: 2
 --- !u!1 &1348568130
 GameObject:
