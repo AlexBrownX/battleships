@@ -3,7 +3,8 @@ using UnityEngine;
 public class GameManager : MonoBehaviour {
 
     public static GameManager Instance;
-    private bool _setupComplete;
+    private bool _playerSetupComplete;
+    private bool _enemySetupComplete;
     private bool _playerTurn = true;
     private bool _turnTaken = false;
 
@@ -12,7 +13,7 @@ public class GameManager : MonoBehaviour {
     }
 
     void Update() {
-        if (!_setupComplete) return;
+        if (!_playerSetupComplete || !_enemySetupComplete) return;
 
         if (_playerTurn && !_turnTaken) {
             PlayerTurn();
@@ -30,7 +31,11 @@ public class GameManager : MonoBehaviour {
         GetComponent<CameraScript>().LeftBtnClicked();
     }
 
-    public void CompleteSetup() {
-        _setupComplete = true;
+    public void PlayerCompleteSetup() {
+        _playerSetupComplete = true;
+    }
+    
+    public void EnemyCompleteSetup() {
+        _enemySetupComplete = true;
     }
 }

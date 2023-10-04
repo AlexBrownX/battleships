@@ -1,5 +1,5 @@
-using System.Linq;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 namespace GameSetup {
     public class EnemyBoardSetup : MonoBehaviour
@@ -25,7 +25,9 @@ namespace GameSetup {
         }
 
         private void Setup() {
-            if (_setupComplete) return;
+            if (_setupComplete) {
+                GameManager.Instance.EnemyCompleteSetup();
+            }
         }
 
         private void PopulateTiles() {
@@ -45,10 +47,44 @@ namespace GameSetup {
             }
         
             currentShip = ships[_shipIndex];
+            
+            // TODO - Remove so ships are invisible 
             currentShip.GetComponent<Renderer>().enabled = true;
             currentShip.GetComponent<EnemyShipScript>().gameObject.SetActive(true);
+
+            PlaceShip();
+            SetNextShip();
         }
-    
+
+        private void PlaceShip() {
+            var startPosition = Random.Range(101, 200);
+            var shipSize = currentShip.GetComponent<EnemyShipScript>().shipSize;
+            var rotated = Random.value > 0.5f;
+
+            // Debug.Log($"Rotated: {rotated} Start Pos: {startPosition}");
+
+            if (CanPlaceShip(startPosition, shipSize, rotated)) {
+                
+            }
+        }
+
+        private bool CanPlaceShip(double startPosition, int shipSize, bool rotated) {
+            var startTile = GameObject.Find($"Tile ({startPosition})");
+            var tilePosition = startTile.transform.position;
+
+            if (rotated) {
+                currentShip.GetComponent<EnemyShipScript>().SetRotated(true);
+                currentShip.transform.Rotate(0, 90, 0);
+            }
+
+            var zOffset = currentShip.GetComponent<EnemyShipScript>().GetZOffset();
+            var xOffset = currentShip.GetComponent<EnemyShipScript>().GetXOffset();
+            var dropPosition = new Vector3(tilePosition.x - xOffset, tilePosition.y + 1f, tilePosition.z - zOffset);
+            currentShip.transform.position = dropPosition;
+
+            return true;
+        }
+
         private void SetupCompleted() {
             foreach (var tile in tiles) {
                 tile.GetComponent<EnemyTileSetup>().CompleteSetup();
@@ -56,7 +92,6 @@ namespace GameSetup {
         
             currentShip = null;
             _setupComplete = true;
-            GameManager.Instance.CompleteSetup();
         }
     }
 }

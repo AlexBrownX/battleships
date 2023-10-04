@@ -23,6 +23,10 @@ public class EnemyShipScript : MonoBehaviour {
         Setup();
     }
 
+    public void SetRotated(bool rotated) {
+        _rotated = rotated;
+    }
+
     public float GetZOffset() {
         return _rotated ? zRotatedOffset : zOffset;
     }
