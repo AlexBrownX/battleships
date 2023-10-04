@@ -1,3 +1,4 @@
+using GameSetup;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour {
@@ -33,9 +34,13 @@ public class GameManager : MonoBehaviour {
 
     public void PlayerCompleteSetup() {
         _playerSetupComplete = true;
+        Destroy(GetComponent<PlayerBoardSetup>());
+        Debug.Log("Player board setup complete");
     }
     
     public void EnemyCompleteSetup() {
         _enemySetupComplete = true;
+        Destroy(GetComponent<EnemyBoardSetup>());
+        Debug.Log("Enemy board setup complete");
     }
 }

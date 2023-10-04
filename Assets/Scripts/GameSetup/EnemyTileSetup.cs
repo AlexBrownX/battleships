@@ -1,10 +1,9 @@
 using UnityEngine;
 
 namespace GameSetup {
-    public class EnemyTileSetup : MonoBehaviour
-    {
-        public bool shipHovering = false;
-        public bool setupComplete = false;
+    public class EnemyTileSetup : MonoBehaviour {
+        
+        public bool hasShip;
     
         void Start()
         {
@@ -17,10 +16,11 @@ namespace GameSetup {
         }
     
         public void CompleteSetup() {
-            shipHovering = false;
-            setupComplete = true;
-            // GetComponent<Renderer>().material = tile;
-            // Debug.Log($"{name} setup complete");
+            
+        }
+
+        public void PlaceShipOnTile() {
+            hasShip = true;
         }
     }
 }
