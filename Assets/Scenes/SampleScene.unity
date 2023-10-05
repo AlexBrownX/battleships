@@ -269,12 +269,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e29f075c4087c425d98378d36fcde8ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  missile: {fileID: 1012549055}
   tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   yellowTile: {fileID: 2100000, guid: 6457559eb2c6a427dbb82292f40bcebb, type: 2}
   hasShip: 0
+  missileDroppedOnTile: 0
 --- !u!1 &35273694
 GameObject:
   m_ObjectHideFlags: 0
@@ -327,7 +327,8 @@ MonoBehaviour:
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
   shipHovering: 0
-  setupComplete: 0
+  hasShip: 0
+  missileDroppedOnTile: 0
 --- !u!54 &35273697
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -572,12 +573,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e29f075c4087c425d98378d36fcde8ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  missile: {fileID: 1012549055}
   tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   yellowTile: {fileID: 2100000, guid: 6457559eb2c6a427dbb82292f40bcebb, type: 2}
   hasShip: 0
+  missileDroppedOnTile: 0
 --- !u!1 &49948862
 GameObject:
   m_ObjectHideFlags: 0
@@ -630,7 +631,8 @@ MonoBehaviour:
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
   shipHovering: 0
-  setupComplete: 0
+  hasShip: 0
+  missileDroppedOnTile: 0
 --- !u!54 &49948865
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -781,7 +783,8 @@ MonoBehaviour:
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
   shipHovering: 0
-  setupComplete: 0
+  hasShip: 0
+  missileDroppedOnTile: 0
 --- !u!54 &61501232
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1026,12 +1029,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e29f075c4087c425d98378d36fcde8ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  missile: {fileID: 1012549055}
   tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   yellowTile: {fileID: 2100000, guid: 6457559eb2c6a427dbb82292f40bcebb, type: 2}
   hasShip: 0
+  missileDroppedOnTile: 0
 --- !u!1 &78157196
 GameObject:
   m_ObjectHideFlags: 0
@@ -1084,7 +1087,8 @@ MonoBehaviour:
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
   shipHovering: 0
-  setupComplete: 0
+  hasShip: 0
+  missileDroppedOnTile: 0
 --- !u!54 &78157199
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1220,7 +1224,8 @@ MonoBehaviour:
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
   shipHovering: 0
-  setupComplete: 0
+  hasShip: 0
+  missileDroppedOnTile: 0
 --- !u!54 &92598113
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1480,12 +1485,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e29f075c4087c425d98378d36fcde8ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  missile: {fileID: 1012549055}
   tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   yellowTile: {fileID: 2100000, guid: 6457559eb2c6a427dbb82292f40bcebb, type: 2}
   hasShip: 0
+  missileDroppedOnTile: 0
 --- !u!1 &118185770
 GameObject:
   m_ObjectHideFlags: 0
@@ -1632,12 +1637,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e29f075c4087c425d98378d36fcde8ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  missile: {fileID: 1012549055}
   tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   yellowTile: {fileID: 2100000, guid: 6457559eb2c6a427dbb82292f40bcebb, type: 2}
   hasShip: 0
+  missileDroppedOnTile: 0
 --- !u!1 &119680036
 GameObject:
   m_ObjectHideFlags: 0
@@ -1784,12 +1789,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e29f075c4087c425d98378d36fcde8ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  missile: {fileID: 1012549055}
   tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   yellowTile: {fileID: 2100000, guid: 6457559eb2c6a427dbb82292f40bcebb, type: 2}
   hasShip: 0
+  missileDroppedOnTile: 0
 --- !u!1 &125789991
 GameObject:
   m_ObjectHideFlags: 0
@@ -1842,7 +1847,8 @@ MonoBehaviour:
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
   shipHovering: 0
-  setupComplete: 0
+  hasShip: 0
+  missileDroppedOnTile: 0
 --- !u!54 &125789994
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2087,12 +2093,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e29f075c4087c425d98378d36fcde8ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  missile: {fileID: 1012549055}
   tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   yellowTile: {fileID: 2100000, guid: 6457559eb2c6a427dbb82292f40bcebb, type: 2}
   hasShip: 0
+  missileDroppedOnTile: 0
 --- !u!1 &133447704
 GameObject:
   m_ObjectHideFlags: 0
@@ -2145,7 +2151,8 @@ MonoBehaviour:
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
   shipHovering: 0
-  setupComplete: 0
+  hasShip: 0
+  missileDroppedOnTile: 0
 --- !u!54 &133447707
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2390,12 +2397,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e29f075c4087c425d98378d36fcde8ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  missile: {fileID: 1012549055}
   tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   yellowTile: {fileID: 2100000, guid: 6457559eb2c6a427dbb82292f40bcebb, type: 2}
   hasShip: 0
+  missileDroppedOnTile: 0
 --- !u!1 &151861478
 GameObject:
   m_ObjectHideFlags: 0
@@ -2448,7 +2455,8 @@ MonoBehaviour:
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
   shipHovering: 0
-  setupComplete: 0
+  hasShip: 0
+  missileDroppedOnTile: 0
 --- !u!54 &151861481
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2599,7 +2607,8 @@ MonoBehaviour:
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
   shipHovering: 0
-  setupComplete: 0
+  hasShip: 0
+  missileDroppedOnTile: 0
 --- !u!54 &156144880
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2844,12 +2853,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e29f075c4087c425d98378d36fcde8ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  missile: {fileID: 1012549055}
   tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   yellowTile: {fileID: 2100000, guid: 6457559eb2c6a427dbb82292f40bcebb, type: 2}
   hasShip: 0
+  missileDroppedOnTile: 0
 --- !u!1 &173637003
 GameObject:
   m_ObjectHideFlags: 0
@@ -2996,12 +3005,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e29f075c4087c425d98378d36fcde8ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  missile: {fileID: 1012549055}
   tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   yellowTile: {fileID: 2100000, guid: 6457559eb2c6a427dbb82292f40bcebb, type: 2}
   hasShip: 0
+  missileDroppedOnTile: 0
 --- !u!1 &176771293
 GameObject:
   m_ObjectHideFlags: 0
@@ -3227,12 +3236,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e29f075c4087c425d98378d36fcde8ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  missile: {fileID: 1012549055}
   tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   yellowTile: {fileID: 2100000, guid: 6457559eb2c6a427dbb82292f40bcebb, type: 2}
   hasShip: 0
+  missileDroppedOnTile: 0
 --- !u!1 &246954187
 GameObject:
   m_ObjectHideFlags: 0
@@ -3379,12 +3388,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e29f075c4087c425d98378d36fcde8ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  missile: {fileID: 1012549055}
   tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   yellowTile: {fileID: 2100000, guid: 6457559eb2c6a427dbb82292f40bcebb, type: 2}
   hasShip: 0
+  missileDroppedOnTile: 0
 --- !u!1 &255182186
 GameObject:
   m_ObjectHideFlags: 0
@@ -3437,7 +3446,8 @@ MonoBehaviour:
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
   shipHovering: 0
-  setupComplete: 0
+  hasShip: 0
+  missileDroppedOnTile: 0
 --- !u!54 &255182189
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3682,12 +3692,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e29f075c4087c425d98378d36fcde8ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  missile: {fileID: 1012549055}
   tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   yellowTile: {fileID: 2100000, guid: 6457559eb2c6a427dbb82292f40bcebb, type: 2}
   hasShip: 0
+  missileDroppedOnTile: 0
 --- !u!1 &258583201
 GameObject:
   m_ObjectHideFlags: 0
@@ -3740,7 +3750,8 @@ MonoBehaviour:
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
   shipHovering: 0
-  setupComplete: 0
+  hasShip: 0
+  missileDroppedOnTile: 0
 --- !u!54 &258583204
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3985,12 +3996,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e29f075c4087c425d98378d36fcde8ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  missile: {fileID: 1012549055}
   tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   yellowTile: {fileID: 2100000, guid: 6457559eb2c6a427dbb82292f40bcebb, type: 2}
   hasShip: 0
+  missileDroppedOnTile: 0
 --- !u!1 &274931816
 GameObject:
   m_ObjectHideFlags: 0
@@ -4137,12 +4148,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e29f075c4087c425d98378d36fcde8ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  missile: {fileID: 1012549055}
   tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   yellowTile: {fileID: 2100000, guid: 6457559eb2c6a427dbb82292f40bcebb, type: 2}
   hasShip: 0
+  missileDroppedOnTile: 0
 --- !u!1 &275333206
 GameObject:
   m_ObjectHideFlags: 0
@@ -4289,12 +4300,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e29f075c4087c425d98378d36fcde8ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  missile: {fileID: 1012549055}
   tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   yellowTile: {fileID: 2100000, guid: 6457559eb2c6a427dbb82292f40bcebb, type: 2}
   hasShip: 0
+  missileDroppedOnTile: 0
 --- !u!1 &295437281
 GameObject:
   m_ObjectHideFlags: 0
@@ -4441,12 +4452,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e29f075c4087c425d98378d36fcde8ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  missile: {fileID: 1012549055}
   tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   yellowTile: {fileID: 2100000, guid: 6457559eb2c6a427dbb82292f40bcebb, type: 2}
   hasShip: 0
+  missileDroppedOnTile: 0
 --- !u!1 &313696258
 GameObject:
   m_ObjectHideFlags: 0
@@ -4499,7 +4510,8 @@ MonoBehaviour:
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
   shipHovering: 0
-  setupComplete: 0
+  hasShip: 0
+  missileDroppedOnTile: 0
 --- !u!54 &313696261
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -4650,7 +4662,8 @@ MonoBehaviour:
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
   shipHovering: 0
-  setupComplete: 0
+  hasShip: 0
+  missileDroppedOnTile: 0
 --- !u!54 &354809115
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -4895,12 +4908,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e29f075c4087c425d98378d36fcde8ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  missile: {fileID: 1012549055}
   tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   yellowTile: {fileID: 2100000, guid: 6457559eb2c6a427dbb82292f40bcebb, type: 2}
   hasShip: 0
+  missileDroppedOnTile: 0
 --- !u!1 &384897278
 GameObject:
   m_ObjectHideFlags: 0
@@ -5198,12 +5211,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e29f075c4087c425d98378d36fcde8ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  missile: {fileID: 1012549055}
   tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   yellowTile: {fileID: 2100000, guid: 6457559eb2c6a427dbb82292f40bcebb, type: 2}
   hasShip: 0
+  missileDroppedOnTile: 0
 --- !u!1 &398626393
 GameObject:
   m_ObjectHideFlags: 0
@@ -5256,7 +5269,8 @@ MonoBehaviour:
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
   shipHovering: 0
-  setupComplete: 0
+  hasShip: 0
+  missileDroppedOnTile: 0
 --- !u!54 &398626396
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -5501,12 +5515,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e29f075c4087c425d98378d36fcde8ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  missile: {fileID: 1012549055}
   tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   yellowTile: {fileID: 2100000, guid: 6457559eb2c6a427dbb82292f40bcebb, type: 2}
   hasShip: 0
+  missileDroppedOnTile: 0
 --- !u!1 &413500077
 GameObject:
   m_ObjectHideFlags: 0
@@ -5804,12 +5818,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e29f075c4087c425d98378d36fcde8ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  missile: {fileID: 1012549055}
   tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   yellowTile: {fileID: 2100000, guid: 6457559eb2c6a427dbb82292f40bcebb, type: 2}
   hasShip: 0
+  missileDroppedOnTile: 0
 --- !u!1 &428939888
 GameObject:
   m_ObjectHideFlags: 0
@@ -5862,7 +5876,8 @@ MonoBehaviour:
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
   shipHovering: 0
-  setupComplete: 0
+  hasShip: 0
+  missileDroppedOnTile: 0
 --- !u!54 &428939891
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -6013,7 +6028,8 @@ MonoBehaviour:
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
   shipHovering: 0
-  setupComplete: 0
+  hasShip: 0
+  missileDroppedOnTile: 0
 --- !u!54 &429501150
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -6164,7 +6180,8 @@ MonoBehaviour:
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
   shipHovering: 0
-  setupComplete: 0
+  hasShip: 0
+  missileDroppedOnTile: 0
 --- !u!54 &436217844
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -6315,7 +6332,8 @@ MonoBehaviour:
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
   shipHovering: 0
-  setupComplete: 0
+  hasShip: 0
+  missileDroppedOnTile: 0
 --- !u!54 &439642164
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -6560,12 +6578,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e29f075c4087c425d98378d36fcde8ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  missile: {fileID: 1012549055}
   tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   yellowTile: {fileID: 2100000, guid: 6457559eb2c6a427dbb82292f40bcebb, type: 2}
   hasShip: 0
+  missileDroppedOnTile: 0
 --- !u!1 &447593024
 GameObject:
   m_ObjectHideFlags: 0
@@ -6712,12 +6730,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e29f075c4087c425d98378d36fcde8ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  missile: {fileID: 1012549055}
   tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   yellowTile: {fileID: 2100000, guid: 6457559eb2c6a427dbb82292f40bcebb, type: 2}
   hasShip: 0
+  missileDroppedOnTile: 0
 --- !u!1 &471798447
 GameObject:
   m_ObjectHideFlags: 0
@@ -6943,12 +6961,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e29f075c4087c425d98378d36fcde8ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  missile: {fileID: 1012549055}
   tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   yellowTile: {fileID: 2100000, guid: 6457559eb2c6a427dbb82292f40bcebb, type: 2}
   hasShip: 0
+  missileDroppedOnTile: 0
 --- !u!1 &497774119
 GameObject:
   m_ObjectHideFlags: 0
@@ -7122,7 +7140,8 @@ MonoBehaviour:
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
   shipHovering: 0
-  setupComplete: 0
+  hasShip: 0
+  missileDroppedOnTile: 0
 --- !u!54 &503767612
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -7258,7 +7277,8 @@ MonoBehaviour:
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
   shipHovering: 0
-  setupComplete: 0
+  hasShip: 0
+  missileDroppedOnTile: 0
 --- !u!54 &538531178
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -7424,7 +7444,8 @@ MonoBehaviour:
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
   shipHovering: 0
-  setupComplete: 0
+  hasShip: 0
+  missileDroppedOnTile: 0
 --- !u!54 &563187892
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -7575,7 +7596,8 @@ MonoBehaviour:
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
   shipHovering: 0
-  setupComplete: 0
+  hasShip: 0
+  missileDroppedOnTile: 0
 --- !u!54 &569384101
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -7726,7 +7748,8 @@ MonoBehaviour:
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
   shipHovering: 0
-  setupComplete: 0
+  hasShip: 0
+  missileDroppedOnTile: 0
 --- !u!54 &581067423
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -7971,12 +7994,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e29f075c4087c425d98378d36fcde8ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  missile: {fileID: 1012549055}
   tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   yellowTile: {fileID: 2100000, guid: 6457559eb2c6a427dbb82292f40bcebb, type: 2}
   hasShip: 0
+  missileDroppedOnTile: 0
 --- !u!1 &593759335
 GameObject:
   m_ObjectHideFlags: 0
@@ -8029,7 +8052,8 @@ MonoBehaviour:
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
   shipHovering: 0
-  setupComplete: 0
+  hasShip: 0
+  missileDroppedOnTile: 0
 --- !u!54 &593759338
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -8180,7 +8204,8 @@ MonoBehaviour:
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
   shipHovering: 0
-  setupComplete: 0
+  hasShip: 0
+  missileDroppedOnTile: 0
 --- !u!54 &597302153
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -8425,12 +8450,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e29f075c4087c425d98378d36fcde8ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  missile: {fileID: 1012549055}
   tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   yellowTile: {fileID: 2100000, guid: 6457559eb2c6a427dbb82292f40bcebb, type: 2}
   hasShip: 0
+  missileDroppedOnTile: 0
 --- !u!1 &638319007
 GameObject:
   m_ObjectHideFlags: 0
@@ -8483,7 +8508,8 @@ MonoBehaviour:
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
   shipHovering: 0
-  setupComplete: 0
+  hasShip: 0
+  missileDroppedOnTile: 0
 --- !u!54 &638319010
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -8785,7 +8811,8 @@ MonoBehaviour:
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
   shipHovering: 0
-  setupComplete: 0
+  hasShip: 0
+  missileDroppedOnTile: 0
 --- !u!54 &648316634
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -9030,12 +9057,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e29f075c4087c425d98378d36fcde8ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  missile: {fileID: 1012549055}
   tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   yellowTile: {fileID: 2100000, guid: 6457559eb2c6a427dbb82292f40bcebb, type: 2}
   hasShip: 0
+  missileDroppedOnTile: 0
 --- !u!1 &659190529
 GameObject:
   m_ObjectHideFlags: 0
@@ -9088,7 +9115,8 @@ MonoBehaviour:
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
   shipHovering: 0
-  setupComplete: 0
+  hasShip: 0
+  missileDroppedOnTile: 0
 --- !u!54 &659190532
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -9333,12 +9361,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e29f075c4087c425d98378d36fcde8ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  missile: {fileID: 1012549055}
   tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   yellowTile: {fileID: 2100000, guid: 6457559eb2c6a427dbb82292f40bcebb, type: 2}
   hasShip: 0
+  missileDroppedOnTile: 0
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -9485,7 +9513,8 @@ MonoBehaviour:
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
   shipHovering: 0
-  setupComplete: 0
+  hasShip: 0
+  missileDroppedOnTile: 0
 --- !u!54 &713047148
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -9730,12 +9759,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e29f075c4087c425d98378d36fcde8ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  missile: {fileID: 1012549055}
   tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   yellowTile: {fileID: 2100000, guid: 6457559eb2c6a427dbb82292f40bcebb, type: 2}
   hasShip: 0
+  missileDroppedOnTile: 0
 --- !u!1 &726058180
 GameObject:
   m_ObjectHideFlags: 0
@@ -9882,12 +9911,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e29f075c4087c425d98378d36fcde8ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  missile: {fileID: 1012549055}
   tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   yellowTile: {fileID: 2100000, guid: 6457559eb2c6a427dbb82292f40bcebb, type: 2}
   hasShip: 0
+  missileDroppedOnTile: 0
 --- !u!1 &727874276
 GameObject:
   m_ObjectHideFlags: 0
@@ -10019,7 +10048,8 @@ MonoBehaviour:
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
   shipHovering: 0
-  setupComplete: 0
+  hasShip: 0
+  missileDroppedOnTile: 0
 --- !u!54 &750017364
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -10170,7 +10200,8 @@ MonoBehaviour:
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
   shipHovering: 0
-  setupComplete: 0
+  hasShip: 0
+  missileDroppedOnTile: 0
 --- !u!54 &753411001
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -10415,12 +10446,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e29f075c4087c425d98378d36fcde8ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  missile: {fileID: 1012549055}
   tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   yellowTile: {fileID: 2100000, guid: 6457559eb2c6a427dbb82292f40bcebb, type: 2}
   hasShip: 0
+  missileDroppedOnTile: 0
 --- !u!1 &758352201
 GameObject:
   m_ObjectHideFlags: 0
@@ -10718,12 +10749,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e29f075c4087c425d98378d36fcde8ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  missile: {fileID: 1012549055}
   tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   yellowTile: {fileID: 2100000, guid: 6457559eb2c6a427dbb82292f40bcebb, type: 2}
   hasShip: 0
+  missileDroppedOnTile: 0
 --- !u!1 &781797105
 GameObject:
   m_ObjectHideFlags: 0
@@ -10776,7 +10807,8 @@ MonoBehaviour:
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
   shipHovering: 0
-  setupComplete: 0
+  hasShip: 0
+  missileDroppedOnTile: 0
 --- !u!54 &781797108
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -10912,7 +10944,8 @@ MonoBehaviour:
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
   shipHovering: 0
-  setupComplete: 0
+  hasShip: 0
+  missileDroppedOnTile: 0
 --- !u!54 &788655512
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -11078,7 +11111,8 @@ MonoBehaviour:
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
   shipHovering: 0
-  setupComplete: 0
+  hasShip: 0
+  missileDroppedOnTile: 0
 --- !u!54 &792243485
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -11229,7 +11263,8 @@ MonoBehaviour:
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
   shipHovering: 0
-  setupComplete: 0
+  hasShip: 0
+  missileDroppedOnTile: 0
 --- !u!54 &792440619
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -11380,7 +11415,8 @@ MonoBehaviour:
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
   shipHovering: 0
-  setupComplete: 0
+  hasShip: 0
+  missileDroppedOnTile: 0
 --- !u!54 &797963336
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -11625,12 +11661,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e29f075c4087c425d98378d36fcde8ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  missile: {fileID: 1012549055}
   tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   yellowTile: {fileID: 2100000, guid: 6457559eb2c6a427dbb82292f40bcebb, type: 2}
   hasShip: 0
+  missileDroppedOnTile: 0
 --- !u!1 &814716658
 GameObject:
   m_ObjectHideFlags: 0
@@ -11777,12 +11813,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e29f075c4087c425d98378d36fcde8ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  missile: {fileID: 1012549055}
   tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   yellowTile: {fileID: 2100000, guid: 6457559eb2c6a427dbb82292f40bcebb, type: 2}
   hasShip: 0
+  missileDroppedOnTile: 0
 --- !u!1 &826909378
 GameObject:
   m_ObjectHideFlags: 0
@@ -11929,12 +11965,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e29f075c4087c425d98378d36fcde8ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  missile: {fileID: 1012549055}
   tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   yellowTile: {fileID: 2100000, guid: 6457559eb2c6a427dbb82292f40bcebb, type: 2}
   hasShip: 0
+  missileDroppedOnTile: 0
 --- !u!1 &832701563
 GameObject:
   m_ObjectHideFlags: 0
@@ -11987,7 +12023,8 @@ MonoBehaviour:
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
   shipHovering: 0
-  setupComplete: 0
+  hasShip: 0
+  missileDroppedOnTile: 0
 --- !u!54 &832701566
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -12138,7 +12175,8 @@ MonoBehaviour:
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
   shipHovering: 0
-  setupComplete: 0
+  hasShip: 0
+  missileDroppedOnTile: 0
 --- !u!54 &835343293
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -12383,12 +12421,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e29f075c4087c425d98378d36fcde8ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  missile: {fileID: 1012549055}
   tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   yellowTile: {fileID: 2100000, guid: 6457559eb2c6a427dbb82292f40bcebb, type: 2}
   hasShip: 0
+  missileDroppedOnTile: 0
 --- !u!1 &839944584
 GameObject:
   m_ObjectHideFlags: 0
@@ -12441,7 +12479,8 @@ MonoBehaviour:
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
   shipHovering: 0
-  setupComplete: 0
+  hasShip: 0
+  missileDroppedOnTile: 0
 --- !u!54 &839944587
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -12686,12 +12725,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e29f075c4087c425d98378d36fcde8ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  missile: {fileID: 1012549055}
   tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   yellowTile: {fileID: 2100000, guid: 6457559eb2c6a427dbb82292f40bcebb, type: 2}
   hasShip: 0
+  missileDroppedOnTile: 0
 --- !u!1 &857272909
 GameObject:
   m_ObjectHideFlags: 0
@@ -12860,7 +12899,8 @@ MonoBehaviour:
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
   shipHovering: 0
-  setupComplete: 0
+  hasShip: 0
+  missileDroppedOnTile: 0
 --- !u!54 &857682905
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -13184,12 +13224,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e29f075c4087c425d98378d36fcde8ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  missile: {fileID: 1012549055}
   tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   yellowTile: {fileID: 2100000, guid: 6457559eb2c6a427dbb82292f40bcebb, type: 2}
   hasShip: 0
+  missileDroppedOnTile: 0
 --- !u!1 &895038020
 GameObject:
   m_ObjectHideFlags: 0
@@ -13242,7 +13282,8 @@ MonoBehaviour:
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
   shipHovering: 0
-  setupComplete: 0
+  hasShip: 0
+  missileDroppedOnTile: 0
 --- !u!54 &895038023
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -13487,12 +13528,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e29f075c4087c425d98378d36fcde8ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  missile: {fileID: 1012549055}
   tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   yellowTile: {fileID: 2100000, guid: 6457559eb2c6a427dbb82292f40bcebb, type: 2}
   hasShip: 0
+  missileDroppedOnTile: 0
 --- !u!1 &950899942
 GameObject:
   m_ObjectHideFlags: 0
@@ -13545,7 +13586,8 @@ MonoBehaviour:
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
   shipHovering: 0
-  setupComplete: 0
+  hasShip: 0
+  missileDroppedOnTile: 0
 --- !u!54 &950899945
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -13696,7 +13738,8 @@ MonoBehaviour:
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
   shipHovering: 0
-  setupComplete: 0
+  hasShip: 0
+  missileDroppedOnTile: 0
 --- !u!54 &950902857
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -13941,12 +13984,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e29f075c4087c425d98378d36fcde8ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  missile: {fileID: 1012549055}
   tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   yellowTile: {fileID: 2100000, guid: 6457559eb2c6a427dbb82292f40bcebb, type: 2}
   hasShip: 0
+  missileDroppedOnTile: 0
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -14091,7 +14134,8 @@ MonoBehaviour:
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
   shipHovering: 0
-  setupComplete: 0
+  hasShip: 0
+  missileDroppedOnTile: 0
 --- !u!54 &1003984228
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -14340,7 +14384,8 @@ MonoBehaviour:
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
   shipHovering: 0
-  setupComplete: 0
+  hasShip: 0
+  missileDroppedOnTile: 0
 --- !u!1 &1012549055
 GameObject:
   m_ObjectHideFlags: 0
@@ -14353,6 +14398,8 @@ GameObject:
   - component: {fileID: 1012549059}
   - component: {fileID: 1012549058}
   - component: {fileID: 1012549057}
+  - component: {fileID: 1012549061}
+  - component: {fileID: 1012549060}
   m_Layer: 0
   m_Name: Player Missile
   m_TagString: Untagged
@@ -14369,8 +14416,8 @@ Transform:
   m_GameObject: {fileID: 1012549055}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -4.02, z: -7.97}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -2.38, y: -1.64, z: -1.53}
+  m_LocalScale: {x: 0.2, y: 0.5, z: 0.2}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2075291905}
@@ -14416,7 +14463,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 3757001205c364f7397ba99db6d188ad, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -14445,7 +14492,46 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1012549055}
-  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+  m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1012549060
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1012549055}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bffbc5654d73f499b9fb824a90e3b95a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!54 &1012549061
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1012549055}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 112
+  m_CollisionDetection: 0
 --- !u!1 &1016831387
 GameObject:
   m_ObjectHideFlags: 0
@@ -14498,7 +14584,8 @@ MonoBehaviour:
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
   shipHovering: 0
-  setupComplete: 0
+  hasShip: 0
+  missileDroppedOnTile: 0
 --- !u!54 &1016831390
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -14848,12 +14935,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e29f075c4087c425d98378d36fcde8ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  missile: {fileID: 1012549055}
   tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   yellowTile: {fileID: 2100000, guid: 6457559eb2c6a427dbb82292f40bcebb, type: 2}
   hasShip: 0
+  missileDroppedOnTile: 0
 --- !u!1 &1032469736
 GameObject:
   m_ObjectHideFlags: 0
@@ -15024,7 +15111,8 @@ MonoBehaviour:
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
   shipHovering: 0
-  setupComplete: 0
+  hasShip: 0
+  missileDroppedOnTile: 0
 --- !u!54 &1034145308
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -15190,7 +15278,8 @@ MonoBehaviour:
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
   shipHovering: 0
-  setupComplete: 0
+  hasShip: 0
+  missileDroppedOnTile: 0
 --- !u!54 &1038583344
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -15341,7 +15430,8 @@ MonoBehaviour:
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
   shipHovering: 0
-  setupComplete: 0
+  hasShip: 0
+  missileDroppedOnTile: 0
 --- !u!54 &1043277896
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -15586,12 +15676,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e29f075c4087c425d98378d36fcde8ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  missile: {fileID: 1012549055}
   tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   yellowTile: {fileID: 2100000, guid: 6457559eb2c6a427dbb82292f40bcebb, type: 2}
   hasShip: 0
+  missileDroppedOnTile: 0
 --- !u!1 &1051786675
 GameObject:
   m_ObjectHideFlags: 0
@@ -15644,7 +15734,8 @@ MonoBehaviour:
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
   shipHovering: 0
-  setupComplete: 0
+  hasShip: 0
+  missileDroppedOnTile: 0
 --- !u!54 &1051786678
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -15889,12 +15980,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e29f075c4087c425d98378d36fcde8ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  missile: {fileID: 1012549055}
   tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   yellowTile: {fileID: 2100000, guid: 6457559eb2c6a427dbb82292f40bcebb, type: 2}
   hasShip: 0
+  missileDroppedOnTile: 0
 --- !u!1 &1059621344
 GameObject:
   m_ObjectHideFlags: 0
@@ -15947,7 +16038,8 @@ MonoBehaviour:
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
   shipHovering: 0
-  setupComplete: 0
+  hasShip: 0
+  missileDroppedOnTile: 0
 --- !u!54 &1059621347
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -16098,7 +16190,8 @@ MonoBehaviour:
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
   shipHovering: 0
-  setupComplete: 0
+  hasShip: 0
+  missileDroppedOnTile: 0
 --- !u!54 &1065179388
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -16343,12 +16436,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e29f075c4087c425d98378d36fcde8ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  missile: {fileID: 1012549055}
   tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   yellowTile: {fileID: 2100000, guid: 6457559eb2c6a427dbb82292f40bcebb, type: 2}
   hasShip: 0
+  missileDroppedOnTile: 0
 --- !u!1 &1085049695
 GameObject:
   m_ObjectHideFlags: 0
@@ -16552,7 +16645,8 @@ MonoBehaviour:
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
   shipHovering: 0
-  setupComplete: 0
+  hasShip: 0
+  missileDroppedOnTile: 0
 --- !u!54 &1096494344
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -16703,7 +16797,8 @@ MonoBehaviour:
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
   shipHovering: 0
-  setupComplete: 0
+  hasShip: 0
+  missileDroppedOnTile: 0
 --- !u!54 &1096722551
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -16854,7 +16949,8 @@ MonoBehaviour:
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
   shipHovering: 0
-  setupComplete: 0
+  hasShip: 0
+  missileDroppedOnTile: 0
 --- !u!54 &1100542864
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -17099,12 +17195,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e29f075c4087c425d98378d36fcde8ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  missile: {fileID: 1012549055}
   tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   yellowTile: {fileID: 2100000, guid: 6457559eb2c6a427dbb82292f40bcebb, type: 2}
   hasShip: 0
+  missileDroppedOnTile: 0
 --- !u!1 &1114572204
 GameObject:
   m_ObjectHideFlags: 0
@@ -17288,7 +17384,8 @@ MonoBehaviour:
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
   shipHovering: 0
-  setupComplete: 0
+  hasShip: 0
+  missileDroppedOnTile: 0
 --- !u!54 &1151511064
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -17533,12 +17630,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e29f075c4087c425d98378d36fcde8ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  missile: {fileID: 1012549055}
   tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   yellowTile: {fileID: 2100000, guid: 6457559eb2c6a427dbb82292f40bcebb, type: 2}
   hasShip: 0
+  missileDroppedOnTile: 0
 --- !u!1 &1187583085
 GameObject:
   m_ObjectHideFlags: 0
@@ -17685,12 +17782,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e29f075c4087c425d98378d36fcde8ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  missile: {fileID: 1012549055}
   tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   yellowTile: {fileID: 2100000, guid: 6457559eb2c6a427dbb82292f40bcebb, type: 2}
   hasShip: 0
+  missileDroppedOnTile: 0
 --- !u!1 &1195603497
 GameObject:
   m_ObjectHideFlags: 0
@@ -17841,7 +17938,8 @@ MonoBehaviour:
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
   shipHovering: 0
-  setupComplete: 0
+  hasShip: 0
+  missileDroppedOnTile: 0
 --- !u!1 &1208319149
 GameObject:
   m_ObjectHideFlags: 0
@@ -17988,12 +18086,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e29f075c4087c425d98378d36fcde8ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  missile: {fileID: 1012549055}
   tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   yellowTile: {fileID: 2100000, guid: 6457559eb2c6a427dbb82292f40bcebb, type: 2}
   hasShip: 0
+  missileDroppedOnTile: 0
 --- !u!1 &1211779206
 GameObject:
   m_ObjectHideFlags: 0
@@ -18140,12 +18238,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e29f075c4087c425d98378d36fcde8ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  missile: {fileID: 1012549055}
   tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   yellowTile: {fileID: 2100000, guid: 6457559eb2c6a427dbb82292f40bcebb, type: 2}
   hasShip: 0
+  missileDroppedOnTile: 0
 --- !u!1 &1219474016
 GameObject:
   m_ObjectHideFlags: 0
@@ -18198,7 +18296,8 @@ MonoBehaviour:
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
   shipHovering: 0
-  setupComplete: 0
+  hasShip: 0
+  missileDroppedOnTile: 0
 --- !u!54 &1219474019
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -18349,7 +18448,8 @@ MonoBehaviour:
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
   shipHovering: 0
-  setupComplete: 0
+  hasShip: 0
+  missileDroppedOnTile: 0
 --- !u!54 &1228202361
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -18594,12 +18694,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e29f075c4087c425d98378d36fcde8ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  missile: {fileID: 1012549055}
   tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   yellowTile: {fileID: 2100000, guid: 6457559eb2c6a427dbb82292f40bcebb, type: 2}
   hasShip: 0
+  missileDroppedOnTile: 0
 --- !u!1 &1239512132
 GameObject:
   m_ObjectHideFlags: 0
@@ -18652,7 +18752,8 @@ MonoBehaviour:
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
   shipHovering: 0
-  setupComplete: 0
+  hasShip: 0
+  missileDroppedOnTile: 0
 --- !u!54 &1239512135
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -18897,12 +18998,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e29f075c4087c425d98378d36fcde8ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  missile: {fileID: 1012549055}
   tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   yellowTile: {fileID: 2100000, guid: 6457559eb2c6a427dbb82292f40bcebb, type: 2}
   hasShip: 0
+  missileDroppedOnTile: 0
 --- !u!1 &1251308027
 GameObject:
   m_ObjectHideFlags: 0
@@ -19049,12 +19150,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e29f075c4087c425d98378d36fcde8ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  missile: {fileID: 1012549055}
   tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   yellowTile: {fileID: 2100000, guid: 6457559eb2c6a427dbb82292f40bcebb, type: 2}
   hasShip: 0
+  missileDroppedOnTile: 0
 --- !u!1 &1254392121
 GameObject:
   m_ObjectHideFlags: 0
@@ -19201,12 +19302,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e29f075c4087c425d98378d36fcde8ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  missile: {fileID: 1012549055}
   tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   yellowTile: {fileID: 2100000, guid: 6457559eb2c6a427dbb82292f40bcebb, type: 2}
   hasShip: 0
+  missileDroppedOnTile: 0
 --- !u!1 &1272769257
 GameObject:
   m_ObjectHideFlags: 0
@@ -19353,12 +19454,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e29f075c4087c425d98378d36fcde8ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  missile: {fileID: 1012549055}
   tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   yellowTile: {fileID: 2100000, guid: 6457559eb2c6a427dbb82292f40bcebb, type: 2}
   hasShip: 0
+  missileDroppedOnTile: 0
 --- !u!1 &1281751934
 GameObject:
   m_ObjectHideFlags: 0
@@ -19505,12 +19606,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e29f075c4087c425d98378d36fcde8ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  missile: {fileID: 1012549055}
   tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   yellowTile: {fileID: 2100000, guid: 6457559eb2c6a427dbb82292f40bcebb, type: 2}
   hasShip: 0
+  missileDroppedOnTile: 0
 --- !u!1 &1289708826
 GameObject:
   m_ObjectHideFlags: 0
@@ -19714,7 +19815,8 @@ MonoBehaviour:
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
   shipHovering: 0
-  setupComplete: 0
+  hasShip: 0
+  missileDroppedOnTile: 0
 --- !u!54 &1292212673
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -19865,7 +19967,8 @@ MonoBehaviour:
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
   shipHovering: 0
-  setupComplete: 0
+  hasShip: 0
+  missileDroppedOnTile: 0
 --- !u!54 &1301660834
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -20016,7 +20119,8 @@ MonoBehaviour:
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
   shipHovering: 0
-  setupComplete: 0
+  hasShip: 0
+  missileDroppedOnTile: 0
 --- !u!54 &1310299479
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -20261,12 +20365,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e29f075c4087c425d98378d36fcde8ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  missile: {fileID: 1012549055}
   tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   yellowTile: {fileID: 2100000, guid: 6457559eb2c6a427dbb82292f40bcebb, type: 2}
   hasShip: 0
+  missileDroppedOnTile: 0
 --- !u!1 &1313884362
 GameObject:
   m_ObjectHideFlags: 0
@@ -20413,12 +20517,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e29f075c4087c425d98378d36fcde8ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  missile: {fileID: 1012549055}
   tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   yellowTile: {fileID: 2100000, guid: 6457559eb2c6a427dbb82292f40bcebb, type: 2}
   hasShip: 0
+  missileDroppedOnTile: 0
 --- !u!1 &1316651993
 GameObject:
   m_ObjectHideFlags: 0
@@ -20471,7 +20575,8 @@ MonoBehaviour:
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
   shipHovering: 0
-  setupComplete: 0
+  hasShip: 0
+  missileDroppedOnTile: 0
 --- !u!54 &1316651996
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -20716,12 +20821,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e29f075c4087c425d98378d36fcde8ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  missile: {fileID: 1012549055}
   tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   yellowTile: {fileID: 2100000, guid: 6457559eb2c6a427dbb82292f40bcebb, type: 2}
   hasShip: 0
+  missileDroppedOnTile: 0
 --- !u!1 &1336226650
 GameObject:
   m_ObjectHideFlags: 0
@@ -20774,7 +20879,8 @@ MonoBehaviour:
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
   shipHovering: 0
-  setupComplete: 0
+  hasShip: 0
+  missileDroppedOnTile: 0
 --- !u!54 &1336226653
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -21019,12 +21125,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e29f075c4087c425d98378d36fcde8ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  missile: {fileID: 1012549055}
   tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   yellowTile: {fileID: 2100000, guid: 6457559eb2c6a427dbb82292f40bcebb, type: 2}
   hasShip: 0
+  missileDroppedOnTile: 0
 --- !u!1 &1343236093
 GameObject:
   m_ObjectHideFlags: 0
@@ -21228,7 +21334,8 @@ MonoBehaviour:
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
   shipHovering: 0
-  setupComplete: 0
+  hasShip: 0
+  missileDroppedOnTile: 0
 --- !u!54 &1348568133
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -21379,7 +21486,8 @@ MonoBehaviour:
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
   shipHovering: 0
-  setupComplete: 0
+  hasShip: 0
+  missileDroppedOnTile: 0
 --- !u!54 &1351549468
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -21624,12 +21732,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e29f075c4087c425d98378d36fcde8ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  missile: {fileID: 1012549055}
   tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   yellowTile: {fileID: 2100000, guid: 6457559eb2c6a427dbb82292f40bcebb, type: 2}
   hasShip: 0
+  missileDroppedOnTile: 0
 --- !u!1 &1353297545
 GameObject:
   m_ObjectHideFlags: 0
@@ -21682,7 +21790,8 @@ MonoBehaviour:
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
   shipHovering: 0
-  setupComplete: 0
+  hasShip: 0
+  missileDroppedOnTile: 0
 --- !u!54 &1353297548
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -21927,12 +22036,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e29f075c4087c425d98378d36fcde8ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  missile: {fileID: 1012549055}
   tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   yellowTile: {fileID: 2100000, guid: 6457559eb2c6a427dbb82292f40bcebb, type: 2}
   hasShip: 0
+  missileDroppedOnTile: 0
 --- !u!1 &1364445098
 GameObject:
   m_ObjectHideFlags: 0
@@ -22079,12 +22188,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e29f075c4087c425d98378d36fcde8ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  missile: {fileID: 1012549055}
   tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   yellowTile: {fileID: 2100000, guid: 6457559eb2c6a427dbb82292f40bcebb, type: 2}
   hasShip: 0
+  missileDroppedOnTile: 0
 --- !u!1 &1388061471
 GameObject:
   m_ObjectHideFlags: 0
@@ -22268,7 +22377,8 @@ MonoBehaviour:
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
   shipHovering: 0
-  setupComplete: 0
+  hasShip: 0
+  missileDroppedOnTile: 0
 --- !u!54 &1393240878
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -22513,12 +22623,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e29f075c4087c425d98378d36fcde8ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  missile: {fileID: 1012549055}
   tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   yellowTile: {fileID: 2100000, guid: 6457559eb2c6a427dbb82292f40bcebb, type: 2}
   hasShip: 0
+  missileDroppedOnTile: 0
 --- !u!1 &1398732074
 GameObject:
   m_ObjectHideFlags: 0
@@ -22669,7 +22779,8 @@ MonoBehaviour:
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
   shipHovering: 0
-  setupComplete: 0
+  hasShip: 0
+  missileDroppedOnTile: 0
 --- !u!1 &1410531502
 GameObject:
   m_ObjectHideFlags: 0
@@ -22722,7 +22833,8 @@ MonoBehaviour:
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
   shipHovering: 0
-  setupComplete: 0
+  hasShip: 0
+  missileDroppedOnTile: 0
 --- !u!54 &1410531505
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -23088,12 +23200,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e29f075c4087c425d98378d36fcde8ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  missile: {fileID: 1012549055}
   tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   yellowTile: {fileID: 2100000, guid: 6457559eb2c6a427dbb82292f40bcebb, type: 2}
   hasShip: 0
+  missileDroppedOnTile: 0
 --- !u!1 &1428554677
 GameObject:
   m_ObjectHideFlags: 0
@@ -23240,12 +23352,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e29f075c4087c425d98378d36fcde8ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  missile: {fileID: 1012549055}
   tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   yellowTile: {fileID: 2100000, guid: 6457559eb2c6a427dbb82292f40bcebb, type: 2}
   hasShip: 0
+  missileDroppedOnTile: 0
 --- !u!1 &1445050936
 GameObject:
   m_ObjectHideFlags: 0
@@ -23298,7 +23410,8 @@ MonoBehaviour:
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
   shipHovering: 0
-  setupComplete: 0
+  hasShip: 0
+  missileDroppedOnTile: 0
 --- !u!54 &1445050939
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -23543,12 +23656,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e29f075c4087c425d98378d36fcde8ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  missile: {fileID: 1012549055}
   tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   yellowTile: {fileID: 2100000, guid: 6457559eb2c6a427dbb82292f40bcebb, type: 2}
   hasShip: 0
+  missileDroppedOnTile: 0
 --- !u!1 &1456566831
 GameObject:
   m_ObjectHideFlags: 0
@@ -23695,12 +23808,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e29f075c4087c425d98378d36fcde8ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  missile: {fileID: 1012549055}
   tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   yellowTile: {fileID: 2100000, guid: 6457559eb2c6a427dbb82292f40bcebb, type: 2}
   hasShip: 0
+  missileDroppedOnTile: 0
 --- !u!1 &1459745100
 GameObject:
   m_ObjectHideFlags: 0
@@ -23847,12 +23960,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e29f075c4087c425d98378d36fcde8ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  missile: {fileID: 1012549055}
   tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   yellowTile: {fileID: 2100000, guid: 6457559eb2c6a427dbb82292f40bcebb, type: 2}
   hasShip: 0
+  missileDroppedOnTile: 0
 --- !u!1 &1475674612
 GameObject:
   m_ObjectHideFlags: 0
@@ -23905,7 +24018,8 @@ MonoBehaviour:
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
   shipHovering: 0
-  setupComplete: 0
+  hasShip: 0
+  missileDroppedOnTile: 0
 --- !u!54 &1475674615
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -24150,12 +24264,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e29f075c4087c425d98378d36fcde8ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  missile: {fileID: 1012549055}
   tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   yellowTile: {fileID: 2100000, guid: 6457559eb2c6a427dbb82292f40bcebb, type: 2}
   hasShip: 0
+  missileDroppedOnTile: 0
 --- !u!1 &1504982537
 GameObject:
   m_ObjectHideFlags: 0
@@ -24359,7 +24473,8 @@ MonoBehaviour:
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
   shipHovering: 0
-  setupComplete: 0
+  hasShip: 0
+  missileDroppedOnTile: 0
 --- !u!54 &1514613463
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -24604,12 +24719,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e29f075c4087c425d98378d36fcde8ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  missile: {fileID: 1012549055}
   tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   yellowTile: {fileID: 2100000, guid: 6457559eb2c6a427dbb82292f40bcebb, type: 2}
   hasShip: 0
+  missileDroppedOnTile: 0
 --- !u!1 &1530343209
 GameObject:
   m_ObjectHideFlags: 0
@@ -24662,7 +24777,8 @@ MonoBehaviour:
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
   shipHovering: 0
-  setupComplete: 0
+  hasShip: 0
+  missileDroppedOnTile: 0
 --- !u!54 &1530343212
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -24939,12 +25055,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e29f075c4087c425d98378d36fcde8ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  missile: {fileID: 1012549055}
   tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   yellowTile: {fileID: 2100000, guid: 6457559eb2c6a427dbb82292f40bcebb, type: 2}
   hasShip: 0
+  missileDroppedOnTile: 0
 --- !u!1 &1555384228
 GameObject:
   m_ObjectHideFlags: 0
@@ -25091,12 +25207,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e29f075c4087c425d98378d36fcde8ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  missile: {fileID: 1012549055}
   tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   yellowTile: {fileID: 2100000, guid: 6457559eb2c6a427dbb82292f40bcebb, type: 2}
   hasShip: 0
+  missileDroppedOnTile: 0
 --- !u!1 &1571259213
 GameObject:
   m_ObjectHideFlags: 0
@@ -25270,7 +25386,8 @@ MonoBehaviour:
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
   shipHovering: 0
-  setupComplete: 0
+  hasShip: 0
+  missileDroppedOnTile: 0
 --- !u!54 &1577381209
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -25421,7 +25538,8 @@ MonoBehaviour:
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
   shipHovering: 0
-  setupComplete: 0
+  hasShip: 0
+  missileDroppedOnTile: 0
 --- !u!54 &1580956119
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -25702,12 +25820,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e29f075c4087c425d98378d36fcde8ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  missile: {fileID: 1012549055}
   tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   yellowTile: {fileID: 2100000, guid: 6457559eb2c6a427dbb82292f40bcebb, type: 2}
   hasShip: 0
+  missileDroppedOnTile: 0
 --- !u!1 &1613197377
 GameObject:
   m_ObjectHideFlags: 0
@@ -25760,7 +25878,8 @@ MonoBehaviour:
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
   shipHovering: 0
-  setupComplete: 0
+  hasShip: 0
+  missileDroppedOnTile: 0
 --- !u!54 &1613197380
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -25911,7 +26030,8 @@ MonoBehaviour:
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
   shipHovering: 0
-  setupComplete: 0
+  hasShip: 0
+  missileDroppedOnTile: 0
 --- !u!54 &1636276912
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -26189,12 +26309,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e29f075c4087c425d98378d36fcde8ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  missile: {fileID: 1012549055}
   tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   yellowTile: {fileID: 2100000, guid: 6457559eb2c6a427dbb82292f40bcebb, type: 2}
   hasShip: 0
+  missileDroppedOnTile: 0
 --- !u!1 &1663427017
 GameObject:
   m_ObjectHideFlags: 0
@@ -26341,12 +26461,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e29f075c4087c425d98378d36fcde8ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  missile: {fileID: 1012549055}
   tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   yellowTile: {fileID: 2100000, guid: 6457559eb2c6a427dbb82292f40bcebb, type: 2}
   hasShip: 0
+  missileDroppedOnTile: 0
 --- !u!1 &1663702341
 GameObject:
   m_ObjectHideFlags: 0
@@ -26525,12 +26645,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e29f075c4087c425d98378d36fcde8ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  missile: {fileID: 1012549055}
   tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   yellowTile: {fileID: 2100000, guid: 6457559eb2c6a427dbb82292f40bcebb, type: 2}
   hasShip: 0
+  missileDroppedOnTile: 0
 --- !u!1 &1689287253
 GameObject:
   m_ObjectHideFlags: 0
@@ -26583,7 +26703,8 @@ MonoBehaviour:
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
   shipHovering: 0
-  setupComplete: 0
+  hasShip: 0
+  missileDroppedOnTile: 0
 --- !u!54 &1689287256
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -26828,12 +26949,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e29f075c4087c425d98378d36fcde8ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  missile: {fileID: 1012549055}
   tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   yellowTile: {fileID: 2100000, guid: 6457559eb2c6a427dbb82292f40bcebb, type: 2}
   hasShip: 0
+  missileDroppedOnTile: 0
 --- !u!1 &1698225983
 GameObject:
   m_ObjectHideFlags: 0
@@ -26886,7 +27007,8 @@ MonoBehaviour:
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
   shipHovering: 0
-  setupComplete: 0
+  hasShip: 0
+  missileDroppedOnTile: 0
 --- !u!54 &1698225986
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -27037,7 +27159,8 @@ MonoBehaviour:
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
   shipHovering: 0
-  setupComplete: 0
+  hasShip: 0
+  missileDroppedOnTile: 0
 --- !u!54 &1699869372
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -27282,12 +27405,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e29f075c4087c425d98378d36fcde8ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  missile: {fileID: 1012549055}
   tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   yellowTile: {fileID: 2100000, guid: 6457559eb2c6a427dbb82292f40bcebb, type: 2}
   hasShip: 0
+  missileDroppedOnTile: 0
 --- !u!1 &1717244232
 GameObject:
   m_ObjectHideFlags: 0
@@ -27434,12 +27557,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e29f075c4087c425d98378d36fcde8ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  missile: {fileID: 1012549055}
   tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   yellowTile: {fileID: 2100000, guid: 6457559eb2c6a427dbb82292f40bcebb, type: 2}
   hasShip: 0
+  missileDroppedOnTile: 0
 --- !u!1 &1724764101
 GameObject:
   m_ObjectHideFlags: 0
@@ -27492,7 +27615,8 @@ MonoBehaviour:
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
   shipHovering: 0
-  setupComplete: 0
+  hasShip: 0
+  missileDroppedOnTile: 0
 --- !u!54 &1724764104
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -27737,12 +27861,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e29f075c4087c425d98378d36fcde8ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  missile: {fileID: 1012549055}
   tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   yellowTile: {fileID: 2100000, guid: 6457559eb2c6a427dbb82292f40bcebb, type: 2}
   hasShip: 0
+  missileDroppedOnTile: 0
 --- !u!1 &1728153962
 GameObject:
   m_ObjectHideFlags: 0
@@ -27889,12 +28013,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e29f075c4087c425d98378d36fcde8ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  missile: {fileID: 1012549055}
   tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   yellowTile: {fileID: 2100000, guid: 6457559eb2c6a427dbb82292f40bcebb, type: 2}
   hasShip: 0
+  missileDroppedOnTile: 0
 --- !u!1 &1728879216
 GameObject:
   m_ObjectHideFlags: 0
@@ -27947,7 +28071,8 @@ MonoBehaviour:
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
   shipHovering: 0
-  setupComplete: 0
+  hasShip: 0
+  missileDroppedOnTile: 0
 --- !u!54 &1728879219
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -28192,12 +28317,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e29f075c4087c425d98378d36fcde8ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  missile: {fileID: 1012549055}
   tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   yellowTile: {fileID: 2100000, guid: 6457559eb2c6a427dbb82292f40bcebb, type: 2}
   hasShip: 0
+  missileDroppedOnTile: 0
 --- !u!1 &1741495126
 GameObject:
   m_ObjectHideFlags: 0
@@ -28235,7 +28360,8 @@ MonoBehaviour:
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
   shipHovering: 0
-  setupComplete: 0
+  hasShip: 0
+  missileDroppedOnTile: 0
 --- !u!54 &1741495128
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -28495,12 +28621,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e29f075c4087c425d98378d36fcde8ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  missile: {fileID: 1012549055}
   tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   yellowTile: {fileID: 2100000, guid: 6457559eb2c6a427dbb82292f40bcebb, type: 2}
   hasShip: 0
+  missileDroppedOnTile: 0
 --- !u!1 &1760470736
 GameObject:
   m_ObjectHideFlags: 0
@@ -28647,12 +28773,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e29f075c4087c425d98378d36fcde8ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  missile: {fileID: 1012549055}
   tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   yellowTile: {fileID: 2100000, guid: 6457559eb2c6a427dbb82292f40bcebb, type: 2}
   hasShip: 0
+  missileDroppedOnTile: 0
 --- !u!1 &1761720496
 GameObject:
   m_ObjectHideFlags: 0
@@ -28799,12 +28925,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e29f075c4087c425d98378d36fcde8ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  missile: {fileID: 1012549055}
   tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   yellowTile: {fileID: 2100000, guid: 6457559eb2c6a427dbb82292f40bcebb, type: 2}
   hasShip: 0
+  missileDroppedOnTile: 0
 --- !u!1 &1767306687
 GameObject:
   m_ObjectHideFlags: 0
@@ -28951,12 +29077,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e29f075c4087c425d98378d36fcde8ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  missile: {fileID: 1012549055}
   tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   yellowTile: {fileID: 2100000, guid: 6457559eb2c6a427dbb82292f40bcebb, type: 2}
   hasShip: 0
+  missileDroppedOnTile: 0
 --- !u!1 &1767543833
 GameObject:
   m_ObjectHideFlags: 0
@@ -29103,12 +29229,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e29f075c4087c425d98378d36fcde8ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  missile: {fileID: 1012549055}
   tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   yellowTile: {fileID: 2100000, guid: 6457559eb2c6a427dbb82292f40bcebb, type: 2}
   hasShip: 0
+  missileDroppedOnTile: 0
 --- !u!1 &1770868436
 GameObject:
   m_ObjectHideFlags: 0
@@ -29255,12 +29381,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e29f075c4087c425d98378d36fcde8ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  missile: {fileID: 1012549055}
   tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   yellowTile: {fileID: 2100000, guid: 6457559eb2c6a427dbb82292f40bcebb, type: 2}
   hasShip: 0
+  missileDroppedOnTile: 0
 --- !u!1 &1809744323
 GameObject:
   m_ObjectHideFlags: 0
@@ -29464,7 +29590,8 @@ MonoBehaviour:
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
   shipHovering: 0
-  setupComplete: 0
+  hasShip: 0
+  missileDroppedOnTile: 0
 --- !u!54 &1814929939
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -29709,12 +29836,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e29f075c4087c425d98378d36fcde8ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  missile: {fileID: 1012549055}
   tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   yellowTile: {fileID: 2100000, guid: 6457559eb2c6a427dbb82292f40bcebb, type: 2}
   hasShip: 0
+  missileDroppedOnTile: 0
 --- !u!1 &1825762890
 GameObject:
   m_ObjectHideFlags: 0
@@ -29861,12 +29988,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e29f075c4087c425d98378d36fcde8ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  missile: {fileID: 1012549055}
   tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   yellowTile: {fileID: 2100000, guid: 6457559eb2c6a427dbb82292f40bcebb, type: 2}
   hasShip: 0
+  missileDroppedOnTile: 0
 --- !u!1 &1846473801
 GameObject:
   m_ObjectHideFlags: 0
@@ -30013,12 +30140,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e29f075c4087c425d98378d36fcde8ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  missile: {fileID: 1012549055}
   tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   yellowTile: {fileID: 2100000, guid: 6457559eb2c6a427dbb82292f40bcebb, type: 2}
   hasShip: 0
+  missileDroppedOnTile: 0
 --- !u!1 &1893316303
 GameObject:
   m_ObjectHideFlags: 0
@@ -30071,7 +30198,8 @@ MonoBehaviour:
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
   shipHovering: 0
-  setupComplete: 0
+  hasShip: 0
+  missileDroppedOnTile: 0
 --- !u!54 &1893316306
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -30290,7 +30418,8 @@ MonoBehaviour:
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
   shipHovering: 0
-  setupComplete: 0
+  hasShip: 0
+  missileDroppedOnTile: 0
 --- !u!54 &1907043061
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -30535,12 +30664,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e29f075c4087c425d98378d36fcde8ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  missile: {fileID: 1012549055}
   tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   yellowTile: {fileID: 2100000, guid: 6457559eb2c6a427dbb82292f40bcebb, type: 2}
   hasShip: 0
+  missileDroppedOnTile: 0
 --- !u!1 &1911124018
 GameObject:
   m_ObjectHideFlags: 0
@@ -30687,12 +30816,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e29f075c4087c425d98378d36fcde8ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  missile: {fileID: 1012549055}
   tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   yellowTile: {fileID: 2100000, guid: 6457559eb2c6a427dbb82292f40bcebb, type: 2}
   hasShip: 0
+  missileDroppedOnTile: 0
 --- !u!1 &1938277397
 GameObject:
   m_ObjectHideFlags: 0
@@ -30839,12 +30968,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e29f075c4087c425d98378d36fcde8ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  missile: {fileID: 1012549055}
   tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   yellowTile: {fileID: 2100000, guid: 6457559eb2c6a427dbb82292f40bcebb, type: 2}
   hasShip: 0
+  missileDroppedOnTile: 0
 --- !u!1 &1952643614
 GameObject:
   m_ObjectHideFlags: 0
@@ -30991,12 +31120,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e29f075c4087c425d98378d36fcde8ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  missile: {fileID: 1012549055}
   tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   yellowTile: {fileID: 2100000, guid: 6457559eb2c6a427dbb82292f40bcebb, type: 2}
   hasShip: 0
+  missileDroppedOnTile: 0
 --- !u!1 &1966262624
 GameObject:
   m_ObjectHideFlags: 0
@@ -31049,7 +31178,8 @@ MonoBehaviour:
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
   shipHovering: 0
-  setupComplete: 0
+  hasShip: 0
+  missileDroppedOnTile: 0
 --- !u!54 &1966262627
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -31372,7 +31502,8 @@ MonoBehaviour:
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
   shipHovering: 0
-  setupComplete: 0
+  hasShip: 0
+  missileDroppedOnTile: 0
 --- !u!54 &2007736451
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -31632,12 +31763,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e29f075c4087c425d98378d36fcde8ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  missile: {fileID: 1012549055}
   tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   yellowTile: {fileID: 2100000, guid: 6457559eb2c6a427dbb82292f40bcebb, type: 2}
   hasShip: 0
+  missileDroppedOnTile: 0
 --- !u!1 &2030088869
 GameObject:
   m_ObjectHideFlags: 0
@@ -31784,12 +31915,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e29f075c4087c425d98378d36fcde8ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  missile: {fileID: 1012549055}
   tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   yellowTile: {fileID: 2100000, guid: 6457559eb2c6a427dbb82292f40bcebb, type: 2}
   hasShip: 0
+  missileDroppedOnTile: 0
 --- !u!1 &2039608362
 GameObject:
   m_ObjectHideFlags: 0
@@ -31936,12 +32067,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e29f075c4087c425d98378d36fcde8ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  missile: {fileID: 1012549055}
   tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   yellowTile: {fileID: 2100000, guid: 6457559eb2c6a427dbb82292f40bcebb, type: 2}
   hasShip: 0
+  missileDroppedOnTile: 0
 --- !u!1 &2062171576
 GameObject:
   m_ObjectHideFlags: 0
@@ -32088,12 +32219,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e29f075c4087c425d98378d36fcde8ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  missile: {fileID: 1012549055}
   tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   yellowTile: {fileID: 2100000, guid: 6457559eb2c6a427dbb82292f40bcebb, type: 2}
   hasShip: 0
+  missileDroppedOnTile: 0
 --- !u!1 &2068524146
 GameObject:
   m_ObjectHideFlags: 0
@@ -32240,12 +32371,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e29f075c4087c425d98378d36fcde8ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  missile: {fileID: 1012549055}
   tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   yellowTile: {fileID: 2100000, guid: 6457559eb2c6a427dbb82292f40bcebb, type: 2}
   hasShip: 0
+  missileDroppedOnTile: 0
 --- !u!1 &2073256802
 GameObject:
   m_ObjectHideFlags: 0
@@ -32298,7 +32429,8 @@ MonoBehaviour:
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
   shipHovering: 0
-  setupComplete: 0
+  hasShip: 0
+  missileDroppedOnTile: 0
 --- !u!54 &2073256805
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -32449,7 +32581,8 @@ MonoBehaviour:
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
   shipHovering: 0
-  setupComplete: 0
+  hasShip: 0
+  missileDroppedOnTile: 0
 --- !u!54 &2074712406
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -32634,7 +32767,8 @@ MonoBehaviour:
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
   shipHovering: 0
-  setupComplete: 0
+  hasShip: 0
+  missileDroppedOnTile: 0
 --- !u!54 &2112901236
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -32785,7 +32919,8 @@ MonoBehaviour:
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
   shipHovering: 0
-  setupComplete: 0
+  hasShip: 0
+  missileDroppedOnTile: 0
 --- !u!54 &2115673371
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -32936,7 +33071,8 @@ MonoBehaviour:
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
   shipHovering: 0
-  setupComplete: 0
+  hasShip: 0
+  missileDroppedOnTile: 0
 --- !u!54 &2117666137
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -33072,7 +33208,8 @@ MonoBehaviour:
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
   shipHovering: 0
-  setupComplete: 0
+  hasShip: 0
+  missileDroppedOnTile: 0
 --- !u!54 &2121765241
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -33238,7 +33375,8 @@ MonoBehaviour:
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
   shipHovering: 0
-  setupComplete: 0
+  hasShip: 0
+  missileDroppedOnTile: 0
 --- !u!54 &2135249774
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -33389,7 +33527,8 @@ MonoBehaviour:
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
   shipHovering: 0
-  setupComplete: 0
+  hasShip: 0
+  missileDroppedOnTile: 0
 --- !u!54 &2138820576
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -33540,7 +33679,8 @@ MonoBehaviour:
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
   shipHovering: 0
-  setupComplete: 0
+  hasShip: 0
+  missileDroppedOnTile: 0
 --- !u!54 &2141903317
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -33691,7 +33831,8 @@ MonoBehaviour:
   redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}
   greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
   shipHovering: 0
-  setupComplete: 0
+  hasShip: 0
+  missileDroppedOnTile: 0
 --- !u!54 &2146312789
 Rigidbody:
   m_ObjectHideFlags: 0
