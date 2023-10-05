@@ -74,7 +74,8 @@ namespace GameSetup {
             foreach (var tile in tiles) {
                 tile.GetComponent<PlayerTileSetup>().CompleteSetup();
             }
-        
+            
+            rotateBtn.gameObject.SetActive(false);
             currentShip = null;
             _setupComplete = true;
             GameManager.Instance.PlayerCompleteSetup();

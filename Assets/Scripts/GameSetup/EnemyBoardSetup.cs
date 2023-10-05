@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 using Random = UnityEngine.Random;
@@ -10,7 +11,8 @@ namespace GameSetup {
         public GameObject[] tiles;
         public GameObject[] ships;
         public GameObject currentShip;
-        
+
+        private List<GameObject[]> _enemyTiles = new();
         private int _shipIndex = -1;
         private int _minTile = 101;
         private int _maxTile = 200;
@@ -25,7 +27,7 @@ namespace GameSetup {
 
         void Update() {
             if (!_setupComplete) return;
-            GameManager.Instance.EnemyCompleteSetup();
+            GameManager.Instance.EnemyCompleteSetup(_enemyTiles);
         }
         
         private void PopulateTiles() {
@@ -45,8 +47,8 @@ namespace GameSetup {
             }
         
             currentShip = ships[_shipIndex];
-            currentShip.GetComponent<Renderer>().enabled = true;
-            currentShip.GetComponent<EnemyShipScript>().gameObject.SetActive(true);
+            // currentShip.GetComponent<Renderer>().enabled = true;
+            // currentShip.GetComponent<EnemyShipScript>().gameObject.SetActive(true);
             
             do { } while (!PlaceShip());
             SetNextShip();
@@ -82,12 +84,15 @@ namespace GameSetup {
                 shipTiles[i] = shipTile;
             }
 
+            _enemyTiles.Add(shipTiles);
+            currentShip.GetComponent<EnemyShipScript>().SetTiles(shipTiles);
+
             foreach (var shipTile in shipTiles) {
                 shipTile.GetComponent<EnemyTileSetup>().PlaceShipOnTile();
             }
 
-            var shipTilesNames = string.Join(",", shipTiles.Select(shipTile => shipTile.name.ToString()).ToArray());
-            Debug.Log($"Start tile - {tileNumber} Placing {currentShip.name} - [{shipTilesNames}]");
+            // var shipTilesNames = string.Join(",", shipTiles.Select(shipTile => shipTile.name.ToString()).ToArray());
+            // Debug.Log($"Start tile - {tileNumber} Placing {currentShip.name} - [{shipTilesNames}]");
             
             if (isRotated) {
                 currentShip.GetComponent<EnemyShipScript>().SetRotated(true);

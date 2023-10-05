@@ -9,12 +9,17 @@ public class EnemyShipScript : MonoBehaviour {
     public int shipSize;
     private bool _setupComplete = false;
     private bool _rotated = false;
+    private GameObject[] _tiles;
 
     private void Awake() {
         GetComponent<Renderer>().enabled = false;
-        gameObject.SetActive(false);
+        // gameObject.SetActive(false);
     }
 
+    public void SetTiles(GameObject[] tiles) {
+        _tiles = tiles;
+    }
+    
     void Start() {
     }
 
