@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class HUDScript : MonoBehaviour {
 
     public Button newGameBtn;
+    public Button exitGameBtn;
     public Button rightBtn;
     public Button leftBtn;
 
@@ -31,10 +32,15 @@ public class HUDScript : MonoBehaviour {
         statusText.text = StartText;
         
         newGameBtn.onClick.AddListener(NewGame);
+        exitGameBtn.onClick.AddListener(ExitGame);
     }
 
     private void NewGame() {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
+    
+    private void ExitGame() {
+        Application.Quit();
     }
     
     public void ClearText() {
