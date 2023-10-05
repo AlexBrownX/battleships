@@ -2,8 +2,10 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class CameraScript : MonoBehaviour
-{
+public class CameraScript : MonoBehaviour {
+    
+    public static CameraScript Instance;
+    
     public Button rightBtn;
     public Button leftBtn;
     
@@ -12,10 +14,9 @@ public class CameraScript : MonoBehaviour
     private bool _moveCameraLeft;
     private float _cameraMoveSpeed = 13f;
 
-    void Start()
-    {
-        rightBtn.onClick.AddListener(() => ViewEnemyBoard());
-        leftBtn.onClick.AddListener(() => ViewPlayerBoard());
+    void Start() {
+        rightBtn.onClick.AddListener(ViewEnemyBoard);
+        leftBtn.onClick.AddListener(ViewPlayerBoard);
     }
 
     void Update() {
@@ -28,6 +29,8 @@ public class CameraScript : MonoBehaviour
             return;
         }
 
+        // GetComponent<HUDScript>().SetSelectTargetText();
+
         _isPlayerView = false;
         _moveCameraLeft = false;
         _moveCameraRight = true;
@@ -37,6 +40,8 @@ public class CameraScript : MonoBehaviour
         if (_isPlayerView) {
             return;
         }
+
+        // GetComponent<HUDScript>().SetEnemyTargetingText();
 
         _isPlayerView = true;
         _moveCameraLeft = true;
@@ -57,7 +62,7 @@ public class CameraScript : MonoBehaviour
     IEnumerator PlayerViewDelayed(float seconds) {
         yield return new WaitForSeconds(seconds);
         
-        GetComponent<StatusTextScript>().ClearText();
+        // GetComponent<HUDScript>().ClearText();
         var mainCameraPosition = Camera.main.transform.position;
         var enemyCameraPosition = new Vector3(-13.0f, mainCameraPosition.y,  mainCameraPosition.z);
             
@@ -65,7 +70,7 @@ public class CameraScript : MonoBehaviour
             Vector3.MoveTowards(mainCameraPosition, enemyCameraPosition, _cameraMoveSpeed * Time.deltaTime);
 
         if (Camera.main.transform.position.Equals(enemyCameraPosition)) {
-            GetComponent<StatusTextScript>().SetSelectTargetText();
+            // GetComponent<HUDScript>().SetSelectTargetText();
             _moveCameraRight = false;
         }
     }
@@ -73,7 +78,7 @@ public class CameraScript : MonoBehaviour
     IEnumerator EnemyViewDelayed(float seconds) {
         yield return new WaitForSeconds(seconds);
         
-        GetComponent<StatusTextScript>().ClearText();
+        // GetComponent<HUDScript>().ClearText();
         var mainCameraPosition = Camera.main.transform.position;
         var playerCameraPosition = new Vector3(0f, mainCameraPosition.y,  mainCameraPosition.z);
             
@@ -81,7 +86,7 @@ public class CameraScript : MonoBehaviour
             Vector3.MoveTowards(mainCameraPosition, playerCameraPosition, _cameraMoveSpeed * Time.deltaTime);;
 
         if (Camera.main.transform.position.Equals(playerCameraPosition)) {
-            GetComponent<StatusTextScript>().SetEnemyTargetingText();
+            // GetComponent<HUDScript>().SetEnemyTargetingText();
             _moveCameraLeft = false;
         }
     }

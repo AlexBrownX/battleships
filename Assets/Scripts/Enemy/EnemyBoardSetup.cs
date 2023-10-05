@@ -16,8 +16,7 @@ namespace Enemy {
         private int _maxTile = 200;
         private bool _setupComplete;
 
-        void Start()
-        {
+        void Start() {
             Instance = this;
             PopulateTiles();
             SetNextShip();
@@ -83,7 +82,7 @@ namespace Enemy {
             }
 
             _enemyTiles.Add(shipTiles);
-            currentShip.GetComponent<EnemyShipScript>().SetTiles(shipTiles);
+            // currentShip.GetComponent<EnemyShipScript>().SetTiles(shipTiles);
 
             foreach (var shipTile in shipTiles) {
                 shipTile.GetComponent<EnemyTile>().PlaceShipOnTile();
@@ -102,6 +101,7 @@ namespace Enemy {
             var dropPosition = new Vector3(tile.transform.position.x - xOffset, tile.transform.position.y + 1f, tile.transform.position.z - zOffset);
             currentShip.transform.position = dropPosition;
 
+            currentShip.GetComponent<EnemyShipScript>().SetupComplete();
             return true;
         }
 

@@ -10,6 +10,7 @@ namespace Enemy {
         public Material redTile;
         public Material yellowTile;
         
+        private GameObject _ship;
         private bool _hasShip;
         private bool _missileDroppedOnTile;
         private bool _setupComplete;
@@ -39,6 +40,11 @@ namespace Enemy {
 
         public void MissileDroppedOnTile() {
             _missileDroppedOnTile = true;
+            
+            if (HasShip()) {
+                _ship.GetComponent<EnemyShipScript>().MissileHit();
+                // Debug.Log($"{_ship.name} hit !");
+            }
         }
 
         public bool HasShip() {
@@ -58,6 +64,7 @@ namespace Enemy {
         }
 
         public void PlaceShipOnTile() {
+            _ship = EnemyBoardSetup.Instance.currentShip;
             _hasShip = true;
         }
         

@@ -3,6 +3,7 @@ using System.Linq;
 using Enemy;
 using Player;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour {
 
@@ -16,15 +17,38 @@ public class GameManager : MonoBehaviour {
     private List<GameObject[]> _playerTiles;
     private List<GameObject[]> _enemyTiles;
 
+    private GameObject[] _playerShips;
+    private GameObject[] _enemyShips;
+        
     void Start() {
         Instance = this;
     }
 
     void Update() {
-        if (!_playerSetupComplete || !_enemySetupComplete) return;
+        if (!_playerSetupComplete || !_enemySetupComplete) {
+            GetComponent<HUDScript>().ClearShipCounts();
+            return;
+        }
+        
         if (!_turnTaken) return;
-
+        
         DisplayHits();
+        
+        var playerShipCount = 5 - _playerShips.Count(ship => ship.GetComponent<PlayerShipScript>().IsSunk());
+        var enemyShipCount = 5 - _enemyShips.Count(ship => ship.GetComponent<EnemyShipScript>().IsSunk());
+        GetComponent<HUDScript>().UpdateShipCounts(playerShipCount, enemyShipCount);
+
+        if (playerShipCount == 0) {
+            GetComponent<HUDScript>().SetYouLose();
+            return;
+        }
+
+        if (enemyShipCount == 0) {
+            GetComponent<HUDScript>().SetYouWin();
+            return;
+        }
+        
+        GetComponent<HUDScript>().ClearText();
         
         if (_playerTurn) {
             PlayerTurn();
@@ -32,6 +56,13 @@ public class GameManager : MonoBehaviour {
         else {
             EnemyTurn();
         }
+    }
+
+    private void UpdateShipCounts() {
+        var playerShipCount = 5 - _playerShips.Count(ship => ship.GetComponent<PlayerShipScript>().IsSunk());
+        var enemyShipCount = 5 - _enemyShips.Count(ship => ship.GetComponent<EnemyShipScript>().IsSunk());
+
+        GetComponent<HUDScript>().UpdateShipCounts(playerShipCount, enemyShipCount);
     }
 
     public bool IsPlayerTurn() {
@@ -44,13 +75,13 @@ public class GameManager : MonoBehaviour {
     }
     
     private void PlayerTurn() {
-        Debug.Log("Player turn");
+        // Debug.Log("Player turn");
         _turnTaken = false;
         GetComponent<CameraScript>().ViewEnemyBoard();
     }
 
     private void EnemyTurn() {
-        Debug.Log("Enemy turn");
+        // Debug.Log("Enemy turn");
         _turnTaken = false;
         GetComponent<CameraScript>().ViewPlayerBoard();
         GetComponent<EnemyPlayer>().TakeTurn();
@@ -60,8 +91,17 @@ public class GameManager : MonoBehaviour {
         _playerTiles = playerTiles;
         _playerSetupComplete = true;
         _turnTaken = true;
+        _playerShips = PlayerBoardSetup.Instance.ships;
         Destroy(GetComponent<PlayerBoardSetup>());
         // LogPlayerTiles();
+    }
+
+    public void EnemyCompleteSetup(List<GameObject[]> enemyTiles) {
+        _enemyTiles = enemyTiles;
+        _enemySetupComplete = true;
+        _enemyShips = EnemyBoardSetup.Instance.ships;
+        Destroy(GetComponent<EnemyBoardSetup>());
+        LogEnemyTiles();
     }
 
     private void LogPlayerTiles() { 
@@ -70,13 +110,6 @@ public class GameManager : MonoBehaviour {
             var playerShip = string.Join(",", enemyTile.Select(e => e.name.ToString()).ToArray());
             Debug.Log($"Player ship : {playerShip}");
         });
-    }
-    
-    public void EnemyCompleteSetup(List<GameObject[]> enemyTiles) {
-        _enemyTiles = enemyTiles;
-        _enemySetupComplete = true;
-        Destroy(GetComponent<EnemyBoardSetup>());
-        // LogEnemyTiles();
     }
 
     private void LogEnemyTiles() {
@@ -90,11 +123,13 @@ public class GameManager : MonoBehaviour {
     private void DisplayHits() {
         var playerHits = 0;
         var enemyHits = 0;
+        
         _enemyTiles.ForEach(enemyShipTiles => {
             playerHits += enemyShipTiles.Count(enemyShipTile => 
                 enemyShipTile.GetComponent<EnemyTile>().HasShip() && 
                 enemyShipTile.GetComponent<EnemyTile>().HasMissile());
         });
+        
         _playerTiles.ForEach(playerShipTiles => {
             enemyHits += playerShipTiles.Count(playerShipTile => 
                 playerShipTile.GetComponent<PlayerTile>().HasShip() &&

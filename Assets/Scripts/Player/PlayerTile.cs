@@ -9,6 +9,7 @@ namespace Player {
 
         public bool shipHovering;
 
+        private GameObject _ship;
         private bool _hasShip;
         private bool _missileDroppedOnTile;
         private bool _setupComplete;
@@ -88,12 +89,18 @@ namespace Player {
         }
 
         public void PlaceShipOnTile() {
+            _ship = PlayerBoardSetup.Instance.currentShip;
             _hasShip = true;
             CompleteSetup();
         }
         
         public void MissileDroppedOnTile() {
             _missileDroppedOnTile = true;
+
+            if (HasShip()) {
+                _ship.GetComponent<PlayerShipScript>().MissileHit();
+                // Debug.Log($"{_ship.name} hit !");
+            }
         }
         
         public bool HasShip() {

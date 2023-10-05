@@ -7,6 +7,7 @@ namespace Player {
     public class PlayerBoardSetup : MonoBehaviour {
     
         public static PlayerBoardSetup Instance;
+        
         public GameObject[] tiles;
         public GameObject[] ships;
         public GameObject currentShip;
@@ -14,7 +15,6 @@ namespace Player {
 
         private List<GameObject[]> _playerTiles = new();
         private int _shipIndex = -1;
-        private bool _setupComplete;
 
         void Start() {
             Instance = this;
@@ -25,14 +25,6 @@ namespace Player {
 
         private void RotateBtnClicked() {
             currentShip.GetComponent<PlayerShipScript>().Rotate();
-        }
-
-        void Update() {
-            Setup();
-        }
-
-        private void Setup() {
-            if (_setupComplete) return;
         }
 
         private void PopulateTiles() {
@@ -83,7 +75,6 @@ namespace Player {
             
             rotateBtn.gameObject.SetActive(false);
             currentShip = null;
-            _setupComplete = true;
             GameManager.Instance.PlayerCompleteSetup(_playerTiles);
         }
     }

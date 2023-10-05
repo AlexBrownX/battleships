@@ -8,22 +8,32 @@ namespace Player {
         public float xOffset;
         public float xRotatedOffset;
         public int shipSize;
-        private bool _setupComplete = false;
-        private bool _rotated = false;
+        
+        private bool _setupComplete;
+        private bool _rotated;
+        private bool _sunk;
+        private int _hits;
 
         private void Awake() {
             GetComponent<Renderer>().enabled = false;
             gameObject.SetActive(false);
         }
-
-        void Start() {
+        
+        void Update() {
+            if (_setupComplete) return;
         }
 
-        void Update()
-        {
-            Setup();
+        public void MissileHit() {
+            _hits++;
+            if (_hits == shipSize) {
+                _sunk = true;
+            }
         }
 
+        public bool IsSunk() {
+            return _sunk;
+        }
+        
         public float GetZOffset() {
             return _rotated ? zRotatedOffset : zOffset;
         }
@@ -31,14 +41,9 @@ namespace Player {
         public float GetXOffset() {
             return _rotated ? xRotatedOffset : xOffset;
         }
-    
-        private void Setup() {
-            if (_setupComplete) return;
-        }
 
         public void SetupComplete() {
             _setupComplete = true;
-            // Debug.Log($"{name} setup complete");
         }
 
         public void Rotate() {

@@ -8,25 +8,30 @@ namespace Enemy {
         public float xOffset;
         public float xRotatedOffset;
         public int shipSize;
+
         private bool _setupComplete = false;
         private bool _rotated = false;
-        private GameObject[] _tiles;
-
+        private bool _sunk;
+        private int _hits;
+        
         private void Awake() {
             GetComponent<Renderer>().enabled = false;
             gameObject.SetActive(false);
         }
 
-        public void SetTiles(GameObject[] tiles) {
-            _tiles = tiles;
-        }
-    
-        void Start() {
+        void Update() {
+            if (_setupComplete) return;
         }
 
-        void Update()
-        {
-            Setup();
+        public void MissileHit() {
+            _hits++;
+            if (_hits == shipSize) {
+                _sunk = true;
+            }
+        }
+        
+        public bool IsSunk() {
+            return _sunk;
         }
 
         public void SetRotated(bool rotated) {
@@ -39,10 +44,6 @@ namespace Enemy {
     
         public float GetXOffset() {
             return _rotated ? xRotatedOffset : xOffset;
-        }
-    
-        private void Setup() {
-            if (_setupComplete) return;
         }
 
         public void SetupComplete() {
