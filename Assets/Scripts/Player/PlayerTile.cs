@@ -64,8 +64,8 @@ namespace Player {
 
         private void HoverShip() {
             var tilePosition = transform.position;
-            var zOffset = PlayerBoardSetup.Instance.currentShip.GetComponent<PlayerShipScript>().GetZOffset();
-            var xOffset = PlayerBoardSetup.Instance.currentShip.GetComponent<PlayerShipScript>().GetXOffset();
+            var zOffset = PlayerBoardSetup.Instance.currentShip.GetComponent<PlayerShip>().GetZOffset();
+            var xOffset = PlayerBoardSetup.Instance.currentShip.GetComponent<PlayerShip>().GetXOffset();
             var hoverPosition = new Vector3(tilePosition.x - xOffset, tilePosition.y + 1f, tilePosition.z - zOffset);
             PlayerBoardSetup.Instance.currentShip.transform.position = hoverPosition;
         }
@@ -98,7 +98,7 @@ namespace Player {
             _missileDroppedOnTile = true;
 
             if (HasShip()) {
-                _ship.GetComponent<PlayerShipScript>().MissileHit();
+                _ship.GetComponent<PlayerShip>().MissileHit();
                 // Debug.Log($"{_ship.name} hit !");
             }
         }

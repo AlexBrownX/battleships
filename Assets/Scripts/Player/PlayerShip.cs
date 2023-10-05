@@ -1,24 +1,24 @@
 using UnityEngine;
 
-namespace Enemy {
-    public class EnemyShipScript : MonoBehaviour {
+namespace Player {
+    public class PlayerShip : MonoBehaviour {
 
         public float zOffset;
         public float zRotatedOffset;
         public float xOffset;
         public float xRotatedOffset;
         public int shipSize;
-
-        private bool _setupComplete = false;
-        private bool _rotated = false;
+        
+        private bool _setupComplete;
+        private bool _rotated;
         private bool _sunk;
         private int _hits;
-        
+
         private void Awake() {
             GetComponent<Renderer>().enabled = false;
             gameObject.SetActive(false);
         }
-
+        
         void Update() {
             if (_setupComplete) return;
         }
@@ -29,15 +29,11 @@ namespace Enemy {
                 _sunk = true;
             }
         }
-        
+
         public bool IsSunk() {
             return _sunk;
         }
-
-        public void SetRotated(bool rotated) {
-            _rotated = rotated;
-        }
-
+        
         public float GetZOffset() {
             return _rotated ? zRotatedOffset : zOffset;
         }
@@ -48,7 +44,6 @@ namespace Enemy {
 
         public void SetupComplete() {
             _setupComplete = true;
-            // Debug.Log($"{name} setup complete");
         }
 
         public void Rotate() {

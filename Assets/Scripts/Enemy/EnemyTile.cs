@@ -42,7 +42,7 @@ namespace Enemy {
             _missileDroppedOnTile = true;
             
             if (HasShip()) {
-                _ship.GetComponent<EnemyShipScript>().MissileHit();
+                _ship.GetComponent<EnemyShip>().MissileHit();
                 // Debug.Log($"{_ship.name} hit !");
             }
         }

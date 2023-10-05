@@ -34,8 +34,8 @@ public class GameManager : MonoBehaviour {
         
         DisplayHits();
         
-        var playerShipCount = 5 - _playerShips.Count(ship => ship.GetComponent<PlayerShipScript>().IsSunk());
-        var enemyShipCount = 5 - _enemyShips.Count(ship => ship.GetComponent<EnemyShipScript>().IsSunk());
+        var playerShipCount = 5 - _playerShips.Count(ship => ship.GetComponent<PlayerShip>().IsSunk());
+        var enemyShipCount = 5 - _enemyShips.Count(ship => ship.GetComponent<EnemyShip>().IsSunk());
         GetComponent<HUDScript>().UpdateShipCounts(playerShipCount, enemyShipCount);
 
         if (playerShipCount == 0) {
@@ -59,8 +59,8 @@ public class GameManager : MonoBehaviour {
     }
 
     private void UpdateShipCounts() {
-        var playerShipCount = 5 - _playerShips.Count(ship => ship.GetComponent<PlayerShipScript>().IsSunk());
-        var enemyShipCount = 5 - _enemyShips.Count(ship => ship.GetComponent<EnemyShipScript>().IsSunk());
+        var playerShipCount = 5 - _playerShips.Count(ship => ship.GetComponent<PlayerShip>().IsSunk());
+        var enemyShipCount = 5 - _enemyShips.Count(ship => ship.GetComponent<EnemyShip>().IsSunk());
 
         GetComponent<HUDScript>().UpdateShipCounts(playerShipCount, enemyShipCount);
     }

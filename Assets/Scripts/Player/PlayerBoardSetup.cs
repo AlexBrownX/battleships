@@ -24,7 +24,7 @@ namespace Player {
         }
 
         private void RotateBtnClicked() {
-            currentShip.GetComponent<PlayerShipScript>().Rotate();
+            currentShip.GetComponent<PlayerShip>().Rotate();
         }
 
         private void PopulateTiles() {
@@ -45,17 +45,17 @@ namespace Player {
         
             currentShip = ships[_shipIndex];
             currentShip.GetComponent<Renderer>().enabled = true;
-            currentShip.GetComponent<PlayerShipScript>().gameObject.SetActive(true);
+            currentShip.GetComponent<PlayerShip>().gameObject.SetActive(true);
         }
 
         public bool CanDrop() {
             var highlighted = tiles.Count(tile => tile.GetComponent<PlayerTile>().shipHovering);
-            return currentShip.GetComponent<PlayerShipScript>().shipSize == highlighted;
+            return currentShip.GetComponent<PlayerShip>().shipSize == highlighted;
         }
     
         public void ShipPlaced() {
             var shipIndex = 0;
-            var shipTiles = new GameObject[currentShip.GetComponent<PlayerShipScript>().shipSize];
+            var shipTiles = new GameObject[currentShip.GetComponent<PlayerShip>().shipSize];
 
             foreach (var tile in tiles) {
                 if (!tile.GetComponent<PlayerTile>().shipHovering) continue;
@@ -64,7 +64,7 @@ namespace Player {
             }
             
             _playerTiles.Add(shipTiles);
-            currentShip.GetComponent<PlayerShipScript>().SetupComplete();
+            currentShip.GetComponent<PlayerShip>().SetupComplete();
             SetNextShip();
         }
 
