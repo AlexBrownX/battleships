@@ -13,7 +13,7 @@ public class EnemyShipScript : MonoBehaviour {
 
     private void Awake() {
         GetComponent<Renderer>().enabled = false;
-        // gameObject.SetActive(false);
+        gameObject.SetActive(false);
     }
 
     public void SetTiles(GameObject[] tiles) {

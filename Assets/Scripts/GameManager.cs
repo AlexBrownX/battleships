@@ -1,3 +1,4 @@
+using System.Collections;
 using System.Collections.Generic;
 using GameSetup;
 using UnityEngine;
@@ -9,7 +10,7 @@ public class GameManager : MonoBehaviour {
     private bool _playerSetupComplete;
     private bool _enemySetupComplete;
     private bool _playerTurn = true;
-    private bool _turnTaken = false;
+    private bool _turnTaken;
     private List<GameObject[]> _enemyTiles;
 
     void Start() {
@@ -18,8 +19,9 @@ public class GameManager : MonoBehaviour {
 
     void Update() {
         if (!_playerSetupComplete || !_enemySetupComplete) return;
-
-        if (_playerTurn && !_turnTaken) {
+        if (!_turnTaken) return;
+        
+        if (_playerTurn) {
             PlayerTurn();
         }
         else {
@@ -27,16 +29,31 @@ public class GameManager : MonoBehaviour {
         }
     }
 
+    public void PlayerTurnTaken() {
+        _turnTaken = true;
+        _playerTurn = false;
+    }
+    
+    public void EnemyTurnTaken() {
+        _turnTaken = true;
+        _playerTurn = true;
+    }
+    
     private void PlayerTurn() {
-        GetComponent<CameraScript>().RightBtnClicked();
+        _turnTaken = false;
+        Debug.Log("Player turn");
+        GetComponent<CameraScript>().MoveToEnemyBoard();
     }
 
     private void EnemyTurn() {
-        GetComponent<CameraScript>().LeftBtnClicked();
+        _turnTaken = false;
+        Debug.Log("Enemy turn");
+        GetComponent<CameraScript>().MoveToPlayerBoard();
     }
 
     public void PlayerCompleteSetup() {
         _playerSetupComplete = true;
+        _turnTaken = true;
         Destroy(GetComponent<PlayerBoardSetup>());
         Debug.Log("Player board setup complete");
     }

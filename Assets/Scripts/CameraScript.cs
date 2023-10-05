@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -13,8 +14,8 @@ public class CameraScript : MonoBehaviour
 
     void Start()
     {
-        rightBtn.onClick.AddListener(() => RightBtnClicked());
-        leftBtn.onClick.AddListener(() => LeftBtnClicked());
+        rightBtn.onClick.AddListener(() => MoveToEnemyBoard());
+        leftBtn.onClick.AddListener(() => MoveToPlayerBoard());
     }
 
     void Update() {
@@ -22,7 +23,7 @@ public class CameraScript : MonoBehaviour
         EnemyView();
     }
 
-    public void RightBtnClicked() {
+    public void MoveToEnemyBoard() {
         if (!_isPlayerView) {
             return;
         }
@@ -32,7 +33,7 @@ public class CameraScript : MonoBehaviour
         _moveCameraRight = true;
     }
 
-    public void LeftBtnClicked() {
+    public void MoveToPlayerBoard() {
         if (_isPlayerView) {
             return;
         }
@@ -44,6 +45,17 @@ public class CameraScript : MonoBehaviour
 
     private void PlayerView() {
         if (!_moveCameraRight) return;
+        StartCoroutine(PlayerViewDelayed(1.5f));
+    }
+
+
+    private void EnemyView() {
+        if (!_moveCameraLeft) return;
+        StartCoroutine(EnemyViewDelayed(1.5f));
+    }
+
+    IEnumerator PlayerViewDelayed(float seconds) {
+        yield return new WaitForSeconds(seconds);
         
         GetComponent<StatusTextScript>().ClearText();
         var mainCameraPosition = Camera.main.transform.position;
@@ -57,10 +69,9 @@ public class CameraScript : MonoBehaviour
             _moveCameraRight = false;
         }
     }
-
-
-    private void EnemyView() {
-        if (!_moveCameraLeft) return;
+    
+    IEnumerator EnemyViewDelayed(float seconds) {
+        yield return new WaitForSeconds(seconds);
         
         GetComponent<StatusTextScript>().ClearText();
         var mainCameraPosition = Camera.main.transform.position;
