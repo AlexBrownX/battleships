@@ -269,6 +269,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e29f075c4087c425d98378d36fcde8ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
+  yellowTile: {fileID: 2100000, guid: 6457559eb2c6a427dbb82292f40bcebb, type: 2}
   hasShip: 0
 --- !u!1 &35273694
 GameObject:
@@ -567,6 +569,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e29f075c4087c425d98378d36fcde8ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
+  yellowTile: {fileID: 2100000, guid: 6457559eb2c6a427dbb82292f40bcebb, type: 2}
   hasShip: 0
 --- !u!1 &49948862
 GameObject:
@@ -1016,6 +1020,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e29f075c4087c425d98378d36fcde8ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
+  yellowTile: {fileID: 2100000, guid: 6457559eb2c6a427dbb82292f40bcebb, type: 2}
   hasShip: 0
 --- !u!1 &78157196
 GameObject:
@@ -1465,6 +1471,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e29f075c4087c425d98378d36fcde8ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
+  yellowTile: {fileID: 2100000, guid: 6457559eb2c6a427dbb82292f40bcebb, type: 2}
   hasShip: 0
 --- !u!1 &118185770
 GameObject:
@@ -1612,6 +1620,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e29f075c4087c425d98378d36fcde8ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
+  yellowTile: {fileID: 2100000, guid: 6457559eb2c6a427dbb82292f40bcebb, type: 2}
   hasShip: 0
 --- !u!1 &119680036
 GameObject:
@@ -1759,6 +1769,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e29f075c4087c425d98378d36fcde8ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
+  yellowTile: {fileID: 2100000, guid: 6457559eb2c6a427dbb82292f40bcebb, type: 2}
   hasShip: 0
 --- !u!1 &125789991
 GameObject:
@@ -2057,6 +2069,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e29f075c4087c425d98378d36fcde8ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
+  yellowTile: {fileID: 2100000, guid: 6457559eb2c6a427dbb82292f40bcebb, type: 2}
   hasShip: 0
 --- !u!1 &133447704
 GameObject:
@@ -2355,6 +2369,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e29f075c4087c425d98378d36fcde8ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
+  yellowTile: {fileID: 2100000, guid: 6457559eb2c6a427dbb82292f40bcebb, type: 2}
   hasShip: 0
 --- !u!1 &151861478
 GameObject:
@@ -2804,6 +2820,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e29f075c4087c425d98378d36fcde8ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
+  yellowTile: {fileID: 2100000, guid: 6457559eb2c6a427dbb82292f40bcebb, type: 2}
   hasShip: 0
 --- !u!1 &173637003
 GameObject:
@@ -2951,6 +2969,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e29f075c4087c425d98378d36fcde8ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
+  yellowTile: {fileID: 2100000, guid: 6457559eb2c6a427dbb82292f40bcebb, type: 2}
   hasShip: 0
 --- !u!1 &176771293
 GameObject:
@@ -3177,6 +3197,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e29f075c4087c425d98378d36fcde8ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
+  yellowTile: {fileID: 2100000, guid: 6457559eb2c6a427dbb82292f40bcebb, type: 2}
   hasShip: 0
 --- !u!1 &246954187
 GameObject:
@@ -3324,6 +3346,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e29f075c4087c425d98378d36fcde8ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
+  yellowTile: {fileID: 2100000, guid: 6457559eb2c6a427dbb82292f40bcebb, type: 2}
   hasShip: 0
 --- !u!1 &255182186
 GameObject:
@@ -3622,6 +3646,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e29f075c4087c425d98378d36fcde8ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
+  yellowTile: {fileID: 2100000, guid: 6457559eb2c6a427dbb82292f40bcebb, type: 2}
   hasShip: 0
 --- !u!1 &258583201
 GameObject:
@@ -3920,6 +3946,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e29f075c4087c425d98378d36fcde8ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
+  yellowTile: {fileID: 2100000, guid: 6457559eb2c6a427dbb82292f40bcebb, type: 2}
   hasShip: 0
 --- !u!1 &274931816
 GameObject:
@@ -4067,6 +4095,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e29f075c4087c425d98378d36fcde8ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
+  yellowTile: {fileID: 2100000, guid: 6457559eb2c6a427dbb82292f40bcebb, type: 2}
   hasShip: 0
 --- !u!1 &275333206
 GameObject:
@@ -4214,6 +4244,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e29f075c4087c425d98378d36fcde8ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
+  yellowTile: {fileID: 2100000, guid: 6457559eb2c6a427dbb82292f40bcebb, type: 2}
   hasShip: 0
 --- !u!1 &295437281
 GameObject:
@@ -4361,6 +4393,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e29f075c4087c425d98378d36fcde8ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
+  yellowTile: {fileID: 2100000, guid: 6457559eb2c6a427dbb82292f40bcebb, type: 2}
   hasShip: 0
 --- !u!1 &313696258
 GameObject:
@@ -4810,6 +4844,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e29f075c4087c425d98378d36fcde8ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
+  yellowTile: {fileID: 2100000, guid: 6457559eb2c6a427dbb82292f40bcebb, type: 2}
   hasShip: 0
 --- !u!1 &384897278
 GameObject:
@@ -5108,6 +5144,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e29f075c4087c425d98378d36fcde8ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
+  yellowTile: {fileID: 2100000, guid: 6457559eb2c6a427dbb82292f40bcebb, type: 2}
   hasShip: 0
 --- !u!1 &398626393
 GameObject:
@@ -5406,6 +5444,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e29f075c4087c425d98378d36fcde8ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
+  yellowTile: {fileID: 2100000, guid: 6457559eb2c6a427dbb82292f40bcebb, type: 2}
   hasShip: 0
 --- !u!1 &413500077
 GameObject:
@@ -5704,6 +5744,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e29f075c4087c425d98378d36fcde8ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
+  yellowTile: {fileID: 2100000, guid: 6457559eb2c6a427dbb82292f40bcebb, type: 2}
   hasShip: 0
 --- !u!1 &428939888
 GameObject:
@@ -6455,6 +6497,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e29f075c4087c425d98378d36fcde8ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
+  yellowTile: {fileID: 2100000, guid: 6457559eb2c6a427dbb82292f40bcebb, type: 2}
   hasShip: 0
 --- !u!1 &447593024
 GameObject:
@@ -6602,6 +6646,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e29f075c4087c425d98378d36fcde8ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
+  yellowTile: {fileID: 2100000, guid: 6457559eb2c6a427dbb82292f40bcebb, type: 2}
   hasShip: 0
 --- !u!1 &471798447
 GameObject:
@@ -6828,6 +6874,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e29f075c4087c425d98378d36fcde8ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
+  yellowTile: {fileID: 2100000, guid: 6457559eb2c6a427dbb82292f40bcebb, type: 2}
   hasShip: 0
 --- !u!1 &497774119
 GameObject:
@@ -7851,6 +7899,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e29f075c4087c425d98378d36fcde8ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
+  yellowTile: {fileID: 2100000, guid: 6457559eb2c6a427dbb82292f40bcebb, type: 2}
   hasShip: 0
 --- !u!1 &593759335
 GameObject:
@@ -8300,6 +8350,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e29f075c4087c425d98378d36fcde8ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
+  yellowTile: {fileID: 2100000, guid: 6457559eb2c6a427dbb82292f40bcebb, type: 2}
   hasShip: 0
 --- !u!1 &638319007
 GameObject:
@@ -8900,6 +8952,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e29f075c4087c425d98378d36fcde8ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
+  yellowTile: {fileID: 2100000, guid: 6457559eb2c6a427dbb82292f40bcebb, type: 2}
   hasShip: 0
 --- !u!1 &659190529
 GameObject:
@@ -9198,6 +9252,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e29f075c4087c425d98378d36fcde8ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
+  yellowTile: {fileID: 2100000, guid: 6457559eb2c6a427dbb82292f40bcebb, type: 2}
   hasShip: 0
 --- !u!1 &705507993
 GameObject:
@@ -9590,6 +9646,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e29f075c4087c425d98378d36fcde8ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
+  yellowTile: {fileID: 2100000, guid: 6457559eb2c6a427dbb82292f40bcebb, type: 2}
   hasShip: 0
 --- !u!1 &726058180
 GameObject:
@@ -9737,6 +9795,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e29f075c4087c425d98378d36fcde8ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
+  yellowTile: {fileID: 2100000, guid: 6457559eb2c6a427dbb82292f40bcebb, type: 2}
   hasShip: 0
 --- !u!1 &727874276
 GameObject:
@@ -10265,6 +10325,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e29f075c4087c425d98378d36fcde8ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
+  yellowTile: {fileID: 2100000, guid: 6457559eb2c6a427dbb82292f40bcebb, type: 2}
   hasShip: 0
 --- !u!1 &758352201
 GameObject:
@@ -10563,6 +10625,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e29f075c4087c425d98378d36fcde8ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
+  yellowTile: {fileID: 2100000, guid: 6457559eb2c6a427dbb82292f40bcebb, type: 2}
   hasShip: 0
 --- !u!1 &781797105
 GameObject:
@@ -11465,6 +11529,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e29f075c4087c425d98378d36fcde8ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
+  yellowTile: {fileID: 2100000, guid: 6457559eb2c6a427dbb82292f40bcebb, type: 2}
   hasShip: 0
 --- !u!1 &814716658
 GameObject:
@@ -11612,6 +11678,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e29f075c4087c425d98378d36fcde8ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
+  yellowTile: {fileID: 2100000, guid: 6457559eb2c6a427dbb82292f40bcebb, type: 2}
   hasShip: 0
 --- !u!1 &826909378
 GameObject:
@@ -11759,6 +11827,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e29f075c4087c425d98378d36fcde8ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
+  yellowTile: {fileID: 2100000, guid: 6457559eb2c6a427dbb82292f40bcebb, type: 2}
   hasShip: 0
 --- !u!1 &832701563
 GameObject:
@@ -12208,6 +12278,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e29f075c4087c425d98378d36fcde8ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
+  yellowTile: {fileID: 2100000, guid: 6457559eb2c6a427dbb82292f40bcebb, type: 2}
   hasShip: 0
 --- !u!1 &839944584
 GameObject:
@@ -12506,6 +12578,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e29f075c4087c425d98378d36fcde8ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
+  yellowTile: {fileID: 2100000, guid: 6457559eb2c6a427dbb82292f40bcebb, type: 2}
   hasShip: 0
 --- !u!1 &857272909
 GameObject:
@@ -12999,6 +13073,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e29f075c4087c425d98378d36fcde8ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
+  yellowTile: {fileID: 2100000, guid: 6457559eb2c6a427dbb82292f40bcebb, type: 2}
   hasShip: 0
 --- !u!1 &895038020
 GameObject:
@@ -13297,6 +13373,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e29f075c4087c425d98378d36fcde8ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
+  yellowTile: {fileID: 2100000, guid: 6457559eb2c6a427dbb82292f40bcebb, type: 2}
   hasShip: 0
 --- !u!1 &950899942
 GameObject:
@@ -13746,6 +13824,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e29f075c4087c425d98378d36fcde8ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
+  yellowTile: {fileID: 2100000, guid: 6457559eb2c6a427dbb82292f40bcebb, type: 2}
   hasShip: 0
 --- !u!1 &963194225
 GameObject:
@@ -14543,6 +14623,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e29f075c4087c425d98378d36fcde8ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
+  yellowTile: {fileID: 2100000, guid: 6457559eb2c6a427dbb82292f40bcebb, type: 2}
   hasShip: 0
 --- !u!1 &1032469736
 GameObject:
@@ -15276,6 +15358,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e29f075c4087c425d98378d36fcde8ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
+  yellowTile: {fileID: 2100000, guid: 6457559eb2c6a427dbb82292f40bcebb, type: 2}
   hasShip: 0
 --- !u!1 &1051786675
 GameObject:
@@ -15574,6 +15658,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e29f075c4087c425d98378d36fcde8ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
+  yellowTile: {fileID: 2100000, guid: 6457559eb2c6a427dbb82292f40bcebb, type: 2}
   hasShip: 0
 --- !u!1 &1059621344
 GameObject:
@@ -16023,6 +16109,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e29f075c4087c425d98378d36fcde8ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
+  yellowTile: {fileID: 2100000, guid: 6457559eb2c6a427dbb82292f40bcebb, type: 2}
   hasShip: 0
 --- !u!1 &1085049695
 GameObject:
@@ -16774,6 +16862,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e29f075c4087c425d98378d36fcde8ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
+  yellowTile: {fileID: 2100000, guid: 6457559eb2c6a427dbb82292f40bcebb, type: 2}
   hasShip: 0
 --- !u!1 &1114572204
 GameObject:
@@ -17203,6 +17293,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e29f075c4087c425d98378d36fcde8ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
+  yellowTile: {fileID: 2100000, guid: 6457559eb2c6a427dbb82292f40bcebb, type: 2}
   hasShip: 0
 --- !u!1 &1187583085
 GameObject:
@@ -17350,6 +17442,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e29f075c4087c425d98378d36fcde8ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
+  yellowTile: {fileID: 2100000, guid: 6457559eb2c6a427dbb82292f40bcebb, type: 2}
   hasShip: 0
 --- !u!1 &1195603497
 GameObject:
@@ -17648,6 +17742,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e29f075c4087c425d98378d36fcde8ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
+  yellowTile: {fileID: 2100000, guid: 6457559eb2c6a427dbb82292f40bcebb, type: 2}
   hasShip: 0
 --- !u!1 &1211779206
 GameObject:
@@ -17795,6 +17891,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e29f075c4087c425d98378d36fcde8ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
+  yellowTile: {fileID: 2100000, guid: 6457559eb2c6a427dbb82292f40bcebb, type: 2}
   hasShip: 0
 --- !u!1 &1219474016
 GameObject:
@@ -18244,6 +18342,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e29f075c4087c425d98378d36fcde8ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
+  yellowTile: {fileID: 2100000, guid: 6457559eb2c6a427dbb82292f40bcebb, type: 2}
   hasShip: 0
 --- !u!1 &1239512132
 GameObject:
@@ -18542,6 +18642,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e29f075c4087c425d98378d36fcde8ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
+  yellowTile: {fileID: 2100000, guid: 6457559eb2c6a427dbb82292f40bcebb, type: 2}
   hasShip: 0
 --- !u!1 &1251308027
 GameObject:
@@ -18689,6 +18791,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e29f075c4087c425d98378d36fcde8ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
+  yellowTile: {fileID: 2100000, guid: 6457559eb2c6a427dbb82292f40bcebb, type: 2}
   hasShip: 0
 --- !u!1 &1254392121
 GameObject:
@@ -18836,6 +18940,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e29f075c4087c425d98378d36fcde8ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
+  yellowTile: {fileID: 2100000, guid: 6457559eb2c6a427dbb82292f40bcebb, type: 2}
   hasShip: 0
 --- !u!1 &1272769257
 GameObject:
@@ -18983,6 +19089,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e29f075c4087c425d98378d36fcde8ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
+  yellowTile: {fileID: 2100000, guid: 6457559eb2c6a427dbb82292f40bcebb, type: 2}
   hasShip: 0
 --- !u!1 &1281751934
 GameObject:
@@ -19130,6 +19238,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e29f075c4087c425d98378d36fcde8ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
+  yellowTile: {fileID: 2100000, guid: 6457559eb2c6a427dbb82292f40bcebb, type: 2}
   hasShip: 0
 --- !u!1 &1289708826
 GameObject:
@@ -19881,6 +19991,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e29f075c4087c425d98378d36fcde8ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
+  yellowTile: {fileID: 2100000, guid: 6457559eb2c6a427dbb82292f40bcebb, type: 2}
   hasShip: 0
 --- !u!1 &1313884362
 GameObject:
@@ -20028,6 +20140,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e29f075c4087c425d98378d36fcde8ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
+  yellowTile: {fileID: 2100000, guid: 6457559eb2c6a427dbb82292f40bcebb, type: 2}
   hasShip: 0
 --- !u!1 &1316651993
 GameObject:
@@ -20326,6 +20440,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e29f075c4087c425d98378d36fcde8ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
+  yellowTile: {fileID: 2100000, guid: 6457559eb2c6a427dbb82292f40bcebb, type: 2}
   hasShip: 0
 --- !u!1 &1336226650
 GameObject:
@@ -20624,6 +20740,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e29f075c4087c425d98378d36fcde8ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
+  yellowTile: {fileID: 2100000, guid: 6457559eb2c6a427dbb82292f40bcebb, type: 2}
   hasShip: 0
 --- !u!1 &1343236093
 GameObject:
@@ -21224,6 +21342,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e29f075c4087c425d98378d36fcde8ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
+  yellowTile: {fileID: 2100000, guid: 6457559eb2c6a427dbb82292f40bcebb, type: 2}
   hasShip: 0
 --- !u!1 &1353297545
 GameObject:
@@ -21522,6 +21642,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e29f075c4087c425d98378d36fcde8ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
+  yellowTile: {fileID: 2100000, guid: 6457559eb2c6a427dbb82292f40bcebb, type: 2}
   hasShip: 0
 --- !u!1 &1364445098
 GameObject:
@@ -21669,6 +21791,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e29f075c4087c425d98378d36fcde8ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
+  yellowTile: {fileID: 2100000, guid: 6457559eb2c6a427dbb82292f40bcebb, type: 2}
   hasShip: 0
 --- !u!1 &1388061471
 GameObject:
@@ -22098,6 +22222,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e29f075c4087c425d98378d36fcde8ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
+  yellowTile: {fileID: 2100000, guid: 6457559eb2c6a427dbb82292f40bcebb, type: 2}
   hasShip: 0
 --- !u!1 &1398732074
 GameObject:
@@ -22668,6 +22794,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e29f075c4087c425d98378d36fcde8ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
+  yellowTile: {fileID: 2100000, guid: 6457559eb2c6a427dbb82292f40bcebb, type: 2}
   hasShip: 0
 --- !u!1 &1428554677
 GameObject:
@@ -22815,6 +22943,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e29f075c4087c425d98378d36fcde8ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
+  yellowTile: {fileID: 2100000, guid: 6457559eb2c6a427dbb82292f40bcebb, type: 2}
   hasShip: 0
 --- !u!1 &1445050936
 GameObject:
@@ -23113,6 +23243,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e29f075c4087c425d98378d36fcde8ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
+  yellowTile: {fileID: 2100000, guid: 6457559eb2c6a427dbb82292f40bcebb, type: 2}
   hasShip: 0
 --- !u!1 &1456566831
 GameObject:
@@ -23260,6 +23392,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e29f075c4087c425d98378d36fcde8ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
+  yellowTile: {fileID: 2100000, guid: 6457559eb2c6a427dbb82292f40bcebb, type: 2}
   hasShip: 0
 --- !u!1 &1459745100
 GameObject:
@@ -23407,6 +23541,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e29f075c4087c425d98378d36fcde8ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
+  yellowTile: {fileID: 2100000, guid: 6457559eb2c6a427dbb82292f40bcebb, type: 2}
   hasShip: 0
 --- !u!1 &1475674612
 GameObject:
@@ -23705,6 +23841,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e29f075c4087c425d98378d36fcde8ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
+  yellowTile: {fileID: 2100000, guid: 6457559eb2c6a427dbb82292f40bcebb, type: 2}
   hasShip: 0
 --- !u!1 &1504982537
 GameObject:
@@ -24154,6 +24292,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e29f075c4087c425d98378d36fcde8ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
+  yellowTile: {fileID: 2100000, guid: 6457559eb2c6a427dbb82292f40bcebb, type: 2}
   hasShip: 0
 --- !u!1 &1530343209
 GameObject:
@@ -24484,6 +24624,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e29f075c4087c425d98378d36fcde8ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
+  yellowTile: {fileID: 2100000, guid: 6457559eb2c6a427dbb82292f40bcebb, type: 2}
   hasShip: 0
 --- !u!1 &1555384228
 GameObject:
@@ -24631,6 +24773,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e29f075c4087c425d98378d36fcde8ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
+  yellowTile: {fileID: 2100000, guid: 6457559eb2c6a427dbb82292f40bcebb, type: 2}
   hasShip: 0
 --- !u!1 &1571259213
 GameObject:
@@ -25237,6 +25381,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e29f075c4087c425d98378d36fcde8ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
+  yellowTile: {fileID: 2100000, guid: 6457559eb2c6a427dbb82292f40bcebb, type: 2}
   hasShip: 0
 --- !u!1 &1613197377
 GameObject:
@@ -25719,6 +25865,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e29f075c4087c425d98378d36fcde8ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
+  yellowTile: {fileID: 2100000, guid: 6457559eb2c6a427dbb82292f40bcebb, type: 2}
   hasShip: 0
 --- !u!1 &1663427017
 GameObject:
@@ -25866,6 +26014,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e29f075c4087c425d98378d36fcde8ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
+  yellowTile: {fileID: 2100000, guid: 6457559eb2c6a427dbb82292f40bcebb, type: 2}
   hasShip: 0
 --- !u!1 &1663702341
 GameObject:
@@ -26045,6 +26195,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e29f075c4087c425d98378d36fcde8ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
+  yellowTile: {fileID: 2100000, guid: 6457559eb2c6a427dbb82292f40bcebb, type: 2}
   hasShip: 0
 --- !u!1 &1689287253
 GameObject:
@@ -26343,6 +26495,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e29f075c4087c425d98378d36fcde8ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
+  yellowTile: {fileID: 2100000, guid: 6457559eb2c6a427dbb82292f40bcebb, type: 2}
   hasShip: 0
 --- !u!1 &1698225983
 GameObject:
@@ -26792,6 +26946,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e29f075c4087c425d98378d36fcde8ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
+  yellowTile: {fileID: 2100000, guid: 6457559eb2c6a427dbb82292f40bcebb, type: 2}
   hasShip: 0
 --- !u!1 &1717244232
 GameObject:
@@ -26939,6 +27095,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e29f075c4087c425d98378d36fcde8ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
+  yellowTile: {fileID: 2100000, guid: 6457559eb2c6a427dbb82292f40bcebb, type: 2}
   hasShip: 0
 --- !u!1 &1724764101
 GameObject:
@@ -27237,6 +27395,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e29f075c4087c425d98378d36fcde8ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
+  yellowTile: {fileID: 2100000, guid: 6457559eb2c6a427dbb82292f40bcebb, type: 2}
   hasShip: 0
 --- !u!1 &1728153962
 GameObject:
@@ -27384,6 +27544,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e29f075c4087c425d98378d36fcde8ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
+  yellowTile: {fileID: 2100000, guid: 6457559eb2c6a427dbb82292f40bcebb, type: 2}
   hasShip: 0
 --- !u!1 &1728879216
 GameObject:
@@ -27682,6 +27844,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e29f075c4087c425d98378d36fcde8ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
+  yellowTile: {fileID: 2100000, guid: 6457559eb2c6a427dbb82292f40bcebb, type: 2}
   hasShip: 0
 --- !u!1 &1741495126
 GameObject:
@@ -27980,6 +28144,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e29f075c4087c425d98378d36fcde8ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
+  yellowTile: {fileID: 2100000, guid: 6457559eb2c6a427dbb82292f40bcebb, type: 2}
   hasShip: 0
 --- !u!1 &1760470736
 GameObject:
@@ -28127,6 +28293,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e29f075c4087c425d98378d36fcde8ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
+  yellowTile: {fileID: 2100000, guid: 6457559eb2c6a427dbb82292f40bcebb, type: 2}
   hasShip: 0
 --- !u!1 &1761720496
 GameObject:
@@ -28274,6 +28442,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e29f075c4087c425d98378d36fcde8ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
+  yellowTile: {fileID: 2100000, guid: 6457559eb2c6a427dbb82292f40bcebb, type: 2}
   hasShip: 0
 --- !u!1 &1767306687
 GameObject:
@@ -28421,6 +28591,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e29f075c4087c425d98378d36fcde8ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
+  yellowTile: {fileID: 2100000, guid: 6457559eb2c6a427dbb82292f40bcebb, type: 2}
   hasShip: 0
 --- !u!1 &1767543833
 GameObject:
@@ -28568,6 +28740,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e29f075c4087c425d98378d36fcde8ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
+  yellowTile: {fileID: 2100000, guid: 6457559eb2c6a427dbb82292f40bcebb, type: 2}
   hasShip: 0
 --- !u!1 &1770868436
 GameObject:
@@ -28715,6 +28889,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e29f075c4087c425d98378d36fcde8ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
+  yellowTile: {fileID: 2100000, guid: 6457559eb2c6a427dbb82292f40bcebb, type: 2}
   hasShip: 0
 --- !u!1 &1809744323
 GameObject:
@@ -29164,6 +29340,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e29f075c4087c425d98378d36fcde8ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
+  yellowTile: {fileID: 2100000, guid: 6457559eb2c6a427dbb82292f40bcebb, type: 2}
   hasShip: 0
 --- !u!1 &1825762890
 GameObject:
@@ -29311,6 +29489,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e29f075c4087c425d98378d36fcde8ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
+  yellowTile: {fileID: 2100000, guid: 6457559eb2c6a427dbb82292f40bcebb, type: 2}
   hasShip: 0
 --- !u!1 &1846473801
 GameObject:
@@ -29458,6 +29638,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e29f075c4087c425d98378d36fcde8ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
+  yellowTile: {fileID: 2100000, guid: 6457559eb2c6a427dbb82292f40bcebb, type: 2}
   hasShip: 0
 --- !u!1 &1893316303
 GameObject:
@@ -29975,6 +30157,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e29f075c4087c425d98378d36fcde8ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
+  yellowTile: {fileID: 2100000, guid: 6457559eb2c6a427dbb82292f40bcebb, type: 2}
   hasShip: 0
 --- !u!1 &1911124018
 GameObject:
@@ -30122,6 +30306,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e29f075c4087c425d98378d36fcde8ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
+  yellowTile: {fileID: 2100000, guid: 6457559eb2c6a427dbb82292f40bcebb, type: 2}
   hasShip: 0
 --- !u!1 &1938277397
 GameObject:
@@ -30269,6 +30455,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e29f075c4087c425d98378d36fcde8ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
+  yellowTile: {fileID: 2100000, guid: 6457559eb2c6a427dbb82292f40bcebb, type: 2}
   hasShip: 0
 --- !u!1 &1952643614
 GameObject:
@@ -30416,6 +30604,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e29f075c4087c425d98378d36fcde8ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
+  yellowTile: {fileID: 2100000, guid: 6457559eb2c6a427dbb82292f40bcebb, type: 2}
   hasShip: 0
 --- !u!1 &1966262624
 GameObject:
@@ -31052,6 +31242,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e29f075c4087c425d98378d36fcde8ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
+  yellowTile: {fileID: 2100000, guid: 6457559eb2c6a427dbb82292f40bcebb, type: 2}
   hasShip: 0
 --- !u!1 &2030088869
 GameObject:
@@ -31199,6 +31391,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e29f075c4087c425d98378d36fcde8ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
+  yellowTile: {fileID: 2100000, guid: 6457559eb2c6a427dbb82292f40bcebb, type: 2}
   hasShip: 0
 --- !u!1 &2039608362
 GameObject:
@@ -31346,6 +31540,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e29f075c4087c425d98378d36fcde8ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
+  yellowTile: {fileID: 2100000, guid: 6457559eb2c6a427dbb82292f40bcebb, type: 2}
   hasShip: 0
 --- !u!1 &2062171576
 GameObject:
@@ -31493,6 +31689,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e29f075c4087c425d98378d36fcde8ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
+  yellowTile: {fileID: 2100000, guid: 6457559eb2c6a427dbb82292f40bcebb, type: 2}
   hasShip: 0
 --- !u!1 &2068524146
 GameObject:
@@ -31640,6 +31838,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e29f075c4087c425d98378d36fcde8ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tile: {fileID: 2100000, guid: 60854c4e4ebe54d62898eb7081fa057c, type: 2}
+  yellowTile: {fileID: 2100000, guid: 6457559eb2c6a427dbb82292f40bcebb, type: 2}
   hasShip: 0
 --- !u!1 &2073256802
 GameObject:
