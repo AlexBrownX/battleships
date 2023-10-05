@@ -1,15 +1,18 @@
 using UnityEngine;
 
-namespace GameSetup {
+namespace Player {
     public class PlayerTileSetup : MonoBehaviour {
 
         public Material tile;
         public Material redTile;
         public Material greenTile;
 
-        public bool shipHovering = false;
-        public bool setupComplete = false;
-    
+        public bool shipHovering;
+        public bool hasShip;
+        public bool missileDroppedOnTile;
+        
+        private bool _setupComplete;
+
         void Start() {
             // Tiles drop at the start of game at different rates
             GetComponent<Rigidbody>().maxLinearVelocity = Random.Range(1.5f, 3.0f);
@@ -20,7 +23,7 @@ namespace GameSetup {
         }
 
         private void Setup() {
-            if (setupComplete) return;
+            if (_setupComplete) return;
             shipHovering = true;
         
             if (MouseOverTile()) {
@@ -47,15 +50,14 @@ namespace GameSetup {
         }
 
         public void CompleteSetup() {
+            hasShip = true;
             shipHovering = false;
-            setupComplete = true;
+            _setupComplete = true;
             GetComponent<Renderer>().material = tile;
-            // Debug.Log($"{name} setup complete");
         }
     
         private bool isShipOverTile() {
             var direction = new Vector3(transform.position.x, transform.position.y + 50f, transform.position.z);
-            // Debug.DrawLine(transform.position, direction, Color.red, 1);
             return Physics.Raycast(transform.position, direction, out var hit) && 
                    hit.collider.gameObject.name == PlayerBoardSetup.Instance.currentShip.name;
         }

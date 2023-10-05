@@ -1,16 +1,19 @@
 using System.Collections;
 using System.Collections.Generic;
-using GameSetup;
+using System.Linq;
+using Enemy;
+using Player;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour {
 
     public static GameManager Instance;
-    
+
+    private bool _playerTurn = true;
     private bool _playerSetupComplete;
     private bool _enemySetupComplete;
-    private bool _playerTurn = true;
     private bool _turnTaken;
+    private List<GameObject[]> _playerTiles;
     private List<GameObject[]> _enemyTiles;
 
     void Start() {
@@ -20,6 +23,8 @@ public class GameManager : MonoBehaviour {
     void Update() {
         if (!_playerSetupComplete || !_enemySetupComplete) return;
         if (!_turnTaken) return;
+
+        DisplayHits();
         
         if (_playerTurn) {
             PlayerTurn();
@@ -27,6 +32,10 @@ public class GameManager : MonoBehaviour {
         else {
             EnemyTurn();
         }
+    }
+
+    public bool IsPlayerTurn() {
+        return _playerTurn;
     }
 
     public void PlayerTurnTaken() {
@@ -40,28 +49,64 @@ public class GameManager : MonoBehaviour {
     }
     
     private void PlayerTurn() {
-        _turnTaken = false;
         Debug.Log("Player turn");
-        GetComponent<CameraScript>().MoveToEnemyBoard();
+        _turnTaken = false;
+        GetComponent<CameraScript>().ViewEnemyBoard();
     }
 
     private void EnemyTurn() {
-        _turnTaken = false;
         Debug.Log("Enemy turn");
-        GetComponent<CameraScript>().MoveToPlayerBoard();
+        _turnTaken = false;
+        GetComponent<CameraScript>().ViewPlayerBoard();
+        // GetComponent<>().
     }
 
-    public void PlayerCompleteSetup() {
+    public void PlayerCompleteSetup(List<GameObject[]> playerTiles) {
+        _playerTiles = playerTiles;
         _playerSetupComplete = true;
         _turnTaken = true;
         Destroy(GetComponent<PlayerBoardSetup>());
+        // LogPlayerTiles();
+    }
+
+    private void LogPlayerTiles() {
         Debug.Log("Player board setup complete");
+        _playerTiles.ForEach(enemyTile => {
+            var playerShip = string.Join(",", enemyTile.Select(e => e.name.ToString()).ToArray());
+            Debug.Log($"Player ship : {playerShip}");
+        });
     }
     
     public void EnemyCompleteSetup(List<GameObject[]> enemyTiles) {
         _enemyTiles = enemyTiles;
         _enemySetupComplete = true;
         Destroy(GetComponent<EnemyBoardSetup>());
+        // LogEnemyTiles();
+    }
+
+    private void LogEnemyTiles() {
         Debug.Log("Enemy board setup complete");
+        _enemyTiles.ForEach(enemyTile => {
+            var enemyShip = string.Join(",", enemyTile.Select(e => e.name.ToString()).ToArray());
+            Debug.Log($"Enemy ship : {enemyShip}");
+        });
+    }
+    
+    private void DisplayHits() {
+        var playerHits = 0;
+        var enemyHits = 0;
+        _enemyTiles.ForEach(enemyShipTiles => {
+            playerHits += enemyShipTiles.Count(enemyShipTile => 
+                enemyShipTile.GetComponent<EnemyTileSetup>().hasShip && 
+                enemyShipTile.GetComponent<EnemyTileSetup>().missileDroppedOnTile);
+        });
+        _playerTiles.ForEach(playerShipTiles => {
+            enemyHits += playerShipTiles.Count(playerShipTile => 
+                playerShipTile.GetComponent<PlayerTileSetup>().hasShip &&
+                playerShipTile.GetComponent<PlayerTileSetup>().missileDroppedOnTile);
+        });
+        
+        Debug.Log($"Player successful hits: {playerHits}");
+        Debug.Log($"Enemy successful hits: {enemyHits}");
     }
 }

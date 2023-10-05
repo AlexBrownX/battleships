@@ -14,8 +14,8 @@ public class CameraScript : MonoBehaviour
 
     void Start()
     {
-        rightBtn.onClick.AddListener(() => MoveToEnemyBoard());
-        leftBtn.onClick.AddListener(() => MoveToPlayerBoard());
+        rightBtn.onClick.AddListener(() => ViewEnemyBoard());
+        leftBtn.onClick.AddListener(() => ViewPlayerBoard());
     }
 
     void Update() {
@@ -23,7 +23,7 @@ public class CameraScript : MonoBehaviour
         EnemyView();
     }
 
-    public void MoveToEnemyBoard() {
+    public void ViewEnemyBoard() {
         if (!_isPlayerView) {
             return;
         }
@@ -33,7 +33,7 @@ public class CameraScript : MonoBehaviour
         _moveCameraRight = true;
     }
 
-    public void MoveToPlayerBoard() {
+    public void ViewPlayerBoard() {
         if (_isPlayerView) {
             return;
         }

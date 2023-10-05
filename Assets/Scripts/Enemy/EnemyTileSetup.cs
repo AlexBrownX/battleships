@@ -1,6 +1,7 @@
+using Player;
 using UnityEngine;
 
-namespace GameSetup {
+namespace Enemy {
     public class EnemyTileSetup : MonoBehaviour {
 
         public Material tile;
@@ -8,13 +9,14 @@ namespace GameSetup {
         public Material redTile;
         public Material yellowTile;
         public bool hasShip;
+        public bool missileDroppedOnTile;
 
-        private bool _missileDroppedOnTile;
         private bool _setupComplete;
         
         void Update() {
             if (!_setupComplete) return;
-            if (_missileDroppedOnTile) return;
+            if (missileDroppedOnTile) return;
+            if (!GameManager.Instance.IsPlayerTurn()) return;
 
             if (MouseOverTile()) {
                 GetComponent<Renderer>().material = yellowTile;
@@ -31,7 +33,7 @@ namespace GameSetup {
         }
 
         private void DropMissileOnTile() {
-            _missileDroppedOnTile = true;
+            missileDroppedOnTile = true;
             GetComponent<Renderer>().material = tile;
             PlayerMissileScript.Instance.DropMissileOnTile(gameObject);
         }

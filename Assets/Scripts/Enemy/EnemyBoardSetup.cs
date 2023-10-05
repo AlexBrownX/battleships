@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace GameSetup {
+namespace Enemy {
     public class EnemyBoardSetup : MonoBehaviour
     {
         public static EnemyBoardSetup Instance;

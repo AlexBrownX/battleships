@@ -1,8 +1,9 @@
+using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace GameSetup {
+namespace Player {
     public class PlayerBoardSetup : MonoBehaviour {
     
         public static PlayerBoardSetup Instance;
@@ -10,7 +11,8 @@ namespace GameSetup {
         public GameObject[] ships;
         public GameObject currentShip;
         public Button rotateBtn;
-    
+
+        private List<GameObject[]> _playerTiles = new();
         private int _shipIndex = -1;
         private bool _setupComplete;
 
@@ -60,12 +62,16 @@ namespace GameSetup {
         }
     
         public void ShipPlaced() {
+            var shipIndex = 0;
+            var shipTiles = new GameObject[currentShip.GetComponent<PlayerShipScript>().shipSize];
+
             foreach (var tile in tiles) {
-                if (tile.GetComponent<PlayerTileSetup>().shipHovering) {
-                    tile.GetComponent<PlayerTileSetup>().CompleteSetup();
-                }
+                if (!tile.GetComponent<PlayerTileSetup>().shipHovering) continue;
+                tile.GetComponent<PlayerTileSetup>().CompleteSetup();
+                shipTiles[shipIndex++] = tile;
             }
-    
+            
+            _playerTiles.Add(shipTiles);
             currentShip.GetComponent<PlayerShipScript>().SetupComplete();
             SetNextShip();
         }
@@ -78,7 +84,7 @@ namespace GameSetup {
             rotateBtn.gameObject.SetActive(false);
             currentShip = null;
             _setupComplete = true;
-            GameManager.Instance.PlayerCompleteSetup();
+            GameManager.Instance.PlayerCompleteSetup(_playerTiles);
         }
     }
 }
