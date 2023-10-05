@@ -1,16 +1,16 @@
 using UnityEngine;
 
 namespace Player {
-    public class PlayerTileSetup : MonoBehaviour {
+    public class PlayerTile : MonoBehaviour {
 
         public Material tile;
         public Material redTile;
         public Material greenTile;
 
         public bool shipHovering;
-        public bool hasShip;
-        public bool missileDroppedOnTile;
-        
+
+        private bool _hasShip;
+        private bool _missileDroppedOnTile;
         private bool _setupComplete;
 
         void Start() {
@@ -50,7 +50,6 @@ namespace Player {
         }
 
         public void CompleteSetup() {
-            hasShip = true;
             shipHovering = false;
             _setupComplete = true;
             GetComponent<Renderer>().material = tile;
@@ -82,6 +81,27 @@ namespace Player {
             }
 
             return false;
+        }
+
+        public void HighlightTile() {
+            GetComponent<Renderer>().material = _hasShip ? greenTile : redTile;
+        }
+
+        public void PlaceShipOnTile() {
+            _hasShip = true;
+            CompleteSetup();
+        }
+        
+        public void MissileDroppedOnTile() {
+            _missileDroppedOnTile = true;
+        }
+        
+        public bool HasShip() {
+            return _hasShip;
+        }
+
+        public bool HasMissile() {
+            return _missileDroppedOnTile;
         }
     }
 }

@@ -1,29 +1,29 @@
 using Player;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 namespace Enemy {
-    public class EnemyTileSetup : MonoBehaviour {
+    public class EnemyTile : MonoBehaviour {
 
         public Material tile;
         public Material greenTile;
         public Material redTile;
         public Material yellowTile;
-        public bool hasShip;
-        public bool missileDroppedOnTile;
-
+        
+        private bool _hasShip;
+        private bool _missileDroppedOnTile;
         private bool _setupComplete;
         
         void Update() {
             if (!_setupComplete) return;
-            if (missileDroppedOnTile) return;
+            if (_missileDroppedOnTile) return;
             if (!GameManager.Instance.IsPlayerTurn()) return;
 
-            if (MouseOverTile()) {
+            if (MouseOverTile() && !MissileScript.Instance.IsFiring()) {
                 GetComponent<Renderer>().material = yellowTile;
 
                 if (Input.GetMouseButtonDown(0)) {
                     DropMissileOnTile();
-                    GameManager.Instance.PlayerTurnTaken();
                 }
                 
                 return;
@@ -33,13 +33,24 @@ namespace Enemy {
         }
 
         private void DropMissileOnTile() {
-            missileDroppedOnTile = true;
             GetComponent<Renderer>().material = tile;
-            PlayerMissileScript.Instance.DropMissileOnTile(gameObject);
+            MissileScript.Instance.DropMissileOnTile(gameObject);
+        }
+
+        public void MissileDroppedOnTile() {
+            _missileDroppedOnTile = true;
+        }
+
+        public bool HasShip() {
+            return _hasShip;
+        }
+        
+        public bool HasMissile() {
+            return _missileDroppedOnTile;
         }
 
         public void HighlightTile() {
-            GetComponent<Renderer>().material = hasShip ? greenTile : redTile;
+            GetComponent<Renderer>().material = _hasShip ? greenTile : redTile;
         }
 
         public void CompleteSetup() {
@@ -47,7 +58,7 @@ namespace Enemy {
         }
 
         public void PlaceShipOnTile() {
-            hasShip = true;
+            _hasShip = true;
         }
         
         private bool MouseOverTile() {

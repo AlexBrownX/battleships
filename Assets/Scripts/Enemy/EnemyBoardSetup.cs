@@ -74,7 +74,7 @@ namespace Enemy {
 
                 var shipTile = GameObject.Find($"Tile ({tileIndex})");
 
-                if (shipTile.GetComponent<EnemyTileSetup>().hasShip) {
+                if (shipTile.GetComponent<EnemyTile>().HasShip()) {
                     // Debug.Log($"Start tile - {tileNumber} Can't place ship here, already taken - {tileIndex}");
                     return false;
                 }
@@ -86,7 +86,7 @@ namespace Enemy {
             currentShip.GetComponent<EnemyShipScript>().SetTiles(shipTiles);
 
             foreach (var shipTile in shipTiles) {
-                shipTile.GetComponent<EnemyTileSetup>().PlaceShipOnTile();
+                shipTile.GetComponent<EnemyTile>().PlaceShipOnTile();
             }
 
             // var shipTilesNames = string.Join(",", shipTiles.Select(shipTile => shipTile.name.ToString()).ToArray());
@@ -111,7 +111,7 @@ namespace Enemy {
 
         private void SetupCompleted() {
             foreach (var tile in tiles) {
-                tile.GetComponent<EnemyTileSetup>().CompleteSetup();
+                tile.GetComponent<EnemyTile>().CompleteSetup();
             }
         
             currentShip = null;

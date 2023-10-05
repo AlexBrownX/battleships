@@ -12,6 +12,7 @@ public class GameManager : MonoBehaviour {
     private bool _playerSetupComplete;
     private bool _enemySetupComplete;
     private bool _turnTaken;
+    
     private List<GameObject[]> _playerTiles;
     private List<GameObject[]> _enemyTiles;
 
@@ -37,14 +38,9 @@ public class GameManager : MonoBehaviour {
         return _playerTurn;
     }
 
-    public void PlayerTurnTaken() {
+    public void TurnTaken() {
         _turnTaken = true;
-        _playerTurn = false;
-    }
-    
-    public void EnemyTurnTaken() {
-        _turnTaken = true;
-        _playerTurn = true;
+        _playerTurn = !_playerTurn;
     }
     
     private void PlayerTurn() {
@@ -57,7 +53,7 @@ public class GameManager : MonoBehaviour {
         Debug.Log("Enemy turn");
         _turnTaken = false;
         GetComponent<CameraScript>().ViewPlayerBoard();
-        // GetComponent<>().
+        GetComponent<EnemyPlayer>().TakeTurn();
     }
 
     public void PlayerCompleteSetup(List<GameObject[]> playerTiles) {
@@ -68,7 +64,7 @@ public class GameManager : MonoBehaviour {
         // LogPlayerTiles();
     }
 
-    private void LogPlayerTiles() {
+    private void LogPlayerTiles() { 
         Debug.Log("Player board setup complete");
         _playerTiles.ForEach(enemyTile => {
             var playerShip = string.Join(",", enemyTile.Select(e => e.name.ToString()).ToArray());
@@ -96,13 +92,13 @@ public class GameManager : MonoBehaviour {
         var enemyHits = 0;
         _enemyTiles.ForEach(enemyShipTiles => {
             playerHits += enemyShipTiles.Count(enemyShipTile => 
-                enemyShipTile.GetComponent<EnemyTileSetup>().hasShip && 
-                enemyShipTile.GetComponent<EnemyTileSetup>().missileDroppedOnTile);
+                enemyShipTile.GetComponent<EnemyTile>().HasShip() && 
+                enemyShipTile.GetComponent<EnemyTile>().HasMissile());
         });
         _playerTiles.ForEach(playerShipTiles => {
             enemyHits += playerShipTiles.Count(playerShipTile => 
-                playerShipTile.GetComponent<PlayerTileSetup>().hasShip &&
-                playerShipTile.GetComponent<PlayerTileSetup>().missileDroppedOnTile);
+                playerShipTile.GetComponent<PlayerTile>().HasShip() &&
+                playerShipTile.GetComponent<PlayerTile>().HasMissile());
         });
         
         Debug.Log($"Player successful hits: {playerHits}");

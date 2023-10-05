@@ -12745,6 +12745,7 @@ GameObject:
   - component: {fileID: 857272913}
   - component: {fileID: 857272914}
   - component: {fileID: 857272915}
+  - component: {fileID: 857272916}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -12847,6 +12848,18 @@ MonoBehaviour:
   - {fileID: 1809744323}
   - {fileID: 1289708826}
   currentShip: {fileID: 0}
+--- !u!114 &857272916
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 857272909}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d26701a834bc4d2bad5f91ee9f3c1d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &857682902
 GameObject:
   m_ObjectHideFlags: 0
@@ -14401,7 +14414,7 @@ GameObject:
   - component: {fileID: 1012549061}
   - component: {fileID: 1012549060}
   m_Layer: 0
-  m_Name: Player Missile
+  m_Name: Missile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14415,12 +14428,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1012549055}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.38, y: -1.64, z: -1.53}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -13.753191, y: 4.2788205, z: 4.1784983}
   m_LocalScale: {x: 0.2, y: 0.5, z: 0.2}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 2075291905}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &1012549057
 BoxCollider:
@@ -32712,7 +32725,6 @@ Transform:
   m_Children:
   - {fileID: 1600375313}
   - {fileID: 1388061472}
-  - {fileID: 1012549056}
   m_Father: {fileID: 1534462257}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2112901233
@@ -33940,6 +33952,7 @@ SceneRoots:
   - {fileID: 1905094589}
   - {fileID: 1020488856}
   - {fileID: 1032469740}
+  - {fileID: 1012549056}
   - {fileID: 1663702342}
   - {fileID: 1534462257}
   - {fileID: 857272911}
