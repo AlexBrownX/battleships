@@ -35,7 +35,7 @@ namespace Player {
                 HoverShip();
             }
 
-            if (isShipOverTile()) {
+            if (IsShipOverTile()) {
                 if (PlayerBoardSetup.Instance.CanDrop()) {
                     GetComponent<Renderer>().material = greenTile;
         
@@ -60,9 +60,10 @@ namespace Player {
             GetComponent<Renderer>().material = tile;
         }
     
-        private bool isShipOverTile() {
-            var direction = new Vector3(transform.position.x, transform.position.y + 50f, transform.position.z);
-            return Physics.Raycast(transform.position, direction, out var hit) && 
+        private bool IsShipOverTile() {
+            var position = transform.position;
+            var direction = new Vector3(position.x, position.y + 50f, position.z);
+            return Physics.Raycast(position, direction, out var hit) && 
                    hit.collider.gameObject.name == PlayerBoardSetup.Instance.currentShip.name;
         }
 
@@ -75,6 +76,7 @@ namespace Player {
         }
 
         private bool MouseOverTile() {
+            if (Camera.main == null) return false;
             var ray = Camera.main.ScreenPointToRay(Input.mousePosition);
             var raycastHits = new RaycastHit[5];
             var hits = Physics.RaycastNonAlloc(ray, raycastHits);

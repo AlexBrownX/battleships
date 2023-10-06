@@ -1,4 +1,3 @@
-using Player;
 using UnityEngine;
 
 namespace Enemy {
@@ -84,6 +83,7 @@ namespace Enemy {
         }
         
         private bool MouseOverTile() {
+            if (Camera.main == null) return false;
             var ray = Camera.main.ScreenPointToRay(Input.mousePosition);
             var raycastHits = new RaycastHit[5];
             var hits = Physics.RaycastNonAlloc(ray, raycastHits);

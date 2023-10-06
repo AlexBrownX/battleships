@@ -13,7 +13,7 @@ namespace Player {
         public GameObject currentShip;
         public Button rotateBtn;
 
-        private List<GameObject[]> _playerTiles = new();
+        private readonly List<GameObject[]> _playerTiles = new();
         private int _shipIndex = -1;
 
         void Start() {
@@ -64,7 +64,7 @@ namespace Player {
             }
             
             _playerTiles.Add(shipTiles);
-            currentShip.GetComponent<PlayerShip>().SetupComplete();
+            // currentShip.GetComponent<PlayerShip>().SetupComplete();
             SetNextShip();
         }
 

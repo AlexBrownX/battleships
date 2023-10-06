@@ -11,7 +11,6 @@ namespace Player {
         public float xRotatedOffset;
         public int shipSize;
         
-        private bool _setupComplete;
         private bool _rotated;
         private bool _sunk;
         private int _hits;
@@ -21,10 +20,6 @@ namespace Player {
             gameObject.SetActive(false);
         }
         
-        void Update() {
-            if (_setupComplete) return;
-        }
-
         public void MissileHit() {
             _hits++;
             if (_hits == shipSize) {
@@ -43,11 +38,7 @@ namespace Player {
         public float GetXOffset() {
             return _rotated ? xRotatedOffset : xOffset;
         }
-
-        public void SetupComplete() {
-            _setupComplete = true;
-        }
-
+        
         public void Rotate() {
             if (_rotated) {
                 gameObject.transform.Rotate(0, 90, 0);
@@ -59,7 +50,7 @@ namespace Player {
             }
         }
         
-        void OnCollisionEnter(Collision collision) {
+        void OnCollisionEnter() {
             AudioSource.PlayClipAtPoint(splash, transform.position, 0.1f);
         }
     }

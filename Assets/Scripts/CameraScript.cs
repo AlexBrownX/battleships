@@ -12,7 +12,7 @@ public class CameraScript : MonoBehaviour {
     private bool _isPlayerView = true;
     private bool _moveCameraRight;
     private bool _moveCameraLeft;
-    private float _cameraMoveSpeed = 13f;
+    private readonly float _cameraMoveSpeed = 13f;
 
     void Start() {
         rightBtn.onClick.AddListener(ViewEnemyBoard);
@@ -29,8 +29,6 @@ public class CameraScript : MonoBehaviour {
             return;
         }
 
-        // GetComponent<HUDScript>().SetSelectTargetText();
-
         _isPlayerView = false;
         _moveCameraLeft = false;
         _moveCameraRight = true;
@@ -40,8 +38,6 @@ public class CameraScript : MonoBehaviour {
         if (_isPlayerView) {
             return;
         }
-
-        // GetComponent<HUDScript>().SetEnemyTargetingText();
 
         _isPlayerView = true;
         _moveCameraLeft = true;
@@ -61,8 +57,8 @@ public class CameraScript : MonoBehaviour {
 
     IEnumerator PlayerViewDelayed(float seconds) {
         yield return new WaitForSeconds(seconds);
-        
-        // GetComponent<HUDScript>().ClearText();
+
+        if (Camera.main == null) yield break;
         var mainCameraPosition = Camera.main.transform.position;
         var enemyCameraPosition = new Vector3(-13.0f, mainCameraPosition.y,  mainCameraPosition.z);
             
@@ -70,23 +66,21 @@ public class CameraScript : MonoBehaviour {
             Vector3.MoveTowards(mainCameraPosition, enemyCameraPosition, _cameraMoveSpeed * Time.deltaTime);
 
         if (Camera.main.transform.position.Equals(enemyCameraPosition)) {
-            // GetComponent<HUDScript>().SetSelectTargetText();
             _moveCameraRight = false;
         }
     }
     
     IEnumerator EnemyViewDelayed(float seconds) {
         yield return new WaitForSeconds(seconds);
-        
-        // GetComponent<HUDScript>().ClearText();
+
+        if (Camera.main == null) yield break;
         var mainCameraPosition = Camera.main.transform.position;
         var playerCameraPosition = new Vector3(0f, mainCameraPosition.y,  mainCameraPosition.z);
             
         Camera.main.transform.position =
-            Vector3.MoveTowards(mainCameraPosition, playerCameraPosition, _cameraMoveSpeed * Time.deltaTime);;
+            Vector3.MoveTowards(mainCameraPosition, playerCameraPosition, _cameraMoveSpeed * Time.deltaTime);
 
         if (Camera.main.transform.position.Equals(playerCameraPosition)) {
-            // GetComponent<HUDScript>().SetEnemyTargetingText();
             _moveCameraLeft = false;
         }
     }

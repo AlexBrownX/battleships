@@ -10,10 +10,10 @@ namespace Enemy {
         public GameObject[] ships;
         public GameObject currentShip;
 
-        private List<GameObject[]> _enemyTiles = new();
+        private readonly List<GameObject[]> _enemyTiles = new();
         private int _shipIndex = -1;
-        private int _minTile = 101;
-        private int _maxTile = 200;
+        private readonly int _minTile = 101;
+        private readonly int _maxTile = 200;
         private bool _setupComplete;
 
         void Start() {
@@ -44,9 +44,7 @@ namespace Enemy {
             }
         
             currentShip = ships[_shipIndex];
-            // currentShip.GetComponent<Renderer>().enabled = true;
-            // currentShip.GetComponent<EnemyShipScript>().gameObject.SetActive(true);
-            
+
             do { } while (!PlaceShip());
             SetNextShip();
         }
@@ -62,19 +60,16 @@ namespace Enemy {
                 var tileIndex = isRotated ? tileNumber + i : tileNumber + (i * 10);
 
                 if (tileIndex > _maxTile) {
-                    // Debug.Log($"Start tile - {tileNumber} Can't place ship here, off the board - {tileIndex}");
                     return false;
                 }
                 
                 if (isRotated && IsOffGrid(tileNumber, tileIndex)) {
-                    // Debug.Log($"Start tile - {tileNumber} Can't place ship here, off the board - {tileIndex}");
                     return false;
                 }
 
                 var shipTile = GameObject.Find($"Tile ({tileIndex})");
 
                 if (shipTile.GetComponent<EnemyTile>().HasShip()) {
-                    // Debug.Log($"Start tile - {tileNumber} Can't place ship here, already taken - {tileIndex}");
                     return false;
                 }
                 
@@ -82,15 +77,11 @@ namespace Enemy {
             }
 
             _enemyTiles.Add(shipTiles);
-            // currentShip.GetComponent<EnemyShipScript>().SetTiles(shipTiles);
 
             foreach (var shipTile in shipTiles) {
                 shipTile.GetComponent<EnemyTile>().PlaceShipOnTile();
             }
 
-            // var shipTilesNames = string.Join(",", shipTiles.Select(shipTile => shipTile.name.ToString()).ToArray());
-            // Debug.Log($"Start tile - {tileNumber} Placing {currentShip.name} - [{shipTilesNames}]");
-            
             if (isRotated) {
                 currentShip.GetComponent<EnemyShip>().SetRotated(true);
                 currentShip.transform.Rotate(0, 90, 0);
@@ -98,7 +89,8 @@ namespace Enemy {
             
             var zOffset = currentShip.GetComponent<EnemyShip>().GetZOffset();
             var xOffset = currentShip.GetComponent<EnemyShip>().GetXOffset();
-            var dropPosition = new Vector3(tile.transform.position.x - xOffset, tile.transform.position.y + 1f, tile.transform.position.z - zOffset);
+            var position = tile.transform.position;
+            var dropPosition = new Vector3(position.x - xOffset, position.y + 1f, position.z - zOffset);
             currentShip.transform.position = dropPosition;
 
             currentShip.GetComponent<EnemyShip>().SetupComplete();

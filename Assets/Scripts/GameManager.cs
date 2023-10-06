@@ -65,14 +65,7 @@ public class GameManager : MonoBehaviour {
             EnemyTurn();
         }
     }
-
-    private void UpdateShipCounts() {
-        var playerShipCount = 5 - _playerShips.Count(ship => ship.GetComponent<PlayerShip>().IsSunk());
-        var enemyShipCount = 5 - _enemyShips.Count(ship => ship.GetComponent<EnemyShip>().IsSunk());
-
-        GetComponent<HUDScript>().UpdateShipCounts(playerShipCount, enemyShipCount);
-    }
-
+    
     public bool IsPlayerTurn() {
         return _playerTurn;
     }
@@ -99,7 +92,7 @@ public class GameManager : MonoBehaviour {
         _turnTaken = true;
         _playerShips = PlayerBoardSetup.Instance.ships;
         Destroy(GetComponent<PlayerBoardSetup>());
-        // LogPlayerTiles();
+        LogPlayerTiles();
     }
 
     public void EnemyCompleteSetup(List<GameObject[]> enemyTiles) {

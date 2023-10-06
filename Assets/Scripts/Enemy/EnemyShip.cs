@@ -27,6 +27,8 @@ namespace Enemy {
             _hits++;
             if (_hits == shipSize) {
                 _sunk = true;
+                // GetComponent<Renderer>().enabled = true;
+                // GetComponent<EnemyShip>().gameObject.SetActive(true);
             }
         }
         
