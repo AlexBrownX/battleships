@@ -145,7 +145,8 @@ public class GameManager : MonoBehaviour {
                 playerShipTile.GetComponent<PlayerTile>().HasMissile());
         });
         
-        Debug.Log($"Player successful hits: {playerHits}");
-        Debug.Log($"Enemy successful hits: {enemyHits}");
+        GetComponent<HUDScript>().SetHits(playerHits, enemyHits);
+        // Debug.Log($"Player successful hits: {playerHits}");
+        // Debug.Log($"Enemy successful hits: {enemyHits}");
     }
 }
