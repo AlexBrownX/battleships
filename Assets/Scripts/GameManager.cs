@@ -93,7 +93,7 @@ public class GameManager : MonoBehaviour {
         _turnTaken = true;
         _playerShips = PlayerBoardSetup.Instance.ships;
         Destroy(GetComponent<PlayerBoardSetup>());
-        LogPlayerTiles();
+        // LogPlayerTiles();
     }
 
     public void EnemyCompleteSetup(List<GameObject[]> enemyTiles) {
@@ -101,7 +101,7 @@ public class GameManager : MonoBehaviour {
         _enemySetupComplete = true;
         _enemyShips = EnemyBoardSetup.Instance.ships;
         Destroy(GetComponent<EnemyBoardSetup>());
-        LogEnemyTiles();
+        // LogEnemyTiles();
     }
 
     private void LogPlayerTiles() { 

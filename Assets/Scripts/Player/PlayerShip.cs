@@ -1,3 +1,4 @@
+using Enemy;
 using UnityEngine;
 
 namespace Player {
@@ -24,6 +25,7 @@ namespace Player {
             _hits++;
             if (_hits == shipSize) {
                 _sunk = true;
+                GameManager.Instance.GetComponent<EnemyPlayer>().PlayerShipSunk();
             }
         }
 
