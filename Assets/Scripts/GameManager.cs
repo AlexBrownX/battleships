@@ -29,6 +29,7 @@ public class GameManager : MonoBehaviour {
     void Update() {
         if (!_playerSetupComplete || !_enemySetupComplete) {
             GetComponent<HUDScript>().ClearShipCounts();
+            GetComponent<HUDScript>().ClearHitCounts();
             return;
         }
         

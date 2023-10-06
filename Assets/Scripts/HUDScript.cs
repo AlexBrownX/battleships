@@ -16,15 +16,10 @@ public class HUDScript : MonoBehaviour {
     public Text enemyHits;
     
     private const string StartText = "Place your battleships";
-    private const string SelectTargetText = "Select enemy target";
-    private const string EnemyTargetingText = "Enemy is targeting you";
     private const string PlayerShipsText = "Player Ships: {0}";
     private const string EnemyShipsText = "Enemy Ships: {0}";
     private const string PlayerHitsText = "Player Hits: {0}";
     private const string EnemyHitsText = "Enemy Hits: {0}";
-    private const string HitText = "Hit!";
-    private const string MissText = "Miss!";
-    private const string ShipSunkText = "Ship Sunk!";
     private const string YouWinText = "You Win!";
     private const string YouLoseText = "You Lose!";
     
@@ -59,25 +54,10 @@ public class HUDScript : MonoBehaviour {
         playerInfo.text = "";
         enemyInfo.text = "";
     }
-
-    public void SetSelectTargetText() {
-        statusText.text = SelectTargetText;
-    }
     
-    public void SetEnemyTargetingText() {
-        statusText.text = EnemyTargetingText;
-    }
-
-    public void SetHit() {
-        statusText.text = HitText;
-    }
-    
-    public void SetMiss() {
-        statusText.text = MissText;
-    }
-    
-    public void SetShipSunk() {
-        statusText.text = ShipSunkText;
+    public void ClearHitCounts() {
+        playerHits.text = "";
+        enemyHits.text = "";
     }
     
     public void SetYouWin() {
