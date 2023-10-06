@@ -1,6 +1,5 @@
 using Player;
 using UnityEngine;
-using UnityEngine.Serialization;
 
 namespace Enemy {
     public class EnemyTile : MonoBehaviour {
