@@ -3,6 +3,10 @@ using UnityEngine;
 namespace Player {
     public class PlayerTile : MonoBehaviour {
 
+        public AudioClip bigExplosion;
+        public AudioClip explosion;
+        public AudioClip splash;
+        
         public Material tile;
         public Material redTile;
         public Material greenTile;
@@ -83,8 +87,20 @@ namespace Player {
 
             return false;
         }
-
+        
         public void HighlightTile() {
+            if (HasShip()) {
+                if (_ship.GetComponent<PlayerShip>().IsSunk()) {
+                    AudioSource.PlayClipAtPoint(bigExplosion, transform.position, 1f);
+                }
+                else {
+                    AudioSource.PlayClipAtPoint(explosion, transform.position, 0.8f);
+                }
+            }
+            else {
+                AudioSource.PlayClipAtPoint(splash, transform.position, 1f);
+            }
+            
             GetComponent<Renderer>().material = _hasShip ? greenTile : redTile;
         }
 

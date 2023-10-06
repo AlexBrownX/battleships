@@ -3,6 +3,8 @@ using UnityEngine;
 namespace Player {
     public class PlayerShip : MonoBehaviour {
 
+        public AudioClip splash;
+        
         public float zOffset;
         public float zRotatedOffset;
         public float xOffset;
@@ -55,6 +57,10 @@ namespace Player {
                 gameObject.transform.Rotate(0, -90, 0);
                 _rotated = true;
             }
+        }
+        
+        void OnCollisionEnter(Collision collision) {
+            AudioSource.PlayClipAtPoint(splash, transform.position, 0.1f);
         }
     }
 }

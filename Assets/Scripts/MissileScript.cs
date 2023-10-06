@@ -5,7 +5,7 @@ namespace Player {
     public class MissileScript : MonoBehaviour {
 
         public static MissileScript Instance;
-    
+
         private GameObject _targetTile;
         private bool _isFiring;
     
@@ -15,9 +15,24 @@ namespace Player {
         }
 
         void Update() {
-            if (!DetectHit()) return;
+            // if (!DetectHit()) return;
+            // if (_targetTile == null) return;
+            //
+            // if (GameManager.Instance.IsPlayerTurn()) {
+            //     _targetTile.GetComponent<EnemyTile>().HighlightTile();
+            // }
+            // else {
+            //     _targetTile.GetComponent<PlayerTile>().HighlightTile();
+            // }
+            //
+            // _targetTile = null;
+            // DisableMissile();
+            // GameManager.Instance.TurnTaken();
+        }
+        
+        void OnCollisionEnter(Collision collision) {
             if (_targetTile == null) return;
-            
+
             if (GameManager.Instance.IsPlayerTurn()) {
                 _targetTile.GetComponent<EnemyTile>().HighlightTile();
             }
@@ -66,6 +81,23 @@ namespace Player {
             var missilePosition = transform.position;
             var direction = new Vector3(missilePosition.x, missilePosition.y - 1.5f, missilePosition.z);
             // Debug.DrawLine(missilePosition, direction, Color.red, 1);
+            // return Physics.Raycast(missilePosition, direction);
+            
+            // var ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+            // var raycastHits = new RaycastHit[5];
+            // var hits = Physics.RaycastNonAlloc(ray, raycastHits);
+            //
+            // var direction2 = new Vector3(missilePosition.x, missilePosition.y - 0.7f, missilePosition.z);
+            // Debug.DrawLine(missilePosition, direction2, Color.red, 1);
+            //
+            // RaycastHit[] m_Results = new RaycastHit[10];
+            // int hits = Physics.RaycastNonAlloc(missilePosition, direction2, m_Results, Mathf.Infinity, ~0);
+            //
+            // for (int i = 0; i < hits; i++)
+            // {
+            //     Debug.Log("Hit " + m_Results[i].collider.gameObject.name);
+            // }
+            
             return Physics.Raycast(missilePosition, direction);
         }
     }

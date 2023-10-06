@@ -4,6 +4,10 @@ using UnityEngine.Serialization;
 
 namespace Enemy {
     public class EnemyTile : MonoBehaviour {
+        
+        public AudioClip bigExplosion;
+        public AudioClip explosion;
+        public AudioClip splash;
 
         public Material tile;
         public Material greenTile;
@@ -32,7 +36,7 @@ namespace Enemy {
 
             GetComponent<Renderer>().material = tile;
         }
-
+        
         private void DropMissileOnTile() {
             GetComponent<Renderer>().material = tile;
             MissileScript.Instance.DropMissileOnTile(gameObject);
@@ -56,6 +60,18 @@ namespace Enemy {
         }
 
         public void HighlightTile() {
+            if (HasShip()) {
+                if (_ship.GetComponent<EnemyShip>().IsSunk()) {
+                    AudioSource.PlayClipAtPoint(bigExplosion, transform.position, 1f);
+                }
+                else {
+                    AudioSource.PlayClipAtPoint(explosion, transform.position, 0.8f);
+                }
+            }
+            else {
+                AudioSource.PlayClipAtPoint(splash, transform.position, 1f);
+            }
+
             GetComponent<Renderer>().material = _hasShip ? greenTile : redTile;
         }
 

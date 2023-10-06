@@ -9,6 +9,9 @@ public class GameManager : MonoBehaviour {
 
     public static GameManager Instance;
 
+    public AudioClip win;
+    public AudioClip lose;
+
     private bool _playerTurn = true;
     private bool _playerSetupComplete;
     private bool _enemySetupComplete;
@@ -39,12 +42,18 @@ public class GameManager : MonoBehaviour {
         GetComponent<HUDScript>().UpdateShipCounts(playerShipCount, enemyShipCount);
 
         if (playerShipCount == 0) {
+            GetComponent<AudioSource>().Stop();
             GetComponent<HUDScript>().SetYouLose();
+            AudioSource.PlayClipAtPoint(lose, transform.position, 1f);
+            _turnTaken = false;
             return;
         }
 
         if (enemyShipCount == 0) {
+            GetComponent<AudioSource>().Stop();
             GetComponent<HUDScript>().SetYouWin();
+            AudioSource.PlayClipAtPoint(win, transform.position, 1f);
+            _turnTaken = false;
             return;
         }
         
