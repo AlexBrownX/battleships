@@ -3,7 +3,6 @@ using System.Linq;
 using Enemy;
 using Player;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour {
 
@@ -84,13 +83,11 @@ public class GameManager : MonoBehaviour {
     }
     
     private void PlayerTurn() {
-        // Debug.Log("Player turn");
         _turnTaken = false;
         GetComponent<CameraScript>().ViewEnemyBoard();
     }
 
     private void EnemyTurn() {
-        // Debug.Log("Enemy turn");
         _turnTaken = false;
         GetComponent<CameraScript>().ViewPlayerBoard();
         GetComponent<EnemyPlayer>().TakeTurn();
@@ -146,7 +143,5 @@ public class GameManager : MonoBehaviour {
         });
         
         GetComponent<HUDScript>().SetHits(playerHits, enemyHits);
-        // Debug.Log($"Player successful hits: {playerHits}");
-        // Debug.Log($"Enemy successful hits: {enemyHits}");
     }
 }
