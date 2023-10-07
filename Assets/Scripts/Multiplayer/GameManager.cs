@@ -40,6 +40,7 @@ namespace Multiplayer {
             
             NetworkManager.Singleton.OnClientDisconnectCallback += clientId => {
                 Debug.Log($"Client {clientId} disconnected");
+                ExitScene();
             };
 
             await UnityServices.InitializeAsync();
