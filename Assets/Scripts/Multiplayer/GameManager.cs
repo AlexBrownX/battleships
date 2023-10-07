@@ -1,13 +1,21 @@
+using TMPro;
 using Unity.Netcode;
+using Unity.Netcode.Transports.UTP;
+using Unity.Networking.Transport.Relay;
+using Unity.Services.Authentication;
+using Unity.Services.Core;
+using Unity.Services.Relay;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 namespace Multiplayer {
     public class GameManager : MonoBehaviour {
 
         public static GameManager Instance;
 
-        [SerializeField]
-        private GameObject cubePrefab;
+        [SerializeField] private GameObject cubePrefab;
+        [SerializeField] private TextMeshProUGUI joinCodeOutput;
+        [SerializeField] private TMP_InputField joinCodeInput;
 
         private GameObject _cube;
 
@@ -20,7 +28,7 @@ namespace Multiplayer {
             }
         }
 
-        private void Start() {
+        private async void Start() {
             NetworkManager.Singleton.OnClientConnectedCallback += clientId => {
                 Debug.Log($"Client {clientId} connected");
                 
@@ -33,6 +41,9 @@ namespace Multiplayer {
             NetworkManager.Singleton.OnClientDisconnectCallback += clientId => {
                 Debug.Log($"Client {clientId} disconnected");
             };
+
+            await UnityServices.InitializeAsync();
+            await AuthenticationService.Instance.SignInAnonymouslyAsync();
         }
         
         private void SpawnCube() {
@@ -40,12 +51,35 @@ namespace Multiplayer {
             _cube.GetComponent<NetworkObject>().Spawn();
         }
 
-        public void StartHost() {
-            NetworkManager.Singleton.StartHost();
+        public async void StartHost() {
+            try {
+                var allocation = await RelayService.Instance.CreateAllocationAsync(1);
+                var joinCode = await RelayService.Instance.GetJoinCodeAsync(allocation.AllocationId);
+                joinCodeOutput.text = "Join Code: " + joinCode;
+
+                var relayServerData = new RelayServerData(allocation, "dtls");
+                NetworkManager.Singleton.GetComponent<UnityTransport>().SetRelayServerData(relayServerData);
+                NetworkManager.Singleton.StartHost();
+            }
+            catch (RelayServiceException exception) {
+                Debug.LogError(exception);
+            }
         }
 
-        public void StartClient() {
-            NetworkManager.Singleton.StartClient();
+        public async void StartClient() {
+            try {
+                var joinAllocation = await RelayService.Instance.JoinAllocationAsync(joinCodeInput.text);
+                var relayServerData = new RelayServerData(joinAllocation, "dtls");
+                NetworkManager.Singleton.GetComponent<UnityTransport>().SetRelayServerData(relayServerData);
+                NetworkManager.Singleton.StartClient();
+            }
+            catch (RelayServiceException exception) {
+                Debug.LogError(exception);
+            }
+        }
+
+        public void ExitScene() {
+            SceneManager.LoadScene("Scenes/MainMenu/MainMenuScene");
         }
     }
 }
