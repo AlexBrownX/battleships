@@ -9,7 +9,7 @@ namespace MainMenu {
         }
 
         public void PlayMultiplayer() {
-            SceneManager.LoadScene("Scenes/MultiPlayer/MultiPlayerBattleshipScene");
+            SceneManager.LoadScene("Scenes/Multiplayer/MultiplayerBattleshipScene");
         }
 
         public void QuitGame() {
