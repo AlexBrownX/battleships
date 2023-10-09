@@ -1,3 +1,4 @@
+using System;
 using TMPro;
 using Unity.Netcode;
 using Unity.Netcode.Transports.UTP;
@@ -14,11 +15,16 @@ namespace Multiplayer {
         public static MultiplayerSetupManager Instance;
         
         [SerializeField] private GameObject multiplayerPanel;
-        [SerializeField] private GameObject cubePrefab;
+        [SerializeField] private GameObject loadingImage;
         [SerializeField] private TextMeshProUGUI joinCodeOutput;
         [SerializeField] private TMP_InputField joinCodeInput;
 
+        private readonly int _spinSpeed = 50;
+        private readonly Vector3 _spinDirection = new Vector3(0, 0, -1);
+
+        // TEMP
         private GameObject _cube;
+        [SerializeField] private GameObject cubePrefab;
 
         void Awake() {
             if (Instance != null && Instance != this) {
@@ -27,6 +33,8 @@ namespace Multiplayer {
             else {
                 Instance = this;
             }
+            
+            ToggleLoadingImage(false);
         }
 
         private async void Start() {
@@ -38,7 +46,6 @@ namespace Multiplayer {
                     multiplayerPanel.SetActive(false);
                     HidePanelClientRpc();
                 }
-
             };
             
             NetworkManager.Singleton.OnClientDisconnectCallback += clientId => {
@@ -48,7 +55,13 @@ namespace Multiplayer {
             await UnityServices.InitializeAsync();
             await AuthenticationService.Instance.SignInAnonymouslyAsync();
         }
-        
+
+        private void Update() {
+            if (loadingImage.activeSelf) {
+                loadingImage.gameObject.transform.Rotate(_spinDirection * (_spinSpeed * Time.deltaTime));
+            }
+        }
+
         private void SpawnCube() {
             Debug.Log($"Spawn cube");
             _cube = Instantiate(cubePrefab);
@@ -63,6 +76,7 @@ namespace Multiplayer {
 
         public async void StartHost() {
             try {
+                ToggleLoadingImage(true);
                 var allocation = await RelayService.Instance.CreateAllocationAsync(1);
                 var joinCode = await RelayService.Instance.GetJoinCodeAsync(allocation.AllocationId);
                 joinCodeOutput.text = "Join Code: " + joinCode;
@@ -71,23 +85,31 @@ namespace Multiplayer {
                 NetworkManager.Singleton.GetComponent<UnityTransport>().SetRelayServerData(relayServerData);
                 NetworkManager.Singleton.StartHost();
             }
-            catch (RelayServiceException exception) {
+            catch (Exception exception) {
+                ToggleLoadingImage(false);
                 Debug.LogError(exception);
             }
         }
 
         public async void StartClient() {
             try {
+                ToggleLoadingImage(true);
                 var joinAllocation = await RelayService.Instance.JoinAllocationAsync(joinCodeInput.text);
                 var relayServerData = new RelayServerData(joinAllocation, "dtls");
                 NetworkManager.Singleton.GetComponent<UnityTransport>().SetRelayServerData(relayServerData);
                 NetworkManager.Singleton.StartClient();
             }
-            catch (RelayServiceException exception) {
+            catch (Exception exception) {
+                ToggleLoadingImage(false);
                 Debug.LogError(exception);
             }
         }
 
+
+        private void ToggleLoadingImage(bool active) {
+            loadingImage.SetActive(active);
+        }
+        
         public void ExitScene() {
             SceneManager.LoadScene("Scenes/MainMenu/MainMenuScene");
         }
