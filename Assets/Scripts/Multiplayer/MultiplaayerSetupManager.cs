@@ -9,9 +9,9 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 namespace Multiplayer {
-    public class GameManager : NetworkBehaviour {
+    public class MultiplayerSetupManager : NetworkBehaviour {
 
-        public static GameManager Instance;
+        public static MultiplayerSetupManager Instance;
         
         [SerializeField] private GameObject multiplayerPanel;
         [SerializeField] private GameObject cubePrefab;
