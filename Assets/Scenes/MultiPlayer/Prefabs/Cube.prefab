@@ -139,3 +139,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cd6d4389e979f4b9b94f6fe341e8258e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  clockwise:
+    m_InternalValue: 1
+  greenTile: {fileID: 2100000, guid: 97b38fa422e99487e91ddee3ffca9194, type: 2}
+  redTile: {fileID: 2100000, guid: 821738c0fd0ed40e6b1741ef8c0b4a80, type: 2}

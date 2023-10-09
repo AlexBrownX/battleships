@@ -9,10 +9,11 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 namespace Multiplayer {
-    public class GameManager : MonoBehaviour {
+    public class GameManager : NetworkBehaviour {
 
         public static GameManager Instance;
-
+        
+        [SerializeField] private GameObject multiplayerPanel;
         [SerializeField] private GameObject cubePrefab;
         [SerializeField] private TextMeshProUGUI joinCodeOutput;
         [SerializeField] private TMP_InputField joinCodeInput;
@@ -33,9 +34,11 @@ namespace Multiplayer {
                 Debug.Log($"Client {clientId} connected");
                 
                 if (NetworkManager.Singleton.IsHost && NetworkManager.Singleton.ConnectedClients.Count == 2) {
-                    Debug.Log($"Spawn cube");
                     SpawnCube();
+                    multiplayerPanel.SetActive(false);
+                    HidePanelClientRpc();
                 }
+
             };
             
             NetworkManager.Singleton.OnClientDisconnectCallback += clientId => {
@@ -47,8 +50,15 @@ namespace Multiplayer {
         }
         
         private void SpawnCube() {
+            Debug.Log($"Spawn cube");
             _cube = Instantiate(cubePrefab);
             _cube.GetComponent<NetworkObject>().Spawn();
+        }
+
+        [ClientRpc]
+        private void HidePanelClientRpc() {
+            Debug.Log("Hiding panel");
+            multiplayerPanel.SetActive(false);
         }
 
         public async void StartHost() {
