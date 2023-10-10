@@ -38,20 +38,8 @@ namespace Multiplayer {
         }
 
         private async void Start() {
-            NetworkManager.Singleton.OnClientConnectedCallback += clientId => {
-                Debug.Log($"Client {clientId} connected");
-                
-                if (NetworkManager.Singleton.IsHost && NetworkManager.Singleton.ConnectedClients.Count == 2) {
-                    SpawnCube();
-                    multiplayerPanel.SetActive(false);
-                    HidePanelClientRpc();
-                }
-            };
-            
-            NetworkManager.Singleton.OnClientDisconnectCallback += clientId => {
-                Debug.Log($"Client {clientId} disconnected");
-            };
-
+            NetworkManager.Singleton.OnClientConnectedCallback += OnClientConnectedCallback();
+            NetworkManager.Singleton.OnClientDisconnectCallback += OnClientDisconnectCallback();
             await UnityServices.InitializeAsync();
             await AuthenticationService.Instance.SignInAnonymouslyAsync();
         }
@@ -62,10 +50,29 @@ namespace Multiplayer {
             }
         }
 
+        private Action<ulong> OnClientConnectedCallback() {
+            return clientId => {
+                Debug.Log($"Client {clientId} connected");
+                
+                if (NetworkManager.Singleton.IsHost && NetworkManager.Singleton.ConnectedClients.Count == 2) {
+                    SpawnCube();
+                    multiplayerPanel.SetActive(false);
+                    HidePanelClientRpc();
+                }
+            };
+        }
+
+        private static Action<ulong> OnClientDisconnectCallback() {
+            return clientId => {
+                Debug.Log($"Client {clientId} disconnected");
+            };
+        }
+
         private void SpawnCube() {
             Debug.Log($"Spawn cube");
             _cube = Instantiate(cubePrefab);
             _cube.GetComponent<NetworkObject>().Spawn();
+            DontDestroyOnLoad(_cube);
         }
 
         [ClientRpc]
