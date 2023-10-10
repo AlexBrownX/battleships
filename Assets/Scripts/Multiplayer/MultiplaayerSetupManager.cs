@@ -19,12 +19,11 @@ namespace Multiplayer {
         [SerializeField] private TextMeshProUGUI joinCodeOutput;
         [SerializeField] private TMP_InputField joinCodeInput;
 
-        private readonly int _spinSpeed = 50;
-        private readonly Vector3 _spinDirection = new Vector3(0, 0, -1);
-
         // TEMP
         private GameObject _cube;
         [SerializeField] private GameObject cubePrefab;
+        private readonly int _spinSpeed = 50;
+        private readonly Vector3 _spinDirection = new Vector3(0, 0, -1);
 
         void Awake() {
             if (Instance != null && Instance != this) {
