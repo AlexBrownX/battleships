@@ -17,7 +17,8 @@ namespace Multiplayer {
 
         private void Awake() {
             Debug.Log("Awake Host board");
-            GameObject.Find("ClientRotateBtn").gameObject.SetActive(false);
+            // TODO - TEMP
+            // GameObject.Find("ClientRotateBtn").gameObject.SetActive(false);
 
             if (Instance != null && Instance != this) {
                 Destroy(gameObject);
@@ -29,6 +30,7 @@ namespace Multiplayer {
 
         void Start() {
             // TODO - TEMP
+            return;
             // if (!NetworkManager.Singleton.IsHost) return;
 
             // Move camera left
