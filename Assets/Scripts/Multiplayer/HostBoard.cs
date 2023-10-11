@@ -4,7 +4,7 @@ using Unity.Netcode;
 using UnityEngine;
 
 namespace Multiplayer {
-    public class HostBoard : NetworkBehaviour {
+    public class HostBoard : MonoBehaviour {
         
         public static HostBoard Instance;
 
@@ -14,11 +14,12 @@ namespace Multiplayer {
 
         private readonly GameObject[] _tiles = new GameObject[100];
         private int _shipIndex = -1;
+        private bool _boardInView;
 
         private void Awake() {
-            Debug.Log("Awake Host board");
-            // TODO - TEMP
-            // GameObject.Find("ClientRotateBtn").gameObject.SetActive(false);
+            if (NetworkManager.Singleton.IsHost) {
+                GameObject.Find("ClientRotateBtn").gameObject.SetActive(false);
+            }
 
             if (Instance != null && Instance != this) {
                 Destroy(gameObject);
@@ -29,11 +30,9 @@ namespace Multiplayer {
         }
 
         void Start() {
-            // TODO - TEMP
-            return;
-            // if (!NetworkManager.Singleton.IsHost) return;
+            if (!NetworkManager.Singleton.IsHost) return;
 
-            // Move camera left
+            MainCamera.Instance.MoveCamera(-7f);
             PopulateTiles();
             StartCoroutine(DelayDropShip());
         }
@@ -90,7 +89,16 @@ namespace Multiplayer {
             }
             
             Destroy(SetupHUD.Instance.gameObject);
-            GameManager.Instance.HostSetupCompleted();
+            GameManager.Instance.HostSetupCompletedClientRpc();
+        }
+
+        public void HostTurn() {
+            MainCamera.Instance.MoveCamera(7f);
+        }
+
+        public void HostTurnTaken() {
+            MainCamera.Instance.MoveCamera(-7f);
+            GameManager.Instance.TurnTaken();
         }
     }
 }

@@ -14,12 +14,12 @@ namespace Multiplayer {
 
         private readonly GameObject[] _tiles = new GameObject[100];
         private int _shipIndex = -1;
+        private bool _boardInView;
 
         private void Awake() {
-            Debug.Log("Awake Client board");
-
-            // TODO - TEMP
-            GameObject.Find("HostRotateBtn").gameObject.SetActive(false);
+            if (!NetworkManager.Singleton.IsHost) {
+                GameObject.Find("HostRotateBtn").gameObject.SetActive(false);
+            }
 
             if (Instance != null && Instance != this) {
                 Destroy(gameObject);
@@ -30,11 +30,9 @@ namespace Multiplayer {
         }
         
         void Start() {
-            // TODO - TEMP
-            //return;
-            // if (NetworkManager.Singleton.IsHost) return;
+            if (NetworkManager.Singleton.IsHost) return;
 
-            // Move camera right
+            MainCamera.Instance.MoveCamera(7f);
             PopulateTiles();
             StartCoroutine(DelayDropShip());
         }
@@ -91,7 +89,16 @@ namespace Multiplayer {
             }
             
             Destroy(SetupHUD.Instance.gameObject);
-            GameManager.Instance.ClientSetupCompleted();
+            GameManager.Instance.ClientSetupCompletedServerRpc();
+        }
+
+        public void ClientTurn() {
+            MainCamera.Instance.MoveCamera(-7f);
+        }
+        
+        public void ClientTurnTaken() {
+            MainCamera.Instance.MoveCamera(7f);
+            GameManager.Instance.TurnTaken();
         }
     }
 }

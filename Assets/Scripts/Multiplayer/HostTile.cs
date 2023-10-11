@@ -18,6 +18,19 @@ namespace Multiplayer {
         }
 
         private void Update() {
+            Setup();
+            
+            if (!GameManager.Instance.hostTurn.Value && MouseOverTile() && Input.GetMouseButtonDown(0)) {
+                Debug.Log($"Clicked {name}");
+                DropBomb();
+            }
+        }
+
+        private void DropBomb() {
+            GameManager.Instance.TurnTaken();
+        }
+
+        private void Setup() {
             if (_setupComplete) return;
             _shipHovering = true;
             

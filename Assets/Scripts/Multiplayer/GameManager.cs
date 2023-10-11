@@ -1,4 +1,3 @@
-using System;
 using Unity.Netcode;
 using UnityEngine;
 
@@ -7,9 +6,12 @@ namespace Multiplayer {
         
         public static GameManager Instance;
 
-        private bool _hostSetupComplete;
-        private bool _clientSetupComplete;
+        public NetworkVariable<bool> hostSetupComplete = new();
+        public NetworkVariable<bool> clientSetupComplete = new();
+        public NetworkVariable<bool> hostTurn = new(true);
 
+        private bool _turnTaken = true;
+        
         private void Awake() {
             Debug.Log("Awake Game Manager");
             
@@ -22,15 +24,48 @@ namespace Multiplayer {
         }
 
         private void Update() {
-            if (!_hostSetupComplete || !_clientSetupComplete) return;
+            if (!hostSetupComplete.Value || !clientSetupComplete.Value) return;
+            if (!_turnTaken) return;
+
+            if (hostTurn.Value) {
+                Debug.Log("Host turn");
+                HostBoard.Instance.HostTurn();
+            }
+            else {
+                Debug.Log("Client turn");
+                ClientBoard.Instance.ClientTurn();
+            }
         }
 
-        public void HostSetupCompleted() {
-            _hostSetupComplete = true;
+        public void TurnTaken() {
+            _turnTaken = true;
+
+            if (NetworkManager.Singleton.IsHost) {
+                HostTurnTakenClientRpc();
+            }
+            else {
+                ClientTurnTakenServerRpc();
+            }
         }
         
-        public void ClientSetupCompleted() {
-            _clientSetupComplete = true;
+        [ClientRpc]
+        private void HostTurnTakenClientRpc() {
+            hostTurn.Value = false;
+        }
+        
+        [ServerRpc(RequireOwnership = false)]
+        private void ClientTurnTakenServerRpc() {
+            hostTurn.Value = true;
+        }
+
+        [ClientRpc]
+        public void HostSetupCompletedClientRpc() {
+            hostSetupComplete.Value = true;
+        }
+        
+        [ServerRpc(RequireOwnership = false)]
+        public void ClientSetupCompletedServerRpc() {
+            clientSetupComplete.Value = true;
         }
     }
 }
