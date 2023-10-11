@@ -8,6 +8,7 @@ namespace Multiplayer {
         [SerializeField] public Material clearTile;
         [SerializeField] public Material redTile;
         [SerializeField] public Material greenTile;
+        [SerializeField] public Material yellowTile;
 
         private GameObject _ship;
         private bool _setupComplete;
@@ -18,20 +19,29 @@ namespace Multiplayer {
         }
 
         private void Update() {
-            Setup();
-            
-            if (GameManager.Instance.hostTurn.Value && MouseOverTile() && Input.GetMouseButtonDown(0)) {
-                Debug.Log($"Clicked {name}");
-                DropBomb();
+            if (!_setupComplete) {
+                Setup();
+                return;
             }
-        }
-        
-        private void DropBomb() {
-            GameManager.Instance.TurnTaken();
+
+            if (NetworkManager.Singleton.IsHost && 
+                GameManager.Instance.hostTurn && 
+                !Missile.Instance.IsFiring() &&
+                MouseOverTile()) {
+                
+                GetComponent<Renderer>().material = yellowTile;
+
+                if (Input.GetMouseButtonDown(0)) {
+                    DropMissile();
+                }
+                
+                return;             
+            }
+            
+            GetComponent<Renderer>().material = clearTile;
         }
 
         private void Setup() {
-            if (_setupComplete) return;
             _shipHovering = true;
             
             if (MouseOverTile()) {
@@ -56,7 +66,16 @@ namespace Multiplayer {
             _shipHovering = false;
             GetComponent<Renderer>().material = clearTile;
         }
-        
+
+        private void DropMissile() {
+            GetComponent<Renderer>().material = clearTile;
+            Missile.Instance.DropMissileOnTile(transform.position);
+        }
+
+        public void MissileHit() {
+            GameManager.Instance.TurnTaken();
+        }
+
         private bool MouseOverTile() {
             if (Camera.main == null) return false;
             var ray = Camera.main.ScreenPointToRay(Input.mousePosition);
@@ -65,7 +84,6 @@ namespace Multiplayer {
 
             for (var i = 0; i < hits; i++) {
                 if (raycastHits[i].collider.gameObject.name == name) {
-                    // Debug.Log($"Tile ray cast hit {raycastHits[i].collider.gameObject.name}");
                     return true;
                 }
             }
@@ -84,14 +102,14 @@ namespace Multiplayer {
             return _shipHovering;
         }
         
-        public bool IsShipOverTile() {
+        private bool IsShipOverTile() {
             if (_setupComplete) return false;
             var position = transform.position;
             var direction = new Vector3(position.x, position.y + 50f, position.z);
             return Physics.Raycast(position, direction, out var hit) && 
                    hit.collider.gameObject.name == ClientBoard.Instance.currentShip.name;
         }
-        
+
         public void CompleteSetup(GameObject ship) {
             if (_setupComplete) return;
             _setupComplete = true;

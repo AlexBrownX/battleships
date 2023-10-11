@@ -4,7 +4,7 @@ using Unity.Netcode;
 using UnityEngine;
 
 namespace Multiplayer {
-    public class HostBoard : MonoBehaviour {
+    public class HostBoard : NetworkBehaviour {
         
         public static HostBoard Instance;
 
@@ -30,8 +30,10 @@ namespace Multiplayer {
         }
 
         void Start() {
-            if (!NetworkManager.Singleton.IsHost) return;
-
+            if (!NetworkManager.Singleton.IsHost) {
+                PopulateTiles();
+                return;
+            }
             MainCamera.Instance.MoveCamera(-7f);
             PopulateTiles();
             StartCoroutine(DelayDropShip());
@@ -89,16 +91,14 @@ namespace Multiplayer {
             }
             
             Destroy(SetupHUD.Instance.gameObject);
+            // TODO Show Game HUD
             GameManager.Instance.HostSetupCompleted();
         }
 
-        public void HostTurn() {
-            MainCamera.Instance.MoveCamera(7f);
-        }
-
-        public void HostTurnTaken() {
-            MainCamera.Instance.MoveCamera(-7f);
-            GameManager.Instance.TurnTaken();
+        public void ClientSetupCompleted() {
+            foreach (var tile in _tiles) {
+                tile.GetComponent<HostTile>().CompleteSetup(null);
+            }        
         }
     }
 }

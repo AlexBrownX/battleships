@@ -4,7 +4,7 @@ using Unity.Netcode;
 using UnityEngine;
 
 namespace Multiplayer {
-    public class ClientBoard : MonoBehaviour {
+    public class ClientBoard : NetworkBehaviour {
 
         public static ClientBoard Instance;
 
@@ -30,7 +30,10 @@ namespace Multiplayer {
         }
         
         void Start() {
-            if (NetworkManager.Singleton.IsHost) return;
+            if (NetworkManager.Singleton.IsHost) {
+                PopulateTiles();
+                return;
+            }
 
             MainCamera.Instance.MoveCamera(7f);
             PopulateTiles();
@@ -91,14 +94,11 @@ namespace Multiplayer {
             Destroy(SetupHUD.Instance.gameObject);
             GameManager.Instance.ClientSetupCompletedServerRpc();
         }
-
-        public void ClientTurn() {
-            MainCamera.Instance.MoveCamera(-7f);
-        }
         
-        public void ClientTurnTaken() {
-            MainCamera.Instance.MoveCamera(7f);
-            GameManager.Instance.TurnTaken();
+        public void HostSetupCompleted() {
+            foreach (var tile in _tiles) {
+                tile.GetComponent<ClientTile>().CompleteSetup(null);
+            }
         }
     }
 }

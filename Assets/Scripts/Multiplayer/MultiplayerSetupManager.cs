@@ -21,11 +21,6 @@ namespace Multiplayer {
         [SerializeField] private GameObject gamePrefab;
 
         private GameObject _game;
-
-        // TEMP
-        // private GameObject _cube;
-        // [SerializeField] private GameObject cubePrefab;
-        
         private readonly int _spinSpeed = 50;
         private readonly Vector3 _spinDirection = new Vector3(0, 0, -1);
 
@@ -55,7 +50,7 @@ namespace Multiplayer {
 
         private Action<ulong> OnClientConnectedCallback() {
             return clientId => {
-                Debug.Log($"Client {clientId} connected");
+                // Debug.Log($"Client {clientId} connected");
                 
                 if (NetworkManager.Singleton.IsHost && NetworkManager.Singleton.ConnectedClients.Count == 2) {
                     SpawnGame();
@@ -67,20 +62,20 @@ namespace Multiplayer {
 
         private static Action<ulong> OnClientDisconnectCallback() {
             return clientId => {
-                Debug.Log($"Client {clientId} disconnected");
+                // Debug.Log($"Client {clientId} disconnected");
             };
         }
 
         private void SpawnGame() {
-            Debug.Log($"Spawning game");
+            // Debug.Log($"Spawning game");
             _game = Instantiate(gamePrefab);
             _game.GetComponent<NetworkObject>().Spawn();
-            DontDestroyOnLoad(_game);
+            // DontDestroyOnLoad(_game);
         }
 
         [ClientRpc]
         private void HidePanelClientRpc() {
-            Debug.Log("Hiding panel");
+            // Debug.Log("Hiding panel");
             multiplayerPanel.SetActive(false);
         }
 

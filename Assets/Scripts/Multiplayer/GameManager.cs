@@ -8,62 +8,81 @@ namespace Multiplayer {
 
         public NetworkVariable<bool> hostSetupComplete = new();
         public NetworkVariable<bool> clientSetupComplete = new();
-        public NetworkVariable<bool> hostTurn = new(true);
-
-        private bool _turnTaken = true;
         
+        public bool hostTurn;
+        public bool turnTaken;
+
         private void Awake() {
-            Debug.Log("Awake Game Manager");
-            
             if (Instance != null && Instance != this) {
                 Destroy(gameObject);
             }
             else {
                 Instance = this;
             }
+            
+            
+            hostTurn = true;
+            turnTaken = true;
         }
 
         private void Update() {
             if (!hostSetupComplete.Value || !clientSetupComplete.Value) return;
-            if (!_turnTaken) return;
-
-            if (hostTurn.Value) {
+            if (!turnTaken) return;
+            
+            turnTaken = false;
+            
+            if (hostTurn) {
                 Debug.Log("Host turn");
-                HostBoard.Instance.HostTurn();
+                MainCamera.Instance.MoveCamera(7f);
+                return;
             }
-            else {
+
+            if (!hostTurn) {
                 Debug.Log("Client turn");
-                ClientBoard.Instance.ClientTurn();
+                MainCamera.Instance.MoveCamera(-7f);
+                return;
             }
         }
 
         public void TurnTaken() {
-            _turnTaken = true;
-
             if (NetworkManager.Singleton.IsHost) {
+                turnTaken = true;
+                hostTurn = false;
                 HostTurnTakenClientRpc();
             }
             else {
+                turnTaken = true;
+                hostTurn = true;
                 ClientTurnTakenServerRpc();
             }
         }
         
+        [ClientRpc]
         private void HostTurnTakenClientRpc() {
-            hostTurn.Value = false;
+            turnTaken = true;
+            hostTurn = false;
         }
         
         [ServerRpc(RequireOwnership = false)]
         private void ClientTurnTakenServerRpc() {
-            hostTurn.Value = true;
+            turnTaken = true;
+            hostTurn = true;
         }
 
         public void HostSetupCompleted() {
             hostSetupComplete.Value = true;
+            HostSetupCompletedClientRpc();
+        }
+        
+        [ClientRpc]
+        private void HostSetupCompletedClientRpc() {
+            HostBoard.Instance.ClientSetupCompleted();
         }
         
         [ServerRpc(RequireOwnership = false)]
         public void ClientSetupCompletedServerRpc() {
             clientSetupComplete.Value = true;
+            ClientBoard.Instance.HostSetupCompleted();
         }
     }
 }

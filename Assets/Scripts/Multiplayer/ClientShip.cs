@@ -1,4 +1,3 @@
-using System.Linq;
 using UnityEngine;
 
 namespace Multiplayer {
@@ -34,7 +33,7 @@ namespace Multiplayer {
             gameObject.GetComponent<BoxCollider>().isTrigger = true;
 
             // TODO - TEMP
-            Debug.Log($"{string.Join(", ", _tiles.Select(tile => tile.name).ToArray())}");
+            // Debug.Log($"{string.Join(", ", _tiles.Select(tile => tile.name).ToArray())}");
         }
     }
 }
