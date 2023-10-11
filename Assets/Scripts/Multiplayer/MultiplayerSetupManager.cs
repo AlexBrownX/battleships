@@ -18,10 +18,14 @@ namespace Multiplayer {
         [SerializeField] private GameObject loadingImage;
         [SerializeField] private TextMeshProUGUI joinCodeOutput;
         [SerializeField] private TMP_InputField joinCodeInput;
+        [SerializeField] private GameObject gamePrefab;
+
+        private GameObject _game;
 
         // TEMP
-        private GameObject _cube;
-        [SerializeField] private GameObject cubePrefab;
+        // private GameObject _cube;
+        // [SerializeField] private GameObject cubePrefab;
+        
         private readonly int _spinSpeed = 50;
         private readonly Vector3 _spinDirection = new Vector3(0, 0, -1);
 
@@ -54,7 +58,7 @@ namespace Multiplayer {
                 Debug.Log($"Client {clientId} connected");
                 
                 if (NetworkManager.Singleton.IsHost && NetworkManager.Singleton.ConnectedClients.Count == 2) {
-                    SpawnCube();
+                    SpawnGame();
                     multiplayerPanel.SetActive(false);
                     HidePanelClientRpc();
                 }
@@ -67,11 +71,11 @@ namespace Multiplayer {
             };
         }
 
-        private void SpawnCube() {
-            Debug.Log($"Spawn cube");
-            _cube = Instantiate(cubePrefab);
-            _cube.GetComponent<NetworkObject>().Spawn();
-            DontDestroyOnLoad(_cube);
+        private void SpawnGame() {
+            Debug.Log($"Spawning game");
+            _game = Instantiate(gamePrefab);
+            _game.GetComponent<NetworkObject>().Spawn();
+            DontDestroyOnLoad(_game);
         }
 
         [ClientRpc]
