@@ -48,7 +48,6 @@ namespace Multiplayer {
             }
         }
         
-        [ClientRpc]
         private void HostTurnTakenClientRpc() {
             hostTurn.Value = false;
         }
@@ -58,8 +57,7 @@ namespace Multiplayer {
             hostTurn.Value = true;
         }
 
-        [ClientRpc]
-        public void HostSetupCompletedClientRpc() {
+        public void HostSetupCompleted() {
             hostSetupComplete.Value = true;
         }
         

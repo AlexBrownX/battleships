@@ -89,7 +89,7 @@ namespace Multiplayer {
             }
             
             Destroy(SetupHUD.Instance.gameObject);
-            GameManager.Instance.HostSetupCompletedClientRpc();
+            GameManager.Instance.HostSetupCompleted();
         }
 
         public void HostTurn() {
