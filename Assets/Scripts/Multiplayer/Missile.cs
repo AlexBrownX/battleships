@@ -19,19 +19,14 @@ namespace Multiplayer {
         }
 
         void OnCollisionEnter(Collision collision) {
-            Debug.Log($"missile hit - {collision.gameObject.name}");
+            // Debug.Log($"missile hit - {collision.gameObject.name}");
             GetComponent<Renderer>().enabled = false;
-            StartCoroutine(DelayedTakeTurn());
 
             // if (GameManager.Instance.hostTurn && NetworkManager.Singleton.IsHost) {
-            //     GameManager.Instance.TurnTaken();
-            //     Despawn();
+            //     collision.gameObject.GetComponent<ClientTile>().MissileHitTile();
             // }
-            //
-            // if (!GameManager.Instance.hostTurn && !NetworkManager.Singleton.IsHost) {
-            //     GameManager.Instance.TurnTaken();
-            //     DespawnServerRpc();
-            // }
+            
+            StartCoroutine(DelayedTakeTurn());
         }
 
         private IEnumerator DelayedTakeTurn() {
