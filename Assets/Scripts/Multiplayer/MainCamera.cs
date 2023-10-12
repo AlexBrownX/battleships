@@ -5,6 +5,7 @@ namespace Multiplayer {
         
         public static MainCamera Instance;
 
+        private readonly float _cameraSpeed = 10f;
         private bool _isMoving;
         private Vector3 _startPosition;
         private Vector3 _endPosition;
@@ -22,7 +23,7 @@ namespace Multiplayer {
             if (!_isMoving) return;
             
             _startPosition = Camera.main.transform.position;
-            Camera.main.transform.position = Vector3.MoveTowards(_startPosition, _endPosition, 5f * Time.deltaTime);
+            Camera.main.transform.position = Vector3.MoveTowards(_startPosition, _endPosition, _cameraSpeed * Time.deltaTime);
             if (Camera.main.transform.position.Equals(_endPosition)) {
                 _isMoving = false;
             }

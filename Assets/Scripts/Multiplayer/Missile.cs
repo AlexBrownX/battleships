@@ -1,7 +1,8 @@
+using Unity.Netcode;
 using UnityEngine;
 
 namespace Multiplayer {
-    public class Missile : MonoBehaviour {
+    public class Missile : NetworkBehaviour {
         
         public static Missile Instance;
 
@@ -14,41 +15,29 @@ namespace Multiplayer {
             else {
                 Instance = this;
             }
-            
-            DisableMissile();
-        }
-
-        public void DropMissileOnTile(Vector3 tilePosition) {
-            var dropPosition = new Vector3(tilePosition.x, tilePosition.y + 7f, tilePosition.z);
-            transform.position = dropPosition;
-            EnableMissile();
         }
 
         void OnCollisionEnter(Collision collision) {
-            if (GameManager.Instance.hostTurn) {
-                collision.gameObject.GetComponent<ClientTile>().MissileHit();
-            }
-            else {
-                collision.gameObject.GetComponent<HostTile>().MissileHit();
-            }
+            Debug.Log($"missile hit - {collision.gameObject.name}");
             
-            DisableMissile();
+            if (GameManager.Instance.hostTurn && NetworkManager.Singleton.IsHost) {
+                GameManager.Instance.TurnTaken();
+                Despawn();
+            }
+
+            if (!GameManager.Instance.hostTurn && !NetworkManager.Singleton.IsHost) {
+                GameManager.Instance.TurnTaken();
+                DespawnServerRpc();
+            }
         }
 
-        public bool IsFiring() {
-            return _isFiring;
+        private void Despawn() {
+            GetComponent<NetworkObject>().Despawn();
         }
         
-        private void EnableMissile() {
-            GetComponent<Renderer>().enabled = true;
-            gameObject.SetActive(true);
-            _isFiring = true;
-        }
-
-        private void DisableMissile() {
-            GetComponent<Renderer>().enabled = false;
-            gameObject.SetActive(false);
-            _isFiring = false;
+        [ServerRpc(RequireOwnership = false)]
+        private void DespawnServerRpc() {
+            GetComponent<NetworkObject>().Despawn();
         }
     }
 }

@@ -5,40 +5,19 @@ using Random = UnityEngine.Random;
 namespace Multiplayer {
     public class HostTile : NetworkBehaviour {
 
+        [SerializeField] private GameObject missilePrefab;
         [SerializeField] public Material clearTile;
         [SerializeField] public Material redTile;
         [SerializeField] public Material greenTile;
         [SerializeField] public Material yellowTile;
 
+        private GameObject _missile;
         private GameObject _ship;
         private bool _setupComplete;
         private bool _shipHovering;
 
         void Start() {
             GetComponent<Rigidbody>().maxLinearVelocity = Random.Range(1.5f, 3.0f);
-        }
-
-        private void Update() {
-            if (!_setupComplete) {
-                Setup();
-                return;
-            }
-
-            if (!NetworkManager.Singleton.IsHost && 
-                !GameManager.Instance.hostTurn && 
-                !Missile.Instance.IsFiring() &&
-                MouseOverTile()) {
-                
-                GetComponent<Renderer>().material = yellowTile;
-
-                if (Input.GetMouseButtonDown(0)) {
-                    DropMissile();
-                }
-                
-                return;
-            }
-            
-            GetComponent<Renderer>().material = clearTile;
         }
 
         private void Setup() {
@@ -67,13 +46,43 @@ namespace Multiplayer {
             GetComponent<Renderer>().material = clearTile;
         }
 
-        private void DropMissile() {
+        private void Update() {
+            if (!_setupComplete) {
+                Setup();
+                return;
+            }
+
+            if (!NetworkManager.Singleton.IsHost && 
+                !GameManager.Instance.hostTurn && 
+                _missile == null &&
+                MouseOverTile()) {
+                
+                GetComponent<Renderer>().material = yellowTile;
+
+                if (Input.GetMouseButtonDown(0)) {
+                    DropMissile();
+                }
+                
+                return;
+            }
+            
             GetComponent<Renderer>().material = clearTile;
-            Missile.Instance.DropMissileOnTile(transform.position);
         }
 
-        public void MissileHit() {
-            GameManager.Instance.TurnTaken();
+        private void DropMissile() {
+            GetComponent<Renderer>().material = clearTile;
+            
+            var position = transform.position;
+            var dropPosition = new Vector3(position.x, position.y + 7f, position.z);
+
+            SpawnMissileServerRpc(dropPosition);
+        }
+        
+        [ServerRpc(RequireOwnership = false)]
+        private void SpawnMissileServerRpc(Vector3 dropPosition) {
+            _missile = Instantiate(missilePrefab);
+            _missile.transform.position = dropPosition;
+            _missile.GetComponent<NetworkObject>().Spawn();
         }
 
         private bool MouseOverTile() {
