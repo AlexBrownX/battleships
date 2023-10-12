@@ -8,11 +8,18 @@ using Unity.Services.Core;
 using Unity.Services.Relay;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.Serialization;
+using UnityEngine.UI;
+using UnityEngine.UIElements;
+using Button = UnityEngine.UIElements.Button;
 
 namespace Multiplayer {
     public class MultiplayerSetupManager : NetworkBehaviour {
 
         public static MultiplayerSetupManager Instance;
+
+        [SerializeField] private GameObject startHostBtn;
+        [SerializeField] private GameObject startClientBtn;
         
         [SerializeField] private GameObject multiplayerPanel;
         [SerializeField] private GameObject loadingImage;
@@ -61,36 +68,37 @@ namespace Multiplayer {
         }
 
         private static Action<ulong> OnClientDisconnectCallback() {
-            return clientId => {
-                // Debug.Log($"Client {clientId} disconnected");
+            return _ => {
+                SceneManager.LoadScene("Scenes/MainMenu/MainMenuScene");
             };
         }
 
         private void SpawnGame() {
-            // Debug.Log($"Spawning game");
             _game = Instantiate(gamePrefab);
             _game.GetComponent<NetworkObject>().Spawn();
-            // DontDestroyOnLoad(_game);
         }
 
         [ClientRpc]
         private void HidePanelClientRpc() {
-            // Debug.Log("Hiding panel");
             multiplayerPanel.SetActive(false);
         }
 
         public async void StartHost() {
             try {
+                startHostBtn.GetComponentInChildren<TMP_Text>().text = "Generating Join Code";
+
                 ToggleLoadingImage(true);
                 var allocation = await RelayService.Instance.CreateAllocationAsync(1);
                 var joinCode = await RelayService.Instance.GetJoinCodeAsync(allocation.AllocationId);
                 joinCodeOutput.text = "Join Code: " + joinCode;
+                startHostBtn.GetComponentInChildren<TMP_Text>().text = "Send To Player 2";
 
                 var relayServerData = new RelayServerData(allocation, "dtls");
                 NetworkManager.Singleton.GetComponent<UnityTransport>().SetRelayServerData(relayServerData);
                 NetworkManager.Singleton.StartHost();
             }
             catch (Exception exception) {
+                startHostBtn.GetComponentInChildren<TMP_Text>().text = "Host Game";
                 ToggleLoadingImage(false);
                 Debug.LogError(exception);
             }
@@ -98,6 +106,7 @@ namespace Multiplayer {
 
         public async void StartClient() {
             try {
+                startClientBtn.GetComponentInChildren<TMP_Text>().text = "Joining Game";
                 ToggleLoadingImage(true);
                 var joinAllocation = await RelayService.Instance.JoinAllocationAsync(joinCodeInput.text);
                 var relayServerData = new RelayServerData(joinAllocation, "dtls");
@@ -105,6 +114,7 @@ namespace Multiplayer {
                 NetworkManager.Singleton.StartClient();
             }
             catch (Exception exception) {
+                startClientBtn.GetComponentInChildren<TMP_Text>().text = "Join Game";
                 ToggleLoadingImage(false);
                 Debug.LogError(exception);
             }
