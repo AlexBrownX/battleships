@@ -1,3 +1,4 @@
+using System.Collections;
 using Unity.Netcode;
 using UnityEngine;
 
@@ -19,6 +20,22 @@ namespace Multiplayer {
 
         void OnCollisionEnter(Collision collision) {
             Debug.Log($"missile hit - {collision.gameObject.name}");
+            GetComponent<Renderer>().enabled = false;
+            StartCoroutine(DelayedTakeTurn());
+
+            // if (GameManager.Instance.hostTurn && NetworkManager.Singleton.IsHost) {
+            //     GameManager.Instance.TurnTaken();
+            //     Despawn();
+            // }
+            //
+            // if (!GameManager.Instance.hostTurn && !NetworkManager.Singleton.IsHost) {
+            //     GameManager.Instance.TurnTaken();
+            //     DespawnServerRpc();
+            // }
+        }
+
+        private IEnumerator DelayedTakeTurn() {
+            yield return new WaitForSeconds(0.3f);
             
             if (GameManager.Instance.hostTurn && NetworkManager.Singleton.IsHost) {
                 GameManager.Instance.TurnTaken();
@@ -30,7 +47,7 @@ namespace Multiplayer {
                 DespawnServerRpc();
             }
         }
-
+        
         private void Despawn() {
             GetComponent<NetworkObject>().Despawn();
         }

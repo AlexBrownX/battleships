@@ -5,7 +5,7 @@ namespace Multiplayer {
         
         public static MainCamera Instance;
 
-        private readonly float _cameraSpeed = 10f;
+        private readonly float _cameraSpeed = 6f;
         private bool _isMoving;
         private Vector3 _startPosition;
         private Vector3 _endPosition;
