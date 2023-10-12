@@ -12,6 +12,7 @@ namespace Multiplayer {
         [SerializeField] public GameObject[] ships = new GameObject[5];
 
         public GameObject currentShip;
+        public List<List<KeyValuePair<string, bool>>> _shipLocations = new();
 
         private readonly GameObject[] _tiles = new GameObject[100];
         private int _shipIndex = -1;
@@ -102,10 +103,55 @@ namespace Multiplayer {
         }
 
         public void ClientSetupCompleted(List<string[]> hostShipLocations) {
+            foreach (var hostShipLocation in hostShipLocations) {
+                List<KeyValuePair<string, bool>> ship = hostShipLocation.Select(shipTile => new KeyValuePair<string, bool>(shipTile, false)).ToList();
+                _shipLocations.Add(ship);
+            }
+
             foreach (var tile in _tiles) {
                 var hasShip = hostShipLocations.SelectMany(shipLocation => shipLocation).Any(shipTile => shipTile == tile.name);
                 tile.GetComponent<HostTile>().CompleteSetup(hasShip);
             }        
+        }
+        
+        public void ShipHit(string tileHit) {
+            UpdateShipLocations(tileHit);
+            
+        }
+
+        private void UpdateShipLocations(string tileHit) {
+            var updatedShipLocations = new List<List<KeyValuePair<string, bool>>>();
+            
+            foreach (var shipLocation in _shipLocations) {
+                var updatedShitLocation = new List<KeyValuePair<string, bool>>();
+                
+                foreach (var tile in shipLocation) {
+                    if (tile.Key == tileHit) {
+                        var updatedTile = new KeyValuePair<string, bool>(tile.Key, true);
+                        updatedShitLocation.Add(updatedTile);
+                    }
+                    else {
+                        updatedShitLocation.Add(tile);
+                    }
+                }
+                updatedShipLocations.Add(updatedShitLocation);
+            }
+
+            _shipLocations = updatedShipLocations;
+        }
+
+        public int HitCounts() {
+            var hitCounts = 0;
+            
+            _shipLocations.ForEach(shipLocation => {
+                hitCounts += shipLocation.Count(ship => ship.Value);
+            });
+
+            return hitCounts;
+        }
+
+        public int SunkCounts() {
+            return _shipLocations.Count(shipLocation => shipLocation.Count == shipLocation.Count(ship => ship.Value));
         }
     }
 }

@@ -11,11 +11,17 @@ namespace Multiplayer {
         public NetworkVariable<bool> hostSetupComplete = new();
         public NetworkVariable<bool> clientSetupComplete = new();
         
+        public NetworkVariable<int> hostHitCount = new();
+        public NetworkVariable<int> clientHitCount = new();
+        public NetworkVariable<int> hostSunkCount = new();
+        public NetworkVariable<int> clientSunkCount = new();
+
+        
         public bool hostTurn;
         public bool turnTaken;
         
-        private char[] _shipGroupsDelimiter = { '[', ']' };
-        char[] _tileDelimiter = { ',' };
+        private readonly char[] _shipGroupsDelimiter = { '[', ']' };
+        private readonly char[] _tileDelimiter = { ',' };
 
         private void Awake() {
             if (Instance != null && Instance != this) {
@@ -25,7 +31,6 @@ namespace Multiplayer {
                 Instance = this;
             }
             
-            
             hostTurn = true;
             turnTaken = true;
         }
@@ -34,9 +39,11 @@ namespace Multiplayer {
             if (!hostSetupComplete.Value || !clientSetupComplete.Value) return;
             if (!turnTaken) return;
             turnTaken = false;
-            
-            
-            
+
+            HitCounts();
+            Debug.Log($"Host Hits: {hostHitCount.Value} Client Hits: {clientHitCount.Value}");
+            Debug.Log($"Host Sunk: {hostSunkCount.Value} Client Sunk: {clientSunkCount.Value}");
+
             if (hostTurn) {
                 Debug.Log("Host turn");
                 MainCamera.Instance.MoveCamera(7f);
@@ -50,6 +57,30 @@ namespace Multiplayer {
             }
         }
 
+        private void HitCounts() {
+            if (NetworkManager.Singleton.IsHost) {
+                hostHitCount.Value = ClientBoard.Instance.HitCounts();
+                hostSunkCount.Value = ClientBoard.Instance.SunkCounts();
+            }
+            else {
+                SetClientHitCountServerRpc(HostBoard.Instance.HitCounts());
+                SetClientSunkCountServerRpc(HostBoard.Instance.SunkCounts());
+            }
+        }
+        
+        [ServerRpc(RequireOwnership = false)]
+        private void SetClientHitCountServerRpc(int count) {
+            clientHitCount.Value = count;
+        }
+        
+        [ServerRpc(RequireOwnership = false)]
+        private void SetClientSunkCountServerRpc(int count) {
+            clientSunkCount.Value = count;
+        }
+
+        /*
+         * Progress to the next players turn, and synchronise.
+         */
         public void TurnTaken() {
             if (NetworkManager.Singleton.IsHost) {
                 turnTaken = true;
@@ -63,18 +94,27 @@ namespace Multiplayer {
             }
         }
         
+        /*
+         * When host turn taken, synchronise the client
+         */
         [ClientRpc]
         private void HostTurnTakenClientRpc() {
             turnTaken = true;
             hostTurn = false;
         }
         
+        /*
+         * When client turn taken, synchronise the host
+         */
         [ServerRpc(RequireOwnership = false)]
         private void ClientTurnTakenServerRpc() {
             turnTaken = true;
             hostTurn = true;
         }
 
+        /*
+         * When the host has finished placing ships, sends the ship locations to the client.
+         */
         public void HostSetupCompleted(List<string[]> hostShipTiles) {
             hostSetupComplete.Value = true;
             HostSetupCompletedClientRpc(Serialize(hostShipTiles));
@@ -86,6 +126,9 @@ namespace Multiplayer {
             HostBoard.Instance.ClientSetupCompleted(deserialized);
         }
 
+        /*
+         * When the client has finished placing ships, sends the ship locations to the host.
+         */        
         public void ClientSetupCompleted(List<string[]> clientShipTiles) {
             ClientSetupCompletedServerRpc(Serialize(clientShipTiles));
         }
@@ -97,6 +140,9 @@ namespace Multiplayer {
             ClientBoard.Instance.HostSetupCompleted(deserialized);
         }
 
+        /*
+         * Serializes a list of ship tile arrays to a string format.
+         */
         private string Serialize(List<string[]> hostShipTiles) {
             var serialized = "";
             foreach (var ship in hostShipTiles) {
@@ -111,6 +157,9 @@ namespace Multiplayer {
             return serialized;
         }
 
+        /*
+         * Deserializes a string into a list of ship tile arrays.
+         */
         private List<string[]> Deserialize(string serialized) {
             var ships = serialized.Split(_shipGroupsDelimiter);
             ships = ships.Where(ship => !string.IsNullOrEmpty(ship)).ToArray();

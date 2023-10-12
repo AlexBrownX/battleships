@@ -66,6 +66,7 @@ namespace Multiplayer {
             _missileHit = true;
             if (_hasShip) {
                 GetComponent<Renderer>().material = greenTile;
+                HostBoard.Instance.ShipHit(name);
             }
             else {
                 GetComponent<Renderer>().material = redTile;
