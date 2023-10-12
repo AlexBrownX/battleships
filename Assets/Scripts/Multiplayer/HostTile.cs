@@ -12,9 +12,10 @@ namespace Multiplayer {
         [SerializeField] public Material yellowTile;
 
         private GameObject _missile;
-        private GameObject _ship;
+        private bool _hasShip;
         private bool _setupComplete;
         private bool _shipHovering;
+        private bool _missileHit;
 
         void Start() {
             GetComponent<Rigidbody>().maxLinearVelocity = Random.Range(1.5f, 3.0f);
@@ -25,6 +26,8 @@ namespace Multiplayer {
                 Setup();
                 return;
             }
+
+            if (_missileHit) return;
 
             if (!NetworkManager.Singleton.IsHost && 
                 !GameManager.Instance.hostTurn && 
@@ -59,6 +62,16 @@ namespace Multiplayer {
             _missile.GetComponent<NetworkObject>().Spawn();
         }
 
+        public void MissileHitTile() {
+            _missileHit = true;
+            if (_hasShip) {
+                GetComponent<Renderer>().material = greenTile;
+            }
+            else {
+                GetComponent<Renderer>().material = redTile;
+            }
+        }
+        
         private bool MouseOverTile() {
             if (Camera.main == null) return false;
             var ray = Camera.main.ScreenPointToRay(Input.mousePosition);
@@ -121,11 +134,12 @@ namespace Multiplayer {
                    hit.collider.gameObject.name == HostBoard.Instance.currentShip.name;
         }
         
-        public void CompleteSetup(GameObject ship) {
+        public void CompleteSetup(bool hasShip) {
             if (_setupComplete) return;
+            if (_hasShip) return;
             _setupComplete = true;
             _shipHovering = false;
-            _ship = ship;
+            _hasShip = hasShip;
             GetComponent<Renderer>().material = clearTile;
         }
     }

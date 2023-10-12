@@ -1,4 +1,5 @@
 using System.Collections;
+using System.Collections.Generic;
 using System.Linq;
 using Unity.Netcode;
 using UnityEngine;
@@ -15,6 +16,7 @@ namespace Multiplayer {
         private readonly GameObject[] _tiles = new GameObject[100];
         private int _shipIndex = -1;
         private bool _boardInView;
+        private readonly List<string[]> _clientShipTiles = new();
 
         private void Awake() {
             if (!NetworkManager.Singleton.IsHost) {
@@ -74,13 +76,18 @@ namespace Multiplayer {
         }
         
         public void PlaceShip() {
+            var shipIndex = 0;
+            var shipTileNames = new string[currentShip.GetComponent<ClientShip>().shipSize];
             var shipTiles = _tiles.Where(tile => tile.GetComponent<ClientTile>().IsShipHovering()).ToArray();
             currentShip.GetComponent<ClientShip>().PlaceShip(shipTiles);
 
             foreach (var shipTile in shipTiles) {
-                shipTile.GetComponent<ClientTile>().CompleteSetup(currentShip);
+                shipTile.GetComponent<ClientTile>().CompleteSetup(true);
+                shipTileNames[shipIndex] = shipTile.name;
+                shipIndex++;
             }
             
+            _clientShipTiles.Add(shipTileNames);
             SetNextShip();
         }
         
@@ -88,16 +95,17 @@ namespace Multiplayer {
             currentShip = null;
             
             foreach (var tile in _tiles) {
-                tile.GetComponent<ClientTile>().CompleteSetup(null);
+                tile.GetComponent<ClientTile>().CompleteSetup(false);
             }
             
             Destroy(SetupHUD.Instance.gameObject);
-            GameManager.Instance.ClientSetupCompletedServerRpc();
+            GameManager.Instance.ClientSetupCompleted(_clientShipTiles);
         }
         
-        public void HostSetupCompleted() {
+        public void HostSetupCompleted(List<string[]> clientShipLocations) {
             foreach (var tile in _tiles) {
-                tile.GetComponent<ClientTile>().CompleteSetup(null);
+                var hasShip = clientShipLocations.SelectMany(shipLocation => shipLocation).Any(shipTile => shipTile == tile.name);
+                tile.GetComponent<ClientTile>().CompleteSetup(hasShip);
             }
         }
     }
