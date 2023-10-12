@@ -34,7 +34,7 @@ namespace Multiplayer {
                 GetComponent<Renderer>().material = yellowTile;
 
                 if (Input.GetMouseButtonDown(0)) {
-                    DropMissile();
+                    DropMissileAboveTile();
                 }
                 
                 return;             
@@ -43,7 +43,7 @@ namespace Multiplayer {
             GetComponent<Renderer>().material = clearTile;
         }
 
-        private void DropMissile() {
+        private void DropMissileAboveTile() {
             GetComponent<Renderer>().material = clearTile;
 
             var position = transform.position;
@@ -54,6 +54,10 @@ namespace Multiplayer {
 
             _missile.GetComponent<NetworkObject>().Spawn();
         }
+
+        // public void MissileHitTile() {
+        //     
+        // }
         
         private bool MouseOverTile() {
             if (Camera.main == null) return false;
