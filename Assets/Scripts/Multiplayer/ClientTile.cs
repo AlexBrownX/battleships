@@ -20,32 +20,6 @@ namespace Multiplayer {
             GetComponent<Rigidbody>().maxLinearVelocity = Random.Range(1.5f, 3.0f);
         }
 
-        private void Setup() {
-            _shipHovering = true;
-            
-            if (MouseOverTile()) {
-                HoverShip();
-            }
-            
-            if (IsShipOverTile()) {
-                if (ClientBoard.Instance.CanPlaceShip()) {
-                    GetComponent<Renderer>().material = greenTile;
-            
-                    if (MouseOverTile() && Input.GetMouseButtonDown(0)) {
-                        ClientBoard.Instance.PlaceShip();
-                        return;
-                    }
-                }
-                else {
-                    GetComponent<Renderer>().material = redTile;
-                }
-                return;
-            }
-            
-            _shipHovering = false;
-            GetComponent<Renderer>().material = clearTile;
-        }
-
         private void Update() {
             if (!_setupComplete) {
                 Setup();
@@ -79,22 +53,8 @@ namespace Multiplayer {
             _missile.transform.position = dropPosition;
 
             _missile.GetComponent<NetworkObject>().Spawn();
-            // Missile.Instance.DropMissileOnTile(position);
         }
-
-        // // [ClientRpc]
-        // public void MissileHit() {
-        //     _missile.GetComponent<NetworkObject>().Despawn();
-        //     Destroy(_missile);
-        //     // GameManager.Instance.TurnTaken();
-        // }
         
-        // [ServerRpc(RequireOwnership = false)]
-        // public void MissileHitServerRpc() {
-        //     _missile.GetComponent<NetworkObject>().Despawn();
-        //     GameManager.Instance.TurnTaken();
-        // }
-
         private bool MouseOverTile() {
             if (Camera.main == null) return false;
             var ray = Camera.main.ScreenPointToRay(Input.mousePosition);
@@ -110,6 +70,38 @@ namespace Multiplayer {
             return false;
         }
         
+        // SETUP ------------------------------------------------------------------
+
+        private void Setup() {
+            _shipHovering = true;
+            
+            if (MouseOverTile()) {
+                HoverShip();
+            }
+            
+            if (IsShipOverTile()) {
+                if (ClientBoard.Instance.CanPlaceShip()) {
+                    GetComponent<Renderer>().material = greenTile;
+            
+                    if (MouseOverTile() && Input.GetMouseButtonDown(0)) {
+                        ClientBoard.Instance.PlaceShip();
+                        return;
+                    }
+                }
+                else {
+                    GetComponent<Renderer>().material = redTile;
+                }
+                return;
+            }
+            
+            _shipHovering = false;
+            GetComponent<Renderer>().material = clearTile;
+        }
+
+        public bool IsShipHovering() {
+            return _shipHovering;
+        }
+
         private void HoverShip() {
             if (ClientBoard.Instance.currentShip == null) return;
             var tilePosition = transform.position;
@@ -117,10 +109,6 @@ namespace Multiplayer {
             ClientBoard.Instance.currentShip.transform.position = hoverPosition;
         }
 
-        public bool IsShipHovering() {
-            return _shipHovering;
-        }
-        
         private bool IsShipOverTile() {
             if (_setupComplete) return false;
             var position = transform.position;

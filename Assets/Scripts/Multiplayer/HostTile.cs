@@ -20,32 +20,6 @@ namespace Multiplayer {
             GetComponent<Rigidbody>().maxLinearVelocity = Random.Range(1.5f, 3.0f);
         }
 
-        private void Setup() {
-            _shipHovering = true;
-            
-            if (MouseOverTile()) {
-                HoverShip();
-            }
-            
-            if (IsShipOverTile()) {
-                if (HostBoard.Instance.CanPlaceShip()) {
-                    GetComponent<Renderer>().material = greenTile;
-            
-                    if (MouseOverTile() && Input.GetMouseButtonDown(0)) {
-                        HostBoard.Instance.PlaceShip();
-                        return;
-                    }
-                }
-                else {
-                    GetComponent<Renderer>().material = redTile;
-                }
-                return;
-            }
-            
-            _shipHovering = false;
-            GetComponent<Renderer>().material = clearTile;
-        }
-
         private void Update() {
             if (!_setupComplete) {
                 Setup();
@@ -99,7 +73,39 @@ namespace Multiplayer {
 
             return false;
         }
-        
+
+        // SETUP ------------------------------------------------------------------
+
+        private void Setup() {
+            _shipHovering = true;
+            
+            if (MouseOverTile()) {
+                HoverShip();
+            }
+            
+            if (IsShipOverTile()) {
+                if (HostBoard.Instance.CanPlaceShip()) {
+                    GetComponent<Renderer>().material = greenTile;
+            
+                    if (MouseOverTile() && Input.GetMouseButtonDown(0)) {
+                        HostBoard.Instance.PlaceShip();
+                        return;
+                    }
+                }
+                else {
+                    GetComponent<Renderer>().material = redTile;
+                }
+                return;
+            }
+            
+            _shipHovering = false;
+            GetComponent<Renderer>().material = clearTile;
+        }
+
+        public bool IsShipHovering() {
+            return _shipHovering;
+        }
+
         private void HoverShip() {
             if (HostBoard.Instance.currentShip == null) return;
             var tilePosition = transform.position;
@@ -107,10 +113,6 @@ namespace Multiplayer {
             HostBoard.Instance.currentShip.transform.position = hoverPosition;
         }
 
-        public bool IsShipHovering() {
-            return _shipHovering;
-        }
-        
         private bool IsShipOverTile() {
             if (_setupComplete) return false;
             var position = transform.position;
