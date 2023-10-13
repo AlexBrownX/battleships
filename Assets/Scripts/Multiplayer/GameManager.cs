@@ -44,9 +44,10 @@ namespace Multiplayer {
             if (!hostSetupComplete.Value || !clientSetupComplete.Value) return;
             
             CountHits();
-            // CheckWin();
 
             if (hostWin.Value) {
+                GetComponent<AudioSource>().Stop();
+                AudioSource.PlayClipAtPoint(NetworkManager.Singleton.IsHost ? win : lose, transform.position, 1f);
                 GameHUD.Instance.HostWin();
                 HostBoard.Instance.Finish();
                 ClientBoard.Instance.Finish();
@@ -54,6 +55,8 @@ namespace Multiplayer {
             }
             
             if (clientWin.Value) {
+                GetComponent<AudioSource>().Stop();
+                AudioSource.PlayClipAtPoint(NetworkManager.Singleton.IsHost ? lose : win, transform.position, 1f);
                 GameHUD.Instance.ClientWin();
                 HostBoard.Instance.Finish();
                 ClientBoard.Instance.Finish();
@@ -76,43 +79,7 @@ namespace Multiplayer {
                     break;
             }
         }
-
-        // private void CheckWin() {
-        //     if (NetworkManager.Singleton.IsHost && HostWin()) {
-        //         hostWin.Value = true;
-        //     }
-        //     
-        //     if (!NetworkManager.Singleton.IsHost && HostWin()) {
-        //         ClientInformedHostWinServerRpc();
-        //     }
-        //     
-        //     if (NetworkManager.Singleton.IsHost && ClientWin()) {
-        //         clientWin.Value = true;
-        //     }
-        //     
-        //     if (!NetworkManager.Singleton.IsHost && ClientWin()) {
-        //         ClientInformedClientWinServerRpc();
-        //     }
-        // }
         
-        // [ServerRpc(RequireOwnership = false)]
-        // private void ClientInformedHostWinServerRpc() {
-        //     hostWin.Value = true;
-        // }
-        //
-        // [ServerRpc(RequireOwnership = false)]
-        // private void ClientInformedClientWinServerRpc() {
-        //     clientWin.Value = true;
-        // }
-        //
-        // private bool HostWin() {
-        //     return hostSunkCount.Value == 5;
-        // }
-        //
-        // private bool ClientWin() {
-        //     return clientSunkCount.Value == 5;
-        // }
-
         private void CountHits() {
             if (NetworkManager.Singleton.IsHost) {
                 hostHitCount.Value = ClientBoard.Instance.HitCounts();

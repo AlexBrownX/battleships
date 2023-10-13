@@ -166,6 +166,10 @@ namespace Multiplayer {
             foreach (var tile in _tiles) {
                 tile.GetComponent<Renderer>().enabled = false;
             }
+                        
+            foreach (var ship in ships) {
+                ship.GetComponent<Renderer>().enabled = false;
+            }
         }
     }
 }
