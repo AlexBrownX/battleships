@@ -24,8 +24,7 @@ namespace Multiplayer {
                 Instance = this;
             }
 
-            headerText.text = "";
-            headerText.text = "";
+            headerText.text = "Place your battleships";
             hostHitCount.text = "";
             hostSunkCount.text = "";
             clientHitCount.text = "";

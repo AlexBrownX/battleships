@@ -36,9 +36,5 @@ namespace Multiplayer {
             // TODO - TEMP
             // Debug.Log($"{string.Join(", ", _tiles.Select(tile => tile.name).ToArray())}");
         }
-        
-        void OnCollisionEnter() {
-            AudioSource.PlayClipAtPoint(splash, transform.position, 0.1f);
-        }
     }
 }

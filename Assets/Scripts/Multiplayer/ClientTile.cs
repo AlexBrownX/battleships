@@ -103,6 +103,7 @@ namespace Multiplayer {
                     GetComponent<Renderer>().material = greenTile;
             
                     if (MouseOverTile() && Input.GetMouseButtonDown(0)) {
+                        AudioSource.PlayClipAtPoint(splash, transform.position, 0.5f);
                         ClientBoard.Instance.PlaceShip();
                         return;
                     }
