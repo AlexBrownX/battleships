@@ -4,19 +4,10 @@ using UnityEngine;
 
 namespace Multiplayer {
     public class Missile : NetworkBehaviour {
-        
-        public static Missile Instance;
 
         [SerializeField] public AudioClip falling;
 
         private void Awake() {
-            if (Instance != null && Instance != this) {
-                Destroy(gameObject);
-            }
-            else {
-                Instance = this;
-            }
-            
             AudioSource.PlayClipAtPoint(falling, transform.position, 0.5f);
         }
 

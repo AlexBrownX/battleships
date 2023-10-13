@@ -12,8 +12,6 @@ using UnityEngine.SceneManagement;
 namespace Multiplayer {
     public class MultiplayerSetupManager : NetworkBehaviour {
 
-        public static MultiplayerSetupManager Instance;
-
         [SerializeField] private GameObject startHostBtn;
         [SerializeField] private GameObject startClientBtn;
         
@@ -28,13 +26,6 @@ namespace Multiplayer {
         private readonly Vector3 _spinDirection = new Vector3(0, 0, -1);
 
         void Awake() {
-            if (Instance != null && Instance != this) {
-                Destroy(gameObject);
-            }
-            else {
-                Instance = this;
-            }
-            
             ToggleLoadingImage(false);
         }
 
@@ -52,9 +43,7 @@ namespace Multiplayer {
         }
 
         private Action<ulong> OnClientConnectedCallback() {
-            return clientId => {
-                // Debug.Log($"Client {clientId} connected");
-                
+            return _ => {
                 if (NetworkManager.Singleton.IsHost && NetworkManager.Singleton.ConnectedClients.Count == 2) {
                     GetComponent<AudioSource>().Stop();
                     StopMuzakClientRpc();
@@ -72,7 +61,7 @@ namespace Multiplayer {
         }
 
         [ClientRpc]
-        public void StopMuzakClientRpc() {
+        private void StopMuzakClientRpc() {
             GetComponent<AudioSource>().Stop();
         }
 

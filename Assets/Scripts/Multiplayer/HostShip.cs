@@ -1,14 +1,11 @@
 using UnityEngine;
 
 namespace Multiplayer {
-    
     public class HostShip : MonoBehaviour {
         
         [SerializeField] public float offset;
         [SerializeField] public bool isRotated;
         [SerializeField] public int shipSize;
-
-        private GameObject[] _tiles;
 
         public Vector3 GetHoverPosition(Vector3 tilePosition) {
             return isRotated
@@ -27,8 +24,7 @@ namespace Multiplayer {
             }
         }
 
-        public void PlaceShip(GameObject[] tiles) {
-            _tiles = tiles;
+        public void PlaceShip() {
             gameObject.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezePosition;
             gameObject.GetComponent<BoxCollider>().isTrigger = true;
         }

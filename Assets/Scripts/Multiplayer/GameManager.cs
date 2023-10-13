@@ -68,12 +68,10 @@ namespace Multiplayer {
 
             switch (hostTurn) {
                 case true:
-                    Debug.Log("Host turn");
                     GameHUD.Instance.HostTurn();
                     MainCamera.Instance.MoveCamera(7f);
                     return;
                 case false:
-                    Debug.Log("Client turn");
                     GameHUD.Instance.ClientTurn();
                     MainCamera.Instance.MoveCamera(-7f);
                     break;
@@ -163,7 +161,7 @@ namespace Multiplayer {
         }
 
         [ServerRpc(RequireOwnership = false)]
-        public void ClientSetupCompletedServerRpc(string serializedShipTiles) {
+        private void ClientSetupCompletedServerRpc(string serializedShipTiles) {
             clientSetupComplete.Value = true;
             var deserialized = Deserialize(serializedShipTiles);
             ClientBoard.Instance.HostSetupCompleted(deserialized);

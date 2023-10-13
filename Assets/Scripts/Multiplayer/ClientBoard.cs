@@ -13,8 +13,8 @@ namespace Multiplayer {
         [SerializeField] public GameObject[] ships = new GameObject[5];
 
         public GameObject currentShip;
-        public List<List<KeyValuePair<string, bool>>> _shipLocations = new();
 
+        private List<List<KeyValuePair<string, bool>>> _shipLocations = new();
         private readonly GameObject[] _tiles = new GameObject[100];
         private int _shipIndex = -1;
         private bool _boardInView;
@@ -83,7 +83,7 @@ namespace Multiplayer {
             var shipIndex = 0;
             var shipTileNames = new string[currentShip.GetComponent<ClientShip>().shipSize];
             var shipTiles = _tiles.Where(tile => tile.GetComponent<ClientTile>().IsShipHovering()).ToArray();
-            currentShip.GetComponent<ClientShip>().PlaceShip(shipTiles);
+            currentShip.GetComponent<ClientShip>().PlaceShip();
 
             foreach (var shipTile in shipTiles) {
                 shipTile.GetComponent<ClientTile>().CompleteSetup(true);
