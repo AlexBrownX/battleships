@@ -10,7 +10,6 @@ namespace Multiplayer {
         [SerializeField] public Material redTile;
         [SerializeField] public Material greenTile;
         [SerializeField] public Material yellowTile;
-        [SerializeField] public AudioClip falling;
         [SerializeField] public AudioClip bigExplosion;
         [SerializeField] public AudioClip explosion;
         [SerializeField] public AudioClip splash;
@@ -55,7 +54,6 @@ namespace Multiplayer {
             
             var position = transform.position;
             var dropPosition = new Vector3(position.x, position.y + 7f, position.z);
-            AudioSource.PlayClipAtPoint(falling, dropPosition, 0.5f);
 
             SpawnMissileServerRpc(dropPosition);
         }

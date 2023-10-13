@@ -7,7 +7,7 @@ namespace Multiplayer {
         
         public static Missile Instance;
 
-        private bool _isFiring;
+        [SerializeField] public AudioClip falling;
 
         private void Awake() {
             if (Instance != null && Instance != this) {
@@ -16,6 +16,8 @@ namespace Multiplayer {
             else {
                 Instance = this;
             }
+            
+            AudioSource.PlayClipAtPoint(falling, transform.position, 0.5f);
         }
 
         void OnCollisionEnter(Collision collision) {
