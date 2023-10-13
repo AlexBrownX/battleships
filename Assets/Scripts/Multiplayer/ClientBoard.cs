@@ -18,6 +18,8 @@ namespace Multiplayer {
         private readonly GameObject[] _tiles = new GameObject[100];
         private int _shipIndex = -1;
         private bool _boardInView;
+        private bool _missileActive;
+
         private readonly List<string[]> _clientShipTiles = new();
 
         private void Awake() {
@@ -166,10 +168,18 @@ namespace Multiplayer {
             foreach (var tile in _tiles) {
                 tile.GetComponent<Renderer>().enabled = false;
             }
-                        
-            foreach (var ship in ships) {
-                ship.GetComponent<Renderer>().enabled = false;
-            }
+        }
+        
+        public bool IsMissileActive() {
+            return _missileActive;
+        }
+        
+        public void MissileStart() {
+            _missileActive = true;
+        }
+
+        public void MissileEnd() {
+            _missileActive = false;
         }
     }
 }

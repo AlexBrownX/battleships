@@ -38,11 +38,13 @@ namespace Multiplayer {
             yield return new WaitForSeconds(0.3f);
             
             if (GameManager.Instance.hostTurn && NetworkManager.Singleton.IsHost) {
+                ClientBoard.Instance.MissileEnd();
                 GameManager.Instance.TurnTaken();
                 Despawn();
             }
 
             if (!GameManager.Instance.hostTurn && !NetworkManager.Singleton.IsHost) {
+                HostBoard.Instance.MissileEnd();
                 GameManager.Instance.TurnTaken();
                 DespawnServerRpc();
             }

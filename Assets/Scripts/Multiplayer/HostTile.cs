@@ -33,7 +33,7 @@ namespace Multiplayer {
 
             if (!NetworkManager.Singleton.IsHost && 
                 !GameManager.Instance.hostTurn && 
-                _missile == null &&
+                !HostBoard.Instance.IsMissileActive() &&
                 MouseOverTile()) {
                 
                 GetComponent<Renderer>().material = yellowTile;
@@ -49,6 +49,7 @@ namespace Multiplayer {
         }
 
         private void DropMissileAboveTile() {
+            HostBoard.Instance.MissileStart();
             GetComponent<Renderer>().material = clearTile;
             
             var position = transform.position;

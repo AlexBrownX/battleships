@@ -33,7 +33,7 @@ namespace Multiplayer {
             
             if (NetworkManager.Singleton.IsHost && 
                 GameManager.Instance.hostTurn && 
-                _missile == null &&
+                !ClientBoard.Instance.IsMissileActive() &&
                 MouseOverTile()) {
                 
                 GetComponent<Renderer>().material = yellowTile;
@@ -49,6 +49,7 @@ namespace Multiplayer {
         }
 
         private void DropMissileAboveTile() {
+            ClientBoard.Instance.MissileStart();
             GetComponent<Renderer>().material = clearTile;
 
             var position = transform.position;
@@ -60,7 +61,6 @@ namespace Multiplayer {
             _missile.GetComponent<NetworkObject>().Spawn();
         }
 
-        // TODO - Bug here ? saw client missile not highlighting on both
         public void MissileHitTile() {
             _missileHit = true;
             if (_hasShip) {
