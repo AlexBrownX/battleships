@@ -70,6 +70,7 @@ namespace Multiplayer {
         }
 
         private void SpawnGame() {
+            GetComponent<AudioSource>().Stop();
             _game = Instantiate(gamePrefab);
             _game.GetComponent<NetworkObject>().Spawn();
         }
@@ -81,6 +82,7 @@ namespace Multiplayer {
 
         public async void StartHost() {
             try {
+                GetComponent<AudioSource>().Play();
                 startHostBtn.GetComponentInChildren<TMP_Text>().text = "Generating Join Code";
                 startClientBtn.SetActive(false);
                 joinCodeInput.gameObject.SetActive(false);
@@ -96,6 +98,7 @@ namespace Multiplayer {
                 NetworkManager.Singleton.StartHost();
             }
             catch (Exception exception) {
+                GetComponent<AudioSource>().Stop();
                 startHostBtn.GetComponentInChildren<TMP_Text>().text = "Host Game";
                 startClientBtn.SetActive(true);
                 joinCodeInput.gameObject.SetActive(true);
@@ -106,6 +109,7 @@ namespace Multiplayer {
 
         public async void StartClient() {
             try {
+                GetComponent<AudioSource>().Play();
                 startClientBtn.GetComponentInChildren<TMP_Text>().text = "Joining Game";
                 startHostBtn.SetActive(false);
                 joinCodeOutput.gameObject.SetActive(false);
@@ -117,6 +121,7 @@ namespace Multiplayer {
                 NetworkManager.Singleton.StartClient();
             }
             catch (Exception exception) {
+                GetComponent<AudioSource>().Stop();
                 startClientBtn.GetComponentInChildren<TMP_Text>().text = "Join Game";
                 startHostBtn.SetActive(true);
                 joinCodeOutput.gameObject.SetActive(true);
