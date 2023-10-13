@@ -10,7 +10,6 @@ namespace Multiplayer {
         [SerializeField] public Material redTile;
         [SerializeField] public Material greenTile;
         [SerializeField] public Material yellowTile;
-        [SerializeField] public AudioClip bigExplosion;
         [SerializeField] public AudioClip explosion;
         [SerializeField] public AudioClip splash;
         

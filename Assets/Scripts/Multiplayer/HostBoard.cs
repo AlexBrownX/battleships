@@ -9,6 +9,7 @@ namespace Multiplayer {
         
         public static HostBoard Instance;
 
+        [SerializeField] public AudioClip bigExplosion;
         [SerializeField] public GameObject[] ships = new GameObject[5];
 
         public GameObject currentShip;
@@ -116,7 +117,13 @@ namespace Multiplayer {
         }
         
         public void ShipHit(string tileHit) {
+            var sunkCountBefore = SunkCounts();
             UpdateShipLocations(tileHit);
+            var sunkCountAfter = SunkCounts();
+
+            if (sunkCountBefore != sunkCountAfter) {
+                AudioSource.PlayClipAtPoint(bigExplosion, transform.position, 1f);
+            }
         }
 
         private void UpdateShipLocations(string tileHit) {
