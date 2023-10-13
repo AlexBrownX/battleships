@@ -41,6 +41,7 @@ namespace Multiplayer {
 
         public void SetupComplete() {
             _setupComplete = true;
+            headerText.text = NetworkManager.Singleton.IsHost ? "Waiting for Player 2" : "Waiting for Player 1";
         }
         
         public void ExitScene() {

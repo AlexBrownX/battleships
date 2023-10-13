@@ -56,6 +56,8 @@ namespace Multiplayer {
                 // Debug.Log($"Client {clientId} connected");
                 
                 if (NetworkManager.Singleton.IsHost && NetworkManager.Singleton.ConnectedClients.Count == 2) {
+                    GetComponent<AudioSource>().Stop();
+                    StopMuzakClientRpc();
                     SpawnGame();
                     multiplayerPanel.SetActive(false);
                     HidePanelClientRpc();
@@ -69,8 +71,12 @@ namespace Multiplayer {
             };
         }
 
-        private void SpawnGame() {
+        [ClientRpc]
+        public void StopMuzakClientRpc() {
             GetComponent<AudioSource>().Stop();
+        }
+
+        private void SpawnGame() {
             _game = Instantiate(gamePrefab);
             _game.GetComponent<NetworkObject>().Spawn();
         }
@@ -129,7 +135,6 @@ namespace Multiplayer {
                 Debug.LogError(exception);
             }
         }
-
 
         private void ToggleLoadingImage(bool active) {
             loadingImage.SetActive(active);
