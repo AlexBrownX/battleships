@@ -14,7 +14,6 @@ namespace Multiplayer {
 
         [SerializeField] private GameObject startHostBtn;
         [SerializeField] private GameObject startClientBtn;
-        
         [SerializeField] private GameObject multiplayerPanel;
         [SerializeField] private GameObject loadingImage;
         [SerializeField] private TextMeshProUGUI joinCodeOutput;
@@ -54,9 +53,9 @@ namespace Multiplayer {
             };
         }
 
-        private static Action<ulong> OnClientDisconnectCallback() {
+        private Action<ulong> OnClientDisconnectCallback() {
             return _ => {
-                SceneManager.LoadScene("Scenes/MainMenu/MainMenuScene");
+                ExitScene();
             };
         }
 
