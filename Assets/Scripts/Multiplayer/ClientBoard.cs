@@ -100,6 +100,7 @@ namespace Multiplayer {
             }
             
             Destroy(SetupHUD.Instance.gameObject);
+            GameHUD.Instance.SetupComplete();
             GameManager.Instance.ClientSetupCompleted(_clientShipTiles);
         }
         

@@ -41,8 +41,8 @@ namespace Multiplayer {
             turnTaken = false;
 
             HitCounts();
-            Debug.Log($"Host Hits: {hostHitCount.Value} Client Hits: {clientHitCount.Value}");
-            Debug.Log($"Host Sunk: {hostSunkCount.Value} Client Sunk: {clientSunkCount.Value}");
+            // Debug.Log($"Host Hits: {hostHitCount.Value} Client Hits: {clientHitCount.Value}");
+            // Debug.Log($"Host Sunk: {hostSunkCount.Value} Client Sunk: {clientSunkCount.Value}");
 
             if (hostTurn) {
                 Debug.Log("Host turn");
