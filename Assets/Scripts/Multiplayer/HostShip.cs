@@ -7,7 +7,6 @@ namespace Multiplayer {
         [SerializeField] public float offset;
         [SerializeField] public bool isRotated;
         [SerializeField] public int shipSize;
-        [SerializeField] public AudioClip splash;
 
         private GameObject[] _tiles;
 
@@ -32,9 +31,6 @@ namespace Multiplayer {
             _tiles = tiles;
             gameObject.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezePosition;
             gameObject.GetComponent<BoxCollider>().isTrigger = true;
-
-            // TODO - TEMP
-            // Debug.Log($"{string.Join(", ", _tiles.Select(tile => tile.name).ToArray())}");
         }
     }
 }
