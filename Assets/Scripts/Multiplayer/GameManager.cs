@@ -15,7 +15,9 @@ namespace Multiplayer {
         public NetworkVariable<int> clientHitCount = new();
         public NetworkVariable<int> hostSunkCount = new();
         public NetworkVariable<int> clientSunkCount = new();
-
+        
+        [SerializeField] public AudioClip win;
+        [SerializeField] public AudioClip lose;
         
         public bool hostTurn;
         public bool turnTaken;
@@ -41,6 +43,10 @@ namespace Multiplayer {
             turnTaken = false;
 
             CountHits();
+            
+            // TODO Check winner
+            // AudioSource.PlayClipAtPoint(lose, transform.position, 1f);
+            // AudioSource.PlayClipAtPoint(win, transform.position, 1f);
 
             if (hostTurn) {
                 Debug.Log("Host turn");

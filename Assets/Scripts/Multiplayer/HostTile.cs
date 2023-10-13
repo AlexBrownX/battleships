@@ -10,6 +10,9 @@ namespace Multiplayer {
         [SerializeField] public Material redTile;
         [SerializeField] public Material greenTile;
         [SerializeField] public Material yellowTile;
+        [SerializeField] public AudioClip bigExplosion;
+        [SerializeField] public AudioClip explosion;
+        [SerializeField] public AudioClip splash;
 
         private GameObject _missile;
         private bool _hasShip;
@@ -65,10 +68,12 @@ namespace Multiplayer {
         public void MissileHitTile() {
             _missileHit = true;
             if (_hasShip) {
+                AudioSource.PlayClipAtPoint(explosion, transform.position, 0.8f);
                 GetComponent<Renderer>().material = greenTile;
                 HostBoard.Instance.ShipHit(name);
             }
             else {
+                AudioSource.PlayClipAtPoint(splash, transform.position, 1f);
                 GetComponent<Renderer>().material = redTile;
             }
         }
