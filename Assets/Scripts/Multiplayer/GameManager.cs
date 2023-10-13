@@ -40,24 +40,24 @@ namespace Multiplayer {
             if (!turnTaken) return;
             turnTaken = false;
 
-            HitCounts();
-            // Debug.Log($"Host Hits: {hostHitCount.Value} Client Hits: {clientHitCount.Value}");
-            // Debug.Log($"Host Sunk: {hostSunkCount.Value} Client Sunk: {clientSunkCount.Value}");
+            CountHits();
 
             if (hostTurn) {
                 Debug.Log("Host turn");
+                GameHUD.Instance.HostTurn();
                 MainCamera.Instance.MoveCamera(7f);
                 return;
             }
 
             if (!hostTurn) {
                 Debug.Log("Client turn");
+                GameHUD.Instance.ClientTurn();
                 MainCamera.Instance.MoveCamera(-7f);
                 return;
             }
         }
 
-        private void HitCounts() {
+        private void CountHits() {
             if (NetworkManager.Singleton.IsHost) {
                 hostHitCount.Value = ClientBoard.Instance.HitCounts();
                 hostSunkCount.Value = ClientBoard.Instance.SunkCounts();
