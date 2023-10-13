@@ -80,8 +80,8 @@ namespace Multiplayer {
                 startHostBtn.GetComponentInChildren<TMP_Text>().text = "Generating Join Code";
                 startClientBtn.SetActive(false);
                 joinCodeInput.gameObject.SetActive(false);
-                
                 ToggleLoadingImage(true);
+
                 var allocation = await RelayService.Instance.CreateAllocationAsync(1);
                 var joinCode = await RelayService.Instance.GetJoinCodeAsync(allocation.AllocationId);
                 joinCodeOutput.text = "Join Code: " + joinCode;
@@ -100,15 +100,15 @@ namespace Multiplayer {
                 Debug.LogError(exception);
             }
         }
-
+        
         public async void StartClient() {
             try {
                 GetComponent<AudioSource>().Play();
                 startClientBtn.GetComponentInChildren<TMP_Text>().text = "Joining Game";
                 startHostBtn.SetActive(false);
                 joinCodeOutput.gameObject.SetActive(false);
-                
                 ToggleLoadingImage(true);
+
                 var joinAllocation = await RelayService.Instance.JoinAllocationAsync(joinCodeInput.text);
                 var relayServerData = new RelayServerData(joinAllocation, "dtls");
                 NetworkManager.Singleton.GetComponent<UnityTransport>().SetRelayServerData(relayServerData);
