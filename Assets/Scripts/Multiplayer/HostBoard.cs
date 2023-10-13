@@ -162,13 +162,7 @@ namespace Multiplayer {
         public int SunkCounts() {
             return _shipLocations.Count(shipLocation => shipLocation.Count == shipLocation.Count(ship => ship.Value));
         }
-
-        public void Finish() {
-            foreach (var tile in _tiles) {
-                tile.GetComponent<Renderer>().enabled = false;
-            }
-        }
-
+        
         public bool IsMissileActive() {
             return _missileActive;
         }

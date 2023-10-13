@@ -34,6 +34,8 @@ namespace Multiplayer {
             if (NetworkManager.Singleton.IsHost && 
                 GameManager.Instance.hostTurn && 
                 !ClientBoard.Instance.IsMissileActive() &&
+                !GameManager.Instance.hostWin.Value &&
+                !GameManager.Instance.clientWin.Value &&
                 MouseOverTile()) {
                 
                 GetComponent<Renderer>().material = yellowTile;

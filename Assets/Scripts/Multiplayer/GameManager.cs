@@ -28,6 +28,8 @@ namespace Multiplayer {
         private readonly char[] _shipGroupsDelimiter = { '[', ']' };
         private readonly char[] _tileDelimiter = { ',' };
 
+        private bool _gameOver;
+
         private void Awake() {
             if (Instance != null && Instance != this) {
                 Destroy(gameObject);
@@ -41,7 +43,7 @@ namespace Multiplayer {
         }
 
         private void Update() {
-            if (!hostSetupComplete.Value || !clientSetupComplete.Value) return;
+            if (!hostSetupComplete.Value || !clientSetupComplete.Value || _gameOver) return;
             
             CountHits();
 
@@ -49,8 +51,7 @@ namespace Multiplayer {
                 GetComponent<AudioSource>().Stop();
                 AudioSource.PlayClipAtPoint(NetworkManager.Singleton.IsHost ? win : lose, transform.position, 1f);
                 GameHUD.Instance.HostWin();
-                HostBoard.Instance.Finish();
-                ClientBoard.Instance.Finish();
+                _gameOver = true;
                 return;
             }
             
@@ -58,8 +59,7 @@ namespace Multiplayer {
                 GetComponent<AudioSource>().Stop();
                 AudioSource.PlayClipAtPoint(NetworkManager.Singleton.IsHost ? lose : win, transform.position, 1f);
                 GameHUD.Instance.ClientWin();
-                HostBoard.Instance.Finish();
-                ClientBoard.Instance.Finish();
+                _gameOver = true;
                 return;
             }
 
