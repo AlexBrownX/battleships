@@ -117,7 +117,6 @@ namespace Multiplayer {
         
         public void ShipHit(string tileHit) {
             UpdateShipLocations(tileHit);
-            
         }
 
         private void UpdateShipLocations(string tileHit) {

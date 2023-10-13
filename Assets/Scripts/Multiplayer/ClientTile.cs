@@ -10,6 +10,7 @@ namespace Multiplayer {
         [SerializeField] public Material redTile;
         [SerializeField] public Material greenTile;
         [SerializeField] public Material yellowTile;
+        [SerializeField] public AudioClip falling;
         [SerializeField] public AudioClip bigExplosion;
         [SerializeField] public AudioClip explosion;
         [SerializeField] public AudioClip splash;
@@ -57,10 +58,12 @@ namespace Multiplayer {
 
             _missile = Instantiate(missilePrefab);
             _missile.transform.position = dropPosition;
+            AudioSource.PlayClipAtPoint(falling, dropPosition, 0.5f);
 
             _missile.GetComponent<NetworkObject>().Spawn();
         }
 
+        // TODO - Bug here ? saw client missile not highlighting on both
         public void MissileHitTile() {
             _missileHit = true;
             if (_hasShip) {
