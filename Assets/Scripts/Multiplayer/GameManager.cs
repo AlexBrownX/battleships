@@ -21,6 +21,9 @@ namespace Multiplayer {
         
         public bool hostTurn;
         public bool turnTaken;
+
+        public NetworkVariable<bool> hostWin = new();
+        public NetworkVariable<bool> clientWin = new();
         
         private readonly char[] _shipGroupsDelimiter = { '[', ']' };
         private readonly char[] _tileDelimiter = { ',' };
@@ -39,34 +42,83 @@ namespace Multiplayer {
 
         private void Update() {
             if (!hostSetupComplete.Value || !clientSetupComplete.Value) return;
+            
+            CountHits();
+            // CheckWin();
+
+            if (hostWin.Value) {
+                GameHUD.Instance.HostWin();
+                HostBoard.Instance.Finish();
+                ClientBoard.Instance.Finish();
+                return;
+            }
+            
+            if (clientWin.Value) {
+                GameHUD.Instance.ClientWin();
+                HostBoard.Instance.Finish();
+                ClientBoard.Instance.Finish();
+                return;
+            }
+
             if (!turnTaken) return;
             turnTaken = false;
 
-            CountHits();
-            
-            // TODO Check winner
-            // AudioSource.PlayClipAtPoint(lose, transform.position, 1f);
-            // AudioSource.PlayClipAtPoint(win, transform.position, 1f);
-
-            if (hostTurn) {
-                Debug.Log("Host turn");
-                GameHUD.Instance.HostTurn();
-                MainCamera.Instance.MoveCamera(7f);
-                return;
-            }
-
-            if (!hostTurn) {
-                Debug.Log("Client turn");
-                GameHUD.Instance.ClientTurn();
-                MainCamera.Instance.MoveCamera(-7f);
-                return;
+            switch (hostTurn) {
+                case true:
+                    Debug.Log("Host turn");
+                    GameHUD.Instance.HostTurn();
+                    MainCamera.Instance.MoveCamera(7f);
+                    return;
+                case false:
+                    Debug.Log("Client turn");
+                    GameHUD.Instance.ClientTurn();
+                    MainCamera.Instance.MoveCamera(-7f);
+                    break;
             }
         }
+
+        // private void CheckWin() {
+        //     if (NetworkManager.Singleton.IsHost && HostWin()) {
+        //         hostWin.Value = true;
+        //     }
+        //     
+        //     if (!NetworkManager.Singleton.IsHost && HostWin()) {
+        //         ClientInformedHostWinServerRpc();
+        //     }
+        //     
+        //     if (NetworkManager.Singleton.IsHost && ClientWin()) {
+        //         clientWin.Value = true;
+        //     }
+        //     
+        //     if (!NetworkManager.Singleton.IsHost && ClientWin()) {
+        //         ClientInformedClientWinServerRpc();
+        //     }
+        // }
+        
+        // [ServerRpc(RequireOwnership = false)]
+        // private void ClientInformedHostWinServerRpc() {
+        //     hostWin.Value = true;
+        // }
+        //
+        // [ServerRpc(RequireOwnership = false)]
+        // private void ClientInformedClientWinServerRpc() {
+        //     clientWin.Value = true;
+        // }
+        //
+        // private bool HostWin() {
+        //     return hostSunkCount.Value == 5;
+        // }
+        //
+        // private bool ClientWin() {
+        //     return clientSunkCount.Value == 5;
+        // }
 
         private void CountHits() {
             if (NetworkManager.Singleton.IsHost) {
                 hostHitCount.Value = ClientBoard.Instance.HitCounts();
                 hostSunkCount.Value = ClientBoard.Instance.SunkCounts();
+                hostWin.Value = hostSunkCount.Value == 5;
+                clientWin.Value = clientSunkCount.Value == 5;
             }
             else {
                 SetClientHitCountServerRpc(HostBoard.Instance.HitCounts());
@@ -82,12 +134,16 @@ namespace Multiplayer {
         [ServerRpc(RequireOwnership = false)]
         private void SetClientSunkCountServerRpc(int count) {
             clientSunkCount.Value = count;
+            hostWin.Value = hostSunkCount.Value == 5;
+            clientWin.Value = clientSunkCount.Value == 5;
         }
 
         /*
          * Progress to the next players turn, and synchronise.
          */
         public void TurnTaken() {
+            CountHits();
+
             if (NetworkManager.Singleton.IsHost) {
                 turnTaken = true;
                 hostTurn = false;

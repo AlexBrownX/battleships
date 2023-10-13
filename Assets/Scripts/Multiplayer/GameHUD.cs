@@ -55,5 +55,13 @@ namespace Multiplayer {
         public void ClientTurn() {
             headerText.text = NetworkManager.Singleton.IsHost ? "Player 2 targeting..." : "Choose target";
         }
+        
+        public void HostWin() {
+            headerText.text = NetworkManager.Singleton.IsHost ? "Winner!" : "Loser!";
+        }
+
+        public void ClientWin() {
+            headerText.text = NetworkManager.Singleton.IsHost ? "Loser!" : "Winner!";
+        }
     }
 }

@@ -21590,7 +21590,7 @@ GameObject:
   - component: {fileID: 1210768288}
   - component: {fileID: 1210768287}
   m_Layer: 0
-  m_Name: BackupGame (1)
+  m_Name: BackupGame
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -21780,6 +21780,10 @@ MonoBehaviour:
   lose: {fileID: 8300000, guid: 9d63bb78b1efb4492aa723f402ba8968, type: 3}
   hostTurn: 0
   turnTaken: 0
+  hostWin:
+    m_InternalValue: 0
+  clientWin:
+    m_InternalValue: 0
 --- !u!4 &1210768292
 Transform:
   m_ObjectHideFlags: 0
@@ -32417,7 +32421,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 2118fac4281ff4516abaada2e5e297bb, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.5
   m_Pitch: 1
   Loop: 0
   Mute: 0
